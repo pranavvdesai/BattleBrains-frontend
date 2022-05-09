@@ -1,0 +1,22 @@
+{
+  "name": "battlebrains-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt build",
+    "start": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt start",
+    "generate": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt generate",
+    "tail-watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
+    "tail-compile": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bb-button {
+        @apply
+        w-5/6 text-justify flex mx-auto
+        justify-self-center self-center p-6 text-3xl
+        rounded-3xl align-middle border bg-transparent
+        border-solid text-dark-500 justify-center font-josefin
+        border-light-100 mb-3
+
+        lg:text-base lg:p-2 lg:rounded-xl lg:w-2/3
+    }
+
+    .bb-input {
+        @apply
+        text-justify flex mx-auto
+        justify-self-center self-center p-6
+        text-3xl rounded-3xl align-middle
+        border-solid bg-dark-300 font-josefin
+        font-normal text-white justify-center
+        border-light-100 mt-5
+
+        lg:text-base lg:p-2 lg:rounded-xl lg:px-6 lg:w-2/3
+    }
+
+    .bb-button-blue {
+        @apply
+        w-5/6 p-6 rounded-3xl text-justify
+        text-3xl flex mx-auto justify-self-center
+        self-center align-middle bg-blue-sky border-solid
+        text-white font-bold justify-center border-light-100
+        bg-gradient-to-r from-blue-sky to-blue-normal mt-2
+
+        lg:text-base lg:p-2 lg:rounded-xl lg:w-2/3
+    }
+}
