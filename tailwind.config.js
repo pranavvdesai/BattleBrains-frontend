@@ -24,7 +24,7 @@ module.exports = {
 
         white: "#FFFFFF",
         black: "#000000",
-
+        gray: "#B8B8CC",
         light: {
           100: "#E6E8F2",
           200: "#B8BBCC",
@@ -38,6 +38,7 @@ module.exports = {
           300: "#3A3A4D",
           400: "#9898B3",
           500: "#CFCFE6",
+          600: "#1C1C26",
         },
 
         "lock-cover": {
@@ -48,6 +49,7 @@ module.exports = {
         blue: {
           normal: "#5B95E6",
           sky: "#5CB8E6",
+          border: "#3B8DFF",
         },
 
         pink: "#E65BE6",
