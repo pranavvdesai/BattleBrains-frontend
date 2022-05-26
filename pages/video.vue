@@ -97,9 +97,12 @@
     />
 
     <!-- bottomnav -->
-    <div :class="{hidden : hidden}" class="  fixed bg-dark-600 shadow-lg bottom-0 left-0 w-full md:hidden">
-        <Modal />
-      </div>
+    <div
+      :class="{hidden : hidden}"
+      class="  fixed bg-dark-600 shadow-lg bottom-0 left-0 w-full md:hidden"
+    >
+      <Modal />
+    </div>
 
   </section>
 
@@ -110,7 +113,7 @@ export default {
   data() {
     return {
       position: "-right-80",
-      hidden: true
+      hidden: true,
     };
   },
   methods: {
@@ -119,7 +122,7 @@ export default {
     },
     toggleModal() {
       this.hidden = !this.hidden;
-    }
+    },
   },
 };
 </script>
