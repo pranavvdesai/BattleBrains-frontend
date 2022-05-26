@@ -17,9 +17,11 @@
         <h2 class="text-pink xl:text-lg lg:text-sm font-josefin">BLOCKCHAIN</h2>
       </div>
       <p class="mt-8 text-lg text-gray font-josefin">A blockchain is a digitally distributed, decentralized, public ledger that exists across a network...</p>
-      <div class="flex">
-        <h1 class="text-white mt-6 mb-6">2/4 videos</h1>
-
+      <div class="flex items-center">
+        <h1 class="text-white mt-6 mb-6 mr-3">2/4 videos</h1>
+        <div class="w-1/2 bg-white rounded-lg">
+          <div class="bg-blue-normal w-1/2 h-3 rounded-lg"></div>
+        </div>
       </div>
     </div>
     <div class="absolute bottom-0 mb-5 w-full">
