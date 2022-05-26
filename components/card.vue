@@ -3,7 +3,7 @@
     <div class="rounded-lg shadow-lg bg-white max-w-sm p-2">
       <a href="#!">
         <img
-          class="rounded-t-lg"
+          class="rounded-t-lg w-full"
           src="@/assets/images/card1.png"
           alt=""
         />
