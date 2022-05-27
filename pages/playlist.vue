@@ -38,7 +38,7 @@
           <!-- middle -->
           <div class="xl:mx-80 lg:mx-64 md:mx-60">
             <div class=" bg-dark-200">
-              <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 p-10">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 px-10 py-5">
                 <Card />
                 <Card />
                 <Card />
