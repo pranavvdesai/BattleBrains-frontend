@@ -35,6 +35,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      position: "-right-full",
+    };
+  },
   methods: {
     toggle() {
       this.$emit("toggle");
