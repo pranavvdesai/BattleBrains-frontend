@@ -65,12 +65,12 @@
 export default {
   data() {
     return {
-      position: "-right-80",
+      position: "-right-full",
     };
   },
   methods: {
     toggleSidebar() {
-      this.position = this.position === "-right-80" ? "right-0" : "-right-80";
+      this.position = this.position === "-right-full" ? "right-0" : "-right-full";
     },
   },
 };
