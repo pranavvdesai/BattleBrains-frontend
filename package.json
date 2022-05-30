@@ -7,6 +7,7 @@
     "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt build",
     "start": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt start",
     "generate": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css && nuxt generate",
+    "generatev2": "nuxt generate",
     "tail-watch": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
     "tail-compile": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css"
   },

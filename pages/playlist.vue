@@ -62,12 +62,18 @@
             
 
 <script>
+import Modal from '../components/modal.vue';
+import Resources from '../components/Resources.vue';
+import Leftsidebar from '../components/Leftsidebar.vue';
+import Card from '../components/Card.vue';
+
 export default {
   data() {
     return {
       position: "-right-full",
     };
   },
+  components: { Modal, Resources, Leftsidebar, Card },
   methods: {
     toggleSidebar() {
       this.position = this.position === "-right-full" ? "right-0" : "-right-full";
