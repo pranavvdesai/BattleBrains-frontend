@@ -1,6 +1,6 @@
 <template>
 
-  <body class="bg-dark-200">
+  <body class="bg-dark-100">
     <section class="h-screen">
       <div class="">
         <!-- leftsidebar -->
@@ -8,12 +8,12 @@
 
         <div class="flex flex-col">
           <!-- nav -->
-          <div class="relative bg-dark-600 shadow-lg  fixed top-0 left-0 w-full md:hidden">
+          <div class="relative bg-dark-300 shadow-lg  fixed top-0 left-0 w-full md:hidden">
             <div class="px-4 pt-4">
               <div class=" flex justify-between items-center h-full">
                 <div class="flex items-center">
                   <img
-                    src="@/assets/images/ArrowLeft.png"
+                    src="@/assets/images/ArrowLeft.svg"
                     alt="Left Arrow"
                     class="mr-4 w-4 h-4"
                   >
@@ -24,21 +24,20 @@
                 <div class="flex items-center">
                   <img
                     @click="toggleSidebar"
-                    src="@/assets/images/paper.png"
+                    src="@/assets/images/boldpaper.svg"
                     alt="Paper"
                     class="w-3 h-4 "
                   >
                 </div>
               </div>
             </div>
-            <!-- <Modal @toggle="toggleSidebar" /> -->
             <Modal />
           </div>
 
           <!-- middle -->
-          <div class="xl:mx-80 lg:mx-64 md:mx-60">
-            <div class=" bg-dark-200">
-              <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 px-10 py-5">
+          <div class=" md:mx-60 lg:mx-64 xl:mx-80 xxl:mx-96">
+            <div class=" bg-dark-100">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 xxl:gap-16 px-10 py-5 xxl:py-10">
                 <Card />
                 <Card />
                 <Card />
@@ -62,10 +61,10 @@
             
 
 <script>
-import Modal from '../components/modal.vue';
-import Resources from '../components/Resources.vue';
-import Leftsidebar from '../components/Leftsidebar.vue';
-import Card from '../components/Card.vue';
+import Modal from "../components/modal.vue";
+import Resources from "../components/Resources.vue";
+import Leftsidebar from "../components/Leftsidebar.vue";
+import Card from "../components/Card.vue";
 
 export default {
   data() {
@@ -76,7 +75,8 @@ export default {
   components: { Modal, Resources, Leftsidebar, Card },
   methods: {
     toggleSidebar() {
-      this.position = this.position === "-right-full" ? "right-0" : "-right-full";
+      this.position =
+        this.position === "-right-full" ? "right-0" : "-right-full";
     },
   },
 };

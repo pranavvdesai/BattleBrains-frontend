@@ -1,6 +1,6 @@
 <template>
 
-  <body class="bg-dark-200">
+  <body class="bg-dark-100">
     <section class="h-screen">
       <!-- leftsidebar -->
       <Leftsidebar />
@@ -8,25 +8,25 @@
       <div class="flex flex-col">
 
         <!-- middle -->
-        <div class="xl:mx-80 lg:mx-64 md:mx-60">
-          <div class=" bg-dark-200 text-gray h-screen">
+        <div class=" md:mx-60 lg:mx-64 xl:mx-80 xxl:mx-96">
+          <div class=" bg-dark-100 text-light-300 h-screen">
 
-            <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-200 ">
+            <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-100 ">
 
               <div class="hidden md:block">
                 <div class="flex justify-between py-4 ">
                   <div class="flex items-center ">
                     <img
-                      src="@/assets/images/ArrowLeft.png"
+                      src="@/assets/images/ArrowLeft.svg"
                       alt="Left Arrow"
                       class="mr-4 w-4 h-4"
                     >
-                    <p class=" text-sm text-gray font-josefin">Back</p>
+                    <p class=" text-sm text-light-300 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
-                    <p class=" text-sm text-gray font-josefin">Next</p>
+                    <p class=" text-sm text-light-300 font-josefin">Next</p>
                     <img
-                      src="@/assets/images/ArrowRight.png"
+                      src="@/assets/images/ArrowRight.svg"
                       alt="Right Arrow"
                       class="ml-4 w-4 h-4"
                     >
@@ -38,7 +38,7 @@
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
                     <img
-                      src="@/assets/images/ArrowLeft.png"
+                      src="@/assets/images/ArrowLeft.svg"
                       alt="Left Arrow"
                       class="mr-4 w-4 h-4"
                     >
@@ -46,12 +46,12 @@
                   </div>
                   <div class="flex items-center">
                     <img
-                      src="@/assets/images/info.png"
+                      src="@/assets/images/info.svg"
                       alt="info"
                       class="ml-4 w-4 h-4"
                       @click="toggleModal"
                     > <img
-                      src="@/assets/images/boldpaper.png"
+                      src="@/assets/images/boldpaper.svg"
                       alt="paper"
                       class="ml-4 w-4 h-4"
                       @click="toggleSidebar"
@@ -73,7 +73,7 @@
                   <input type="checkbox" />
                 </div>
                 <img
-                  src="@/assets/images/heart.png"
+                  src="@/assets/images/heart.svg"
                   alt="Right Arrow"
                   class="w-4 h-4 "
                 >
@@ -81,7 +81,7 @@
 
               <p class=" text-base font-josefin">The Web3 Academy with everything for everyone. Discover, Learn and Make friends!</p>
               <div class="flex">
-                <span class="mr-2 text-blue-normal">DEFI</span>
+                <span class="mr-2 text-blue-300">DEFI</span>
                 <span class="mr-2 text-pink">NFTs</span>
                 <span class="mr-2 text-yellow">PFP</span>
               </div>
@@ -100,7 +100,7 @@
       <!-- bottomnav -->
       <div
         :class="{hidden : hidden}"
-        class="  fixed bg-dark-600 shadow-lg bottom-0 left-0 w-full md:hidden"
+        class="  fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full md:hidden"
       >
         <Modal />
       </div>
@@ -110,21 +110,22 @@
 </template>
 
 <script>
-import Modal from '../components/modal.vue';
-import Resources from '../components/Resources.vue';
-import Leftsidebar from '../components/Leftsidebar.vue';
+import Modal from "../components/modal.vue";
+import Resources from "../components/Resources.vue";
+import Leftsidebar from "../components/Leftsidebar.vue";
 
 export default {
   data() {
     return {
-      position: "-right-80",
+      position: "-right-full",
       hidden: true,
     };
   },
   components: { Modal, Resources, Leftsidebar },
   methods: {
     toggleSidebar() {
-      this.position = this.position === "-right-80" ? "right-0" : "-right-80";
+      this.position =
+        this.position === "-right-full" ? "right-0" : "-right-full";
     },
     toggleModal() {
       this.hidden = !this.hidden;

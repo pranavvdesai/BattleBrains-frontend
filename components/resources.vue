@@ -1,13 +1,13 @@
 <template>
   <div
     :class="[ position ]"
-    class=" h-screen fixed top-0 md:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-100 lg:w-[22%] md:w-1/4 w-3/4 z-10 py-4 px-6 transition-all duration-300"
+    class=" h-screen fixed top-0 md:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[22%] md:w-1/4 w-3/4 z-10 py-4 px-6 transition-all duration-300"
   >
     <div class="flex justify-between items-center md:justify-center">
-      <h1 class="text-center my-6 text-gray text-xl font-mont">Reference material [5]</h1>
+      <h1 class="text-center my-6 text-light-300 text-xl font-mont">Reference material [5]</h1>
       <img
         @click="toggle"
-        src="@/assets/images/close.png"
+        src="@/assets/images/close.svg"
         alt="close"
         class="w-3 h-3 mt-1 md:hidden"
       >
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  props: ['position'],
+  props: ["position"],
   methods: {
     toggle() {
       this.$emit("toggle");
