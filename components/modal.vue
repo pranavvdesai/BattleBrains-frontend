@@ -32,13 +32,3 @@
   </div>
 
 </template>
-
-<script>
-export default {
-  methods: {
-    toggle() {
-      this.$emit("toggle");
-    },
-  },
-};
-</script>
