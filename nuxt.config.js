@@ -28,7 +28,9 @@ export default {
   devServerHandlers: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    '~/plugins/engine.js'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
