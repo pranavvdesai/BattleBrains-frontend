@@ -8,7 +8,8 @@
 
         <div class="flex flex-col">
           <!-- nav -->
-          <div class="relative bg-dark-300 shadow-lg  fixed top-0 left-0 w-full md:hidden">
+          <div>
+          <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full md:hidden">
             <div class="px-4 pt-4">
               <div class=" flex justify-between items-center h-full">
                 <div class="flex items-center">
@@ -32,6 +33,7 @@
               </div>
             </div>
             <Modal />
+          </div>
           </div>
 
           <!-- middle -->
