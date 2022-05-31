@@ -9,7 +9,7 @@
           <div class="mr-4 text-[#01E3FF]">INTRODUCTION</div>
           <div class="mr-4 text-[#FF01EC]">BLOCKCHAIN</div>
         </div>
-        <div class="flex mt-2 text-[#94A3B8] font-normal text-sm">
+        <div class="flex mt-2 text-[#94A3B8] font-medium text-sm">
           <div class="mr-3">Dec 31, 2019</div>
           <div class="mr-3 font-black">.</div>
           <div class="mr-3">7mins</div>
