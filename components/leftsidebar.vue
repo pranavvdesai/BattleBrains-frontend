@@ -4,7 +4,7 @@
       <div class="flex mt-4 align-middle">
         <leftArrowIcon :color='"#fff"'/>
         <p class="ml-5 text-xl text-white">back</p>
-      </div>
+      </div> 
       <h1 class="text-white xl:text-3xl lg:text-2xl md:text-xl font-extrabold mt-16 font-mont">
         Why Web3?
       </h1>
