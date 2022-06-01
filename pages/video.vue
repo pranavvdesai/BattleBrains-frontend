@@ -8,7 +8,7 @@
       <div class="flex flex-col">
 
         <!-- middle -->
-        <div class=" md:mx-60 lg:mx-64 xl:mx-80 xxl:mx-96">
+        <div class=" md:mx-[25%] lg:mx-[22%] ">
           <div class=" bg-dark-100 text-light-300 h-screen">
 
             <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-100 ">
