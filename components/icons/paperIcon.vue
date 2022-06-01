@@ -1,0 +1,32 @@
+<template>
+  <div class="my-auto">
+    <svg
+      id="Iconly_Light-Outline_Paper"
+      data-name="Iconly/Light-Outline/Paper"
+      xmlns="http://www.w3.org/2000/svg"
+      :width="size - 3"
+      :height="size"
+      viewBox="0 0 17.053 19.866"
+    >
+      <g id="Paper" transform="translate(0 0)">
+        <path
+          id="Combined_Shape"
+          data-name="Combined Shape"
+          d="M4.475,19.866A4.585,4.585,0,0,1,0,15.188V4.491A4.606,4.606,0,0,1,4.57.012h6.271a.758.758,0,0,1,.265,0h.131a.755.755,0,0,1,.541.23l5.065,5.277a.753.753,0,0,1,.209.519V15.2A4.615,4.615,0,0,1,12.6,19.865H4.475ZM1.5,4.509V15.2a3.091,3.091,0,0,0,3.009,3.162h8.064a3.109,3.109,0,0,0,2.979-3.155V6.984h-2.01a3.332,3.332,0,0,1-3.318-3.325V1.512H4.572A3.089,3.089,0,0,0,1.5,4.509Zm10.224-.85a1.828,1.828,0,0,0,1.82,1.824H14.73L11.724,2.353ZM5.387,14.108a.75.75,0,0,1,0-1.5h5.4a.75.75,0,0,1,0,1.5Zm0-3.752a.75.75,0,0,1,0-1.5H8.743a.75.75,0,0,1,0,1.5Z"
+          transform="translate(0.001 0)"
+          :fill="color"
+        />
+      </g>
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "paperIcon",
+  props: {
+    color: String,
+    size: Number,
+  },
+};
+</script>

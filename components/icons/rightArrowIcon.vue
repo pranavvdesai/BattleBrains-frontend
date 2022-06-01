@@ -1,17 +1,17 @@
 <template>
   <div class="my-auto">
     <svg
-      id="Iconly_Light-Outline_Arrow_-_Left"
-      data-name="Iconly/Light-Outline/Arrow - Left"
+      id="Iconly_Light-Outline_Arrow_-_Right"
+      data-name="Iconly/Light-Outline/Arrow - Right"
       xmlns="http://www.w3.org/2000/svg"
       :width="size"
       :height="size - 3"
       viewBox="0 0 16.5 13.549"
     >
-      <g 
-        id="Arrow_-_Left"
-        data-name="Arrow - Left"
-        transform="translate(16.5 0) rotate(90)"
+      <g
+        id="Arrow_-_Right"
+        data-name="Arrow - Right"
+        transform="translate(0 13.549) rotate(-90)"
       >
         <path
           id="Combined_Shape"
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "leftArrowIcon",
+  name: "rightArrowIcon",
   props: {
     color: String,
     size: Number,
