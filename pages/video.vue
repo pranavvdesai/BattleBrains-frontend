@@ -94,7 +94,7 @@
       <!-- rightsidebar -->
       <Resources
         @toggle="toggleSidebar"
-        :class="position"
+        :position="position"
       />
 
       <!-- bottomnav -->
@@ -110,6 +110,10 @@
 </template>
 
 <script>
+import Modal from '../components/modal.vue';
+import Resources from '../components/Resources.vue';
+import Leftsidebar from '../components/Leftsidebar.vue';
+
 export default {
   data() {
     return {
@@ -117,6 +121,7 @@ export default {
       hidden: true,
     };
   },
+  components: { Modal, Resources, Leftsidebar },
   methods: {
     toggleSidebar() {
       this.position = this.position === "-right-80" ? "right-0" : "-right-80";

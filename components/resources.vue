@@ -35,6 +35,7 @@
 
 <script>
 export default {
+  props: ['position'],
   methods: {
     toggle() {
       this.$emit("toggle");

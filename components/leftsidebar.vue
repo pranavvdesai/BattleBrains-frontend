@@ -1,13 +1,9 @@
 <template>
   <div class="h-screen fixed top-0 hidden md:block md:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-100 xl:w-80 lg:w-64 md:w-60 z-10 py-4 px-2 transition-all duration-300">
     <div class="xl:mx-5 lg:mx-1">
-      <div class="flex mt-4">
-        <img
-          src="@/assets/images/ArrowLeft.png"
-          alt="Left Arrow"
-          class="mr-4 w-4 h-4 mt-2"
-        >
-        <p class=" text-xl text-gray">back</p>
+      <div class="flex mt-4 align-middle">
+        <leftArrowIcon :color='"#fff"'/>
+        <p class="ml-5 text-xl text-white">back</p>
       </div>
       <h1 class="text-white xl:text-3xl lg:text-2xl md:text-xl font-extrabold mt-16 font-mont">
         Why Web3?
@@ -37,3 +33,15 @@
 
   </div>
 </template>
+
+<script>
+import leftArrowIcon from './icons/leftArrowIcon'
+
+export default {
+  name: 'leftsidebar',
+  components: {
+    leftArrowIcon
+  }
+}
+
+</script>
