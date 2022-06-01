@@ -44,11 +44,12 @@
               <p class="">66mins</p>
             </div>
             <div class="flex items-center mt-2">
-              <img
+              <!-- <img
                 class="mr-2 w-4 h-4"
                 src="../assets/images/paper.png"
                 alt=""
-              />
+              /> -->
+              
               <p class="">5 references</p>
             </div>
           </div>
@@ -71,3 +72,4 @@
     </div>
   </body>
 </template>
+
