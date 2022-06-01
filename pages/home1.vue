@@ -1,6 +1,6 @@
 <template>
   <body class="bg-dark-100">
-    <div class="flex h-64 sm:h-72 md:h-80 lg:h-96 px-5 -z-10">
+    <div class="flex h-1/2 lg:h-96 px-5 -z-10">
       <div
         class="rightSideBar bg-dark-200 rounded-lg w-full flex justify-between flex-col md:flex-row lg:flex-row"
       >
@@ -55,19 +55,16 @@
         </div>
         <!-- 2 -->
         <div class="w-full h-1/2 lg:w-1/2 lg:h-full">
+          <!-- <div class="bg-white z-20 absolute w-full h-full opacity-20"></div> -->
+          <img
+            class="z-0 bg-no-repeat bg-center bg-cover w-full h-full rounded-lg"
+            src="https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc"
+            alt=""
+          />
           <div
-            class="bg-dark-200 bg-gradient-to-b lg:bg-gradient-to-r from-opacity-100 to-opacity-0 z-20"
+            class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 z-30 inline-block absolute right-10 lg:top-5"
           >
-            <div
-              class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 z-30 inline-block"
-            >
-              Beginners
-            </div>
-            <img
-              class="z-0 bg-no-repeat bg-center bg-cover w-full h-full"
-              src="../assets/images/card1.png"
-              alt=""
-            />
+            Beginners
           </div>
         </div>
       </div>
