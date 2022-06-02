@@ -9,16 +9,16 @@
         <img src="@/assets/images/khaby.png" class="khaby_image"/>
       </div>
 
-      <div class="flex-1 flex justify-center mb-10 lg:my-10">
-        <div class="login">
+      <div class="flex-1 flex flex-col justify-center lg:my-10">
+        <div class="login h-full">
           <img src="@/assets/images/wagmi.svg" alt="wagmi" class="wagmi">
           <p class="text">Maximising the creative idea in Education to defy gravity and matter in Web3.</p>
           <button class="metamask_login">
             Connect using Metamask
           </button>
 
-          <div class='w-1/2 border-b border-dark-400 text-center justify-self-center mx-auto' style="height: 20px">
-              <span class='bg-dark-200 px-5 text-dark-400 font-mont'>
+          <div class='w-1/2 border-b border-dark-400 text-center justify-self-center mx-auto xs:hidden mb-0 md:block' style="height: 15px">
+              <span class='bg-dark-200 px-5 text-dark-400 font-mont text-sm'>
                   or
               </span>
           </div>
@@ -31,6 +31,15 @@
           <button class="email_login hover:bg-green-700">
             Sign in with Email
           </button>
+          <div class="contact mt-16">
+          <div class="icons flex space-x-4 justify-center">
+            <img src="@/assets/images/discord.png" class="discord" alt="discord">
+            <img src="@/assets/images/instagram.png" class="instagram" alt="instagram">
+            <img src="@/assets/images/linkedin.png" class="linkedin" alt="linkedin">
+            <img src="@/assets/images/twitter.png" class="twitter" alt="twitter">
+          </div>
+          <div class="cc">BattleBrains &#169; All Rights Reserved.</div>
+        </div>
         </div>
       </div>
     </div>
