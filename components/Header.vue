@@ -31,46 +31,6 @@
                 <!-- Dropdown toggle button -->
                 <button @click="show = !show" class="flex items-center p-2 text-indigo-100 bg-white rounded drop_btn">
                 </button>
-                <!-- Dropdown menu -->
-                <div v-show="show" class="
-          absolute
-          right-0
-          py-2
-          mt-2
-          bg-indigo-500
-          rounded-md
-          shadow-xl
-          w-44
-          z-10
-        ">
-                    <NuxtLink to="/" class="
-            block
-            px-4
-            py-2
-            text-sm text-indigo-100
-            hover:bg-dark-100 hover:text-white
-          ">
-                        Dropdown List 1
-                    </NuxtLink>
-                    <NuxtLink to="/" class="
-            block
-            px-4
-            py-2
-            text-sm text-indigo-100
-             hover:bg-dark-100 hover:text-white
-          ">
-                        Dropdown List 2
-                    </NuxtLink>
-                    <NuxtLink to="/" class="
-            block
-            px-4
-            py-2
-            text-sm text-indigo-100
-             hover:bg-dark-100 hover:text-white
-          ">
-                        Dropdown List 3
-                    </NuxtLink>
-                </div>
             </div>
             <svg class="w-5 h-5 text-indigo-100 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor">

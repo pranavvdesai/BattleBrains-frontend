@@ -6,7 +6,7 @@
       >
         <!-- 1 -->
         <div
-          class="flex flex-col justify-between p-5 w-full h-1/2 lg:w-1/2 lg:h-full"
+          class="flex flex-col justify-between p-5 w-full lg:w-1/2 lg:h-full"
         >
           <div class="z-50">
             <div class="flex text-sm font-medium">
@@ -54,15 +54,9 @@
           </div>
         </div>
         <!-- 2 -->
-        <div class="w-full h-1/2 lg:w-1/2 lg:h-full">
-          <!-- <div class="bg-white z-20 absolute w-full h-full opacity-20"></div> -->
-          <img
-            class="z-0 bg-no-repeat bg-center bg-cover w-full h-full rounded-lg"
-            src="https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc"
-            alt=""
-          />
-          <div
-            class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 z-30 inline-block absolute right-10 lg:top-5"
+        <div class="w-full lg:w-1/2 lg:h-full second">
+              <div
+            class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 z-30 right-10 lg:top-5 beg_btn"
           >
             Beginners
           </div>
@@ -71,3 +65,34 @@
     </div>
   </body>
 </template>
+
+<style> 
+  .second{
+     background-image: url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     justify-content: flex-end;
+  }
+  .beg_btn{
+    width: 125px;
+    text-align: center;
+    height: 35px;
+    margin: 10px;
+  }
+  @media(max-width: 1024px){
+    .second{
+      position: relative;
+      height: 200px;
+    }
+    .beg_btn{
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+    .second{
+     background-image: url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+    }
+  }
+</style>
