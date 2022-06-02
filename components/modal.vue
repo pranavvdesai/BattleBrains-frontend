@@ -21,7 +21,6 @@
     </div>
     <button class="text-white font-josefin border-2 border-blue-100 px-3 py-1 rounded-md mt-1 ">Begginers</button>
   </div>
-
 </template>
 
 <script>

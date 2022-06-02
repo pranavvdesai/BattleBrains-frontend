@@ -4,9 +4,7 @@
     <section class="h-screen">
       <!-- leftsidebar -->
       <Leftsidebar />
-
       <div class="flex flex-col">
-
         <!-- middle -->
         <div class=" lg:mx-[22%] ">
           <div class=" bg-dark-100 text-light-300 h-screen">
@@ -52,13 +50,18 @@
               ></iframe>
               <div class="flex justify-between my-4">
                 <div class="flex items-center">
-                  <h1 class=" text-base text-white font-mont font-bold mr-4">BattleBrains</h1>
+                  <h1 class="text-base text-white font-mont font-bold mr-4">
+                    BattleBrains
+                  </h1>
                   <input type="checkbox" />
                 </div>
                 <HeartIcon :size="20" :color="'#fff'" />
               </div>
 
-              <p class=" text-base font-josefin">The Web3 Academy with everything for everyone. Discover, Learn and Make friends!</p>
+              <p class="text-base font-josefin">
+                The Web3 Academy with everything for everyone. Discover, Learn
+                and Make friends!
+              </p>
               <div class="flex">
                 <span class="mr-2 text-blue-300">DEFI</span>
                 <span class="mr-2 text-pink">NFTs</span>
@@ -71,10 +74,7 @@
       </div>
 
       <!-- rightsidebar -->
-      <Resources
-        @toggle="toggleSidebar"
-        :position="position"
-      />
+      <Resources @toggle="toggleSidebar" :position="position" />
 
       <!-- bottomnav -->
       <div

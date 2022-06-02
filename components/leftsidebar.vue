@@ -5,7 +5,9 @@
         <leftArrowIcon :color="'#fff'" :size="16" />
         <p class="ml-5 text-xl text-white">back</p>
       </div>
-      <h1 class="text-white xl:text-3xl lg:text-2xl md:text-xl font-extrabold mt-16 font-mont">
+      <h1
+        class="text-white xl:text-3xl lg:text-2xl md:text-xl font-extrabold mt-16 font-mont"
+      >
         Why Web3?
       </h1>
       <div class="flex flex-col lg:flex-row mt-4">
@@ -21,12 +23,13 @@
       </div>
     </div>
     <div class="absolute bottom-0 mb-5 w-full">
-      <div class="flex border-2 border-gray mx-8 rounded-md justify-between p-3">
+      <div
+        class="flex border-2 border-gray mx-8 rounded-md justify-between p-3"
+      >
         <p class="text-gray">Test Yourself</p>
         <PaperIcon class="w-3 h-4 mt-1" :size="20" :color="'#fff'" />
       </div>
     </div>
-
   </div>
 </template>
 
