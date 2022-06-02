@@ -1,6 +1,5 @@
 <template>
-  <body class="bg-dark-100">
-    <div class="flex h-1/2 lg:h-96 px-5 -z-10">
+    <div class="flex h-1/2 lg:h-96 px-5 ">
       <div
         class="rightSideBar bg-dark-200 rounded-lg w-full flex justify-between flex-col md:flex-row lg:flex-row"
       >
@@ -8,7 +7,7 @@
         <div
           class="flex flex-col justify-between p-5 w-full lg:w-1/2 lg:h-full"
         >
-          <div class="z-50">
+          <div class="">
             <div class="flex text-sm font-medium">
               <p class="mr-6 text-[#01E3FF]">INTRODUCTION</p>
               <p class="mr-6 text-[#FF01EC]">WEB3</p>
@@ -25,13 +24,13 @@
             </div>
           </div>
           <div
-            class="flex text-white lg:justify-between flex-col lg:flex-row z-50"
+            class="flex text-white lg:justify-between flex-col lg:flex-row "
           >
             <div class="flex mt-2">
               <p class="mr-2">3/4 Videos</p>
-              <div class="bg-white w-24 h-3 items-center rounded-lg mt-2 -z-50">
+              <div class="bg-white w-24 h-3 items-center rounded-lg mt-2 ">
                 <div
-                  class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-lg z-10"
+                  class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-lg "
                 ></div>
               </div>
             </div>
@@ -58,14 +57,13 @@
         <!-- 2 -->
         <div class="w-full lg:w-1/2 lg:h-full second">
               <div
-            class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 z-30 right-10 lg:top-5 beg_btn"
+            class="text-white border-4 rounded-md font-medium border-[#0b0ed8] px-5 pb-1 right-10 lg:top-5 beg_btn"
           >
             Beginners
           </div>
         </div>
       </div>
     </div>
-  </body>
 </template>
 
 <style> 

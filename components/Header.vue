@@ -28,7 +28,7 @@
               <SearchIcon :color="'#9898B3'" :size="20"/>
             </span>
             <input
-              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0"
               placeholder="Search"
               type="text"
               name="search"

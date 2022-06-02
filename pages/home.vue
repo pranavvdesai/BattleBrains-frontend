@@ -1,7 +1,9 @@
 <template>
   <div class="home_right">
       <Header />
-      <h1>Helloooooo</h1>
+        <div class="home_cards">
+          <Homecards />
+        </div>
       <Bottombar />
   </div>
 </template>
@@ -10,9 +12,11 @@
 import Bottombar from '../components/Bottombar.vue'
 import Togglebar from '../components/Togglebar.vue'
 import Header from '../components/Header.vue'
+import Homecards from '../components/Homecards.vue'
+
   export default{
     layout: "sideviewLayout",
-    components: { Bottombar, Togglebar, Header }
+    components: { Bottombar, Togglebar, Header, Homecards }
 }
 </script>
 
@@ -23,10 +27,17 @@ import Header from '../components/Header.vue'
     width: 80%;
     background-color: #1D1D26;
   }
+  .home_cards{
+    position: relative;
+    top: 10vh;
+  }
   @media(max-width: 1024px){
     .home_right{
       width: 100%;
       margin-left: 0%;
+    }
+    .home_cards{
+      top: 17vh;
     }
   }
 </style>

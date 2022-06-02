@@ -1,16 +1,9 @@
 <template>
   <div
-    class="fixed top-0 togglebar p-3 overflow-auto"
+    class="fixed top-0 togglebar p-3 overflow-auto z-10"
     :class="`${active ? 'show' : ''}`"
   >
-    <img
-      class="close"
-      src="@/assets/images/Iconly-Light-Outline-Close Square.svg"
-      alt="close"
-      height="25px"
-      weight="25px"
-      @click="close"
-    />
+    <LightCloseSquareIcon :size="25" :color='"#fff"' @click="close"/>
     <div class="flex flex-row justify-between align-top mt-5">
       <div class="inner flex flex-row">
         <h3>👋</h3>
@@ -35,6 +28,7 @@
 </template>
 
 <script>
+import LightCloseSquareIcon from './icons/lightCloseSquareIcon.vue';
 
 export default {
 
