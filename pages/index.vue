@@ -9,7 +9,7 @@
         <img src="@/assets/images/khaby.png" class="khaby_image"/>
       </div>
 
-      <div class="flex-1 flex flex-col justify-center lg:my-10">
+      <div class="flex-1 flex flex-col justify-center pb-10 lg:py-10 px-1 md:px-10">
         <div class="login h-full">
           <img src="@/assets/images/wagmi.svg" alt="wagmi" class="wagmi">
           <p class="text">Maximising the creative idea in Education to defy gravity and matter in Web3.</p>
@@ -17,7 +17,7 @@
             Connect using Metamask
           </button>
 
-          <div class='w-1/2 border-b border-dark-400 text-center justify-self-center mx-auto xs:hidden mb-0 md:block' style="height: 15px">
+          <div class='w-1/2 border-b border-dark-400 text-center justify-self-center mx-auto xs:hidden my-5 md:block' style="height: 15px">
               <span class='bg-dark-200 px-5 text-dark-400 font-mont text-sm'>
                   or
               </span>
