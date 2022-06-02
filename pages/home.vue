@@ -1,9 +1,9 @@
 <template>
-<div class="home_right">
-    <Header />
-    <h1>Helloooooo</h1>
-    <Bottombar />
-</div>
+  <div class="home_right">
+      <Header />
+      <h1>Helloooooo</h1>
+      <Bottombar />
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ import Header from '../components/Header.vue'
     position: relative;
     margin-left: 20%;
     width: 80%;
-    background-color: aqua;
+    background-color: #1D1D26;
   }
   @media(max-width: 1024px){
     .home_right{

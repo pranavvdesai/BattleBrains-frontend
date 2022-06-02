@@ -4,8 +4,8 @@
       id="Iconly_Light-Outline_Calendar"
       data-name="Iconly/Light-Outline/Calendar"
       xmlns="http://www.w3.org/2000/svg"
-      width="19.5"
-      height="21.5"
+      :width='size'
+      :height='size'
       viewBox="0 0 19.5 21.5"
     >
       <g id="Calendar" transform="translate(0 0)">
@@ -26,6 +26,7 @@ export default {
   name: "releaseIcon",
   props: {
     color: String,
+    size: Number
   },
 };
 </script>

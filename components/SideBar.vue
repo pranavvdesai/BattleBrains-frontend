@@ -1,48 +1,31 @@
 <template>
   <div>
     <!-- Desktop View -->
-    <div class="fixed top-0 flex flex-col items-center leftbar">
+    <div class="fixed top-0 flex flex-col items-center w-1/5 h-full bg-dark-300">
       <img
-        src="@/assets/images/logo-dark_mode.svg"
+        src="@/assets/images/logo.png"
         class="lg:w-1/2 mt-7"
         alt="logo"
       />
-      <div class="flex flex-col w-1/2 mt-9 mb-9">
-        <NuxtLink to="/home" class="link flex p-2">
-          <img
-            src="@/assets/images/Iconly-Bold-Home.svg"
-            class="img"
-            height="15px"
-            width="15px"
-          />
-          <h3 class="ml-3 link_content"><b>Home</b></h3>
+      <div class="flex flex-col w-3/4 my-9">
+        <NuxtLink to="/home" class="link rounded-lg flex py-4 px-6 align-center">
+          <homeIcon :color="'#fff'" :size="22"/>
+          <h3 class="ml-3 link_content font-josefin"><b>Home</b></h3>
         </NuxtLink>
-        <NuxtLink to="/about" class="link flex p-2 mt-3">
-          <img
-            src="@/assets/images/Iconly-Bold-Activity.svg"
-            class="img"
-            height="15px"
-            width="15px"
-          />
-          <h3 class="ml-3 link_content"><b>My Activity</b></h3>
+        <NuxtLink to="/about" class="link rounded-lg flex py-4 px-6 mt-4">
+          <activityIcon :color="'#9898B3'" :size="22"/>
+
+          <h3 class="ml-3 link_content font-josefin"><b>My Activity</b></h3>
         </NuxtLink>
-        <NuxtLink to="/" class="link flex p-2 mt-3">
-          <img
-            src="@/assets/images/Iconly-Bold-Calendar.svg"
-            class="img"
-            height="15px"
-            width="15px"
-          />
-          <h3 class="ml-3 link_content"><b>Release</b></h3>
+        <NuxtLink to="/" class="link rounded-lg flex py-4 px-6  mt-4">
+          <releaseIcon :color="'#9898B3'" :size="22"/>
+
+          <h3 class="ml-3 link_content font-josefin"><b>Release</b></h3>
         </NuxtLink>
-        <NuxtLink to="/" class="link flex p-2 mt-3">
-          <img
-            src="@/assets/images/Iconly-Bold-Info Square.svg"
-            class="img"
-            height="15px"
-            width="15px"
-          />
-          <h3 class="ml-3 link_content"><b>Support</b></h3>
+        <NuxtLink to="/" class="link rounded-lg flex py-4 px-6  mt-4">
+          <supportIcon :color="'#9898B3'" :size="22"/>
+
+          <h3 class="ml-3 link_content font-josefin"><b>Support</b></h3>
         </NuxtLink>
       </div>
       <div class="xp_info flex flex-col items-center mt-12">
@@ -60,63 +43,77 @@
   </div>
 </template>
 
+
+<script>
+import homeIcon from "./icons/homeIcon";
+import activityIcon from "./icons/activityIcon";
+import releaseIcon from "./icons/releaseIcon";
+import supportIcon from "./icons/supportIcon";
+
+
+export default {
+  name: "leftsidebar",
+  components: {
+    homeIcon,
+    activityIcon,
+    releaseIcon,
+    supportIcon
+  },
+};
+</script>
+
+
 <style>
-.leftbar {
-  width: 20%;
-  background-color: #3d3d3d;
-  height: 100%;
+.link{
+  background-color: #262633;
 }
-.link {
-  background-color: #3d3d3d;
-  border-radius: 5px;
+.link_content{
+  color: #9898B3;
 }
-.link_content {
-  color: grey;
-}
-.img {
+.img{
   filter: invert(0.5);
 }
-.link:hover {
-  background-color: #8395a7;
+.link:hover{
+  background-color: #1D1D26;
 }
-.link:hover .link_content {
+a.nuxt-link-exact-active{
+  background-color: #3A3A4D;
+  box-shadow: 0px 0px 10px #1D1D26;
+}
+
+a.nuxt-link-exact-active .link_content{
   color: white;
 }
-.link:hover .img {
-  filter: invert(1);
+
+a.nuxt-link-exact-active .link:hover{
+  background-color: #262633;
 }
-a.nuxt-link-exact-active {
-  background-color: #8395a7;
-}
-a.nuxt-link-exact-active .link_content {
-  color: white;
-}
-a.nuxt-link-exact-active .img {
+
+a.nuxt-link-exact-active .img{
   filter: invert(1);
 }
 
-.pr_img {
-  height: 95%;
-  width: 95%;
+.pr_img{
+  height: 85%;
+  width: 85%;
   border-radius: 50%;
 }
-.img_border {
+.img_border{
   border-right: 3px solid dodgerblue;
   border-bottom: 3px solid dodgerblue;
-  height: 175px;
-  width: 175px;
+  height: 155px;
+  width: 155px;
   border-radius: 50%;
 }
-.name,
-.xp {
+.name,.xp{
   margin-top: 3px;
   color: white;
 }
-@media (max-width: 1024px) {
-  .leftbar {
+@media(max-width: 1024px){
+  .leftbar{
     display: none;
   }
-  a.nuxt-link-exact-active {
+  a.nuxt-link-exact-active{
     background-color: transparent;
   }
 }

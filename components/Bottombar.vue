@@ -5,16 +5,35 @@
       <homeIcon :color="'#fff'" :size="20" />
     </NuxtLink>
     <NuxtLink to="/about" class="flex p-2">
-      <activityIcon :color="'#fff'" :size="20" />
+      <activityIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
     <NuxtLink to="/" class="flex p-2">
-      <releaseIcon :color="'#fff'" :size="20" />
+      <releaseIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
     <NuxtLink to="/" class="flex p-2">
-      <supportIcon :color="'#fff'" :size="20" />
+      <supportIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
   </div>
 </template>
+
+<script>
+import homeIcon from "./icons/homeIcon";
+import activityIcon from "./icons/activityIcon";
+import releaseIcon from "./icons/releaseIcon";
+import supportIcon from "./icons/supportIcon";
+
+
+export default {
+  name: "leftsidebar",
+  components: {
+    homeIcon,
+    activityIcon,
+    releaseIcon,
+    supportIcon
+  },
+};
+</script>
+
 
 <style>
 .bottombar {

@@ -8,7 +8,7 @@
       :height="size - 3"
       viewBox="0 0 16.5 13.549"
     >
-      <g 
+      <g
         id="Arrow_-_Left"
         data-name="Arrow - Left"
         transform="translate(16.5 0) rotate(90)"

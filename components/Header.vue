@@ -2,34 +2,33 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="header bg-dark-100 flex flex-row p-4 items-center justify-between fixed top-0 z-0"
+      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-0"
     >
       <div class="head_nav flex flex-col ml-3">
-        <h3 class="greeting text-lg g"><b>Hi Dev, Good Evening!</b></h3>
-        <p class="learn text-sm l">Learn Web3,the Fun way</p>
-        <img
-          src="@/assets/images/Iconly-Light-Outline-Arrow - Right Square.svg"
-          class="toggler lg:hidden block"
-          alt="toggler"
-          height="30px"
-          width="30px"
-          @click="toggle"
-        />
+        <div class=" flex flex-row">
+          <h3 class="greeting text-xl g font-mont text-dark-700">👋</h3>
+          <div class="ml-2">
+            <h3 class="greeting text-lg g font-mont text-dark-700 tracking-wide"><b>Hi Dev, welcome!</b></h3>
+            <p class="learn text-sm l font-josefin text-dark-500">Learn Web3, the Fun way</p>
+          </div>
+        </div>
+
+        <div @click="toggle" class="toggler lg:hidden block">
+          <menuIcon
+            :color="'#fff'"
+            :size="20"
+          />
+        </div>
       </div>
       <!-- Search -->
       <div class="flex flex-row items-center">
         <div class="search_cont">
-          <label class="relative block search_outer z-0">
-            <span class="sr-only">Search</span>
-            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-              <svg
-                class="h-5 w-5 search"
-                viewBox="0 0 20 20"
-                xmlns="@/assets/images/Iconly-Light-Outline-Search.svg"
-              ></svg>
+          <label class="relative block w-5/6 z-0 lg:w-full">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <SearchIcon :color="'#9898B3'" :size="20"/>
             </span>
             <input
-              class="sfield placeholder:text-slate-400 block bg-dark-100 w-full border border-light-100 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
               placeholder="Search"
               type="text"
               name="search"
@@ -41,38 +40,14 @@
         <!-- <notificationIcon :color="'#fff'" :size="20"/> -->
         <notificationIcon :color="'#fff'" :size="20" class="mx-5" />
 
-        <!--Dropdown-->
         <div class="relative">
           <!-- Dropdown toggle button -->
           <button
             @click="show = !show"
             class="flex items-center p-2 text-indigo-100 bg-white rounded drop_btn"
           ></button>
-          <!-- Dropdown menu -->
-          <div
-            v-show="show"
-            class="absolute right-0 py-2 mt-2 bg-indigo-500 rounded-md shadow-xl w-44 z-10"
-          >
-            <NuxtLink
-              to="/"
-              class="block px-4 py-2 text-sm text-indigo-100 hover:bg-dark-100 hover:text-white"
-            >
-              Dropdown List 1
-            </NuxtLink>
-            <NuxtLink
-              to="/"
-              class="block px-4 py-2 text-sm text-indigo-100 hover:bg-dark-100 hover:text-white"
-            >
-              Dropdown List 2
-            </NuxtLink>
-            <NuxtLink
-              to="/"
-              class="block px-4 py-2 text-sm text-indigo-100 hover:bg-dark-100 hover:text-white"
-            >
-              Dropdown List 3
-            </NuxtLink>
-          </div>
         </div>
+
         <svg
           class="w-5 h-5 text-indigo-100 dark:text-white"
           xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +68,9 @@
 <script>
 import Togglebar from "./Togglebar.vue";
 import NotificationIcon from "./icons/notificationIcon.vue";
+import SearchIcon from "./icons/searchIcon"
+import menuIcon from "./icons/menuIcon";
+
 export default {
   data() {
     return {
@@ -105,7 +83,7 @@ export default {
       this.isActive = !this.isActive;
     },
   },
-  components: { Togglebar, NotificationIcon },
+  components: { Togglebar, NotificationIcon, SearchIcon, menuIcon },
 };
 </script>
 
@@ -113,13 +91,6 @@ export default {
 .header {
   width: 80%;
   height: 10vh;
-}
-.search {
-  fill: whitesmoke;
-}
-.notify,
-.toggler {
-  filter: invert(1);
 }
 
 .sfield {
@@ -143,9 +114,6 @@ export default {
   }
   .header {
     width: 100%;
-  }
-  .search_outer {
-    width: 75%;
   }
   .search_cont {
     display: flex;
