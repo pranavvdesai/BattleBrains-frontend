@@ -16,20 +16,12 @@
               <div class="hidden lg:block">
                 <div class="flex justify-between py-4 ">
                   <div class="flex items-center ">
-                    <img
-                      src="@/assets/images/ArrowLeft.svg"
-                      alt="Left Arrow"
-                      class="mr-4 w-4 h-4"
-                    >
+                    <LeftArrowIcon class="mr-2" :size="16" :color="'#fff'" />
                     <p class=" text-sm text-light-300 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
                     <p class=" text-sm text-light-300 font-josefin">Next</p>
-                    <img
-                      src="@/assets/images/ArrowRight.svg"
-                      alt="Right Arrow"
-                      class="ml-4 w-4 h-4"
-                    >
+                    <RightArrowIcon class="ml-2" :size="16" :color="'#fff'" />
                   </div>
                 </div>
               </div>
@@ -37,25 +29,16 @@
               <div class="lg:hidden">
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
-                    <img
-                      src="@/assets/images/ArrowLeft.svg"
-                      alt="Left Arrow"
-                      class="mr-4 w-4 h-4"
-                    >
+                    <LeftArrowIcon class="mr-2" :size="16" :color="'#fff'" />
                     <p class=" text-base font-bold text-white font-mont">BattleBrainz</p>
                   </div>
                   <div class="flex items-center">
-                    <img
-                      src="@/assets/images/info.svg"
-                      alt="info"
-                      class="ml-4 w-4 h-4"
-                      @click="toggleModal"
-                    > <img
-                      src="@/assets/images/boldpaper.svg"
-                      alt="paper"
-                      class="ml-4 w-4 h-4"
-                      @click="toggleSidebar"
-                    >
+                    <div @click="toggleModal">
+                      <InfoIcon :size="20" :color="'#fff'" />
+                    </div>
+                    <div @click="toggleSidebar">
+                      <PaperIcon :size="20" :color="'#fff'" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -72,11 +55,7 @@
                   <h1 class=" text-base text-white font-mont font-bold mr-4">BattleBrains</h1>
                   <input type="checkbox" />
                 </div>
-                <img
-                  src="@/assets/images/heart.svg"
-                  alt="Right Arrow"
-                  class="w-4 h-4 "
-                >
+                <HeartIcon :size="20" :color="'#fff'" />
               </div>
 
               <p class=" text-base font-josefin">The Web3 Academy with everything for everyone. Discover, Learn and Make friends!</p>
@@ -85,7 +64,7 @@
                 <span class="mr-2 text-pink">NFTs</span>
                 <span class="mr-2 text-yellow">PFP</span>
               </div>
-              <p class=" text-sm font-mont pb-2">1 month ago</p>
+              <p class="text-sm font-mont pb-2">1 month ago</p>
             </div>
           </div>
         </div>
@@ -104,7 +83,6 @@
       >
         <Modal />
       </div>
-
     </section>
   </body>
 </template>
@@ -113,6 +91,11 @@
 import Modal from "../components/modal.vue";
 import Resources from "../components/Resources.vue";
 import Leftsidebar from "../components/Leftsidebar.vue";
+import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
+import HeartIcon from "../components/icons/heartIcon.vue";
+import RightArrowIcon from "../components/icons/rightArrowIcon.vue";
+import PaperIcon from "../components/icons/paperIcon.vue";
+import InfoIcon from "../components/icons/infoIcon.vue";
 
 export default {
   data() {
@@ -121,7 +104,16 @@ export default {
       hidden: true,
     };
   },
-  components: { Modal, Resources, Leftsidebar },
+  components: {
+    Modal,
+    Resources,
+    Leftsidebar,
+    LeftArrowIcon,
+    HeartIcon,
+    RightArrowIcon,
+    PaperIcon,
+    InfoIcon,
+  },
   methods: {
     toggleSidebar() {
       this.position =

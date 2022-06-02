@@ -1,6 +1,5 @@
 <template>
   <div class="px-4 pb-4">
-
     <div class="flex mt-5">
       <h2 class="text-blue-300 mr-2 text-sm font-josefin">INTRODUCTION</h2>
       <h2 class="text-pink text-sm font-josefin">BLOCKCHAIN</h2>
@@ -13,22 +12,27 @@
       </div>
     </div>
     <div class="flex items-center my-2">
-      <img
-        src="@/assets/images/boldtime.svg"
-        alt="Paper"
-        class=" mr-2 "
-      >
+      <BoldTimeCircleIcon :size="20" :color="'#fff'" class="mr-2" />
       <p class="text-white font-josefin">66 mins</p>
     </div>
     <div class="flex items-center my-2">
-      <img
-        src="@/assets/images/boldpaper.svg"
-        alt="Paper"
-        class="w-3 h-4 mr-2 "
-      >
+      <BoldPaperIcon :size="20" :color="'#fff'" class="mr-2" />
       <p class="text-white font-josefin">5 references</p>
     </div>
     <button class="text-white font-josefin border-2 border-blue-100 px-3 py-1 rounded-md mt-1 ">Begginers</button>
   </div>
 
 </template>
+
+<script>
+import BoldPaperIcon from "./icons/boldPaperIcon.vue";
+import BoldTimeCircleIcon from "./icons/boldTimeCircleIcon.vue";
+export default {
+  methods: {
+    toggle() {
+      this.$emit("toggle");
+    },
+  },
+  components: { BoldPaperIcon, BoldTimeCircleIcon },
+};
+</script>
