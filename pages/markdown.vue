@@ -1,9 +1,7 @@
 <template>
   <body class="bg-dark-200">
-    <div
-      class="flex flex-col text-white bg-dark-400 m-5 rounded-lg p-5 text-xl"
-    >
-      <p class="text-center mb-10 text-3xl">Markdown Previewer</p>
+    <div class="flex flex-col text-white bg-dark-400 m-5 rounded-lg p-5">
+      <p class="text-center mb-10">Markdown Previewer</p>
       <div class="flex justify-around">
         <div class="">
           <div>Markdown</div>
@@ -16,9 +14,10 @@
         </div>
         <div class="">
           <div>Preview</div>
-          <div class="w-72 h-72 bg-white rounded-md mt-3 text-dark-200">
-            {{ markdown }}
-          </div>
+          <div
+            class="w-72 h-72 rounded-md mt-3 p-2"
+            v-html="markdownToHTML"
+          ></div>
         </div>
       </div>
     </div>
@@ -26,11 +25,18 @@
 </template>
 
 <script>
+import { marked } from "marked";
+
 export default {
   data() {
     return {
-      markdown: "",
+      markdown: "# hello World!",
     };
+  },
+  computed: {
+    markdownToHTML() {
+      return marked(this.markdown);
+    },
   },
 };
 </script>
