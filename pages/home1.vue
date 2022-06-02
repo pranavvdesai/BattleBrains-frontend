@@ -44,15 +44,17 @@
               <p class="">66mins</p>
             </div>
             <div class="flex items-center mt-2">
-              <img
+              <!-- <img
                 class="mr-2 w-4 h-4"
                 src="../assets/images/paper.png"
                 alt=""
-              />
+              /> -->
+
               <p class="">5 references</p>
             </div>
           </div>
         </div>
+
         <!-- 2 -->
         <div class="w-full lg:w-1/2 lg:h-full second">
               <div
@@ -68,7 +70,7 @@
 
 <style> 
   .second{
-     background-image: url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+     background-image: linear-gradient(to right,rgb(29,29,38),transparent),url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -92,7 +94,7 @@
       right: 20px;
     }
     .second{
-     background-image: url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+     background-image:  linear-gradient(to bottom,rgb(29,29,38),transparent),url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
     }
   }
 </style>

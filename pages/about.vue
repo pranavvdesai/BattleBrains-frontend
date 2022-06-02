@@ -20,7 +20,7 @@ import Togglebar from '../components/Togglebar.vue'
     position: relative;
     margin-left: 20%;
     width: 80%;
-    background-color: aqua;
+    background-color: #1D1D26;
   }
   @media(max-width: 1024px){
     .home_right{
