@@ -1,7 +1,7 @@
 <template>
   <div class="home_right">
       <Header />
-
+      <h1>Helloooooo</h1>
       <Bottombar />
   </div>
 </template>

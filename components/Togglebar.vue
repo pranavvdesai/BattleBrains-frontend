@@ -3,19 +3,22 @@
     class="fixed top-0 togglebar p-3 overflow-auto"
     :class="`${active ? 'show' : ''}`"
   >
-    <div class="flex flex-row justify-between mt-5">
-      <div class="inner flex flex-col">
-        <h3 class="text-lg text-dark-700"><b>Hi Dev, Good Evening!</b></h3>
-        <p class="text-sm text-dark-600">Learn Web3, the Fun way</p>
+    <img
+      class="close"
+      src="@/assets/images/Iconly-Light-Outline-Close Square.svg"
+      alt="close"
+      height="25px"
+      weight="25px"
+      @click="close"
+    />
+    <div class="flex flex-row justify-between align-top mt-5">
+      <div class="inner flex flex-row">
+        <h3>👋</h3>
+        <div class="inner flex flex-col ml-2">
+          <h3 class="text-md text-dark-700 font-mont"><b>Hi Dev, Good Evening!</b></h3>
+          <p class="text-xs text-dark-500 font-josefin">Learn Web3, the Fun way</p>
+        </div>
       </div>
-      <img
-        class="close"
-        src="@/assets/images/Iconly-Light-Outline-Close Square.svg"
-        alt="close"
-        height="25px"
-        weight="25px"
-        @click="close"
-      />
     </div>
     <div class="xp_info flex flex-col items-center mt-12">
       <div class="img_border flex justify-center items-center">
@@ -25,14 +28,16 @@
           class="pr_img"
         />
       </div>
-      <h4 class="name"><b>Novice</b></h4>
-      <p class="xp">1400/2000 XPs</p>
+      <h4 class="font-bold text-md font-mont text-dark-700 mt-6"><b>Novice</b></h4>
+      <p class="font-josefin text-sm text-dark-600 mt-1">1400/2000 XPs</p>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
+
   props: {
     toggle: {
       type: Function,
@@ -53,10 +58,11 @@ export default {
 .togglebar {
   height: 100%;
   width: 80%;
-  background-color: #3d3d3d;
+  background-color: #262633;
+  box-shadow: 5px 0px 15px #14141A;
   z-index: 10;
   position: fixed;
-  left: -80%;
+  left: -90%;
   transition: 0.5s ease-in-out;
 }
 
