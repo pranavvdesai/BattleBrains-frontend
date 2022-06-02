@@ -6,7 +6,7 @@
       <Leftsidebar />
       <div class="flex flex-col">
         <!-- middle -->
-        <div class=" lg:mx-[22%] ">
+        <div class=" lg:mx-[20%] ">
           <div class=" bg-dark-100 text-light-300 h-screen">
 
             <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-100 ">
@@ -14,12 +14,20 @@
               <div class="hidden lg:block">
                 <div class="flex justify-between py-4 ">
                   <div class="flex items-center ">
-                    <LeftArrowIcon class="mr-2" :size="16" :color="'#fff'" />
+                    <LeftArrowIcon
+                      class="mr-2"
+                      :size="16"
+                      :color="'#fff'"
+                    />
                     <p class=" text-sm text-light-300 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
                     <p class=" text-sm text-light-300 font-josefin">Next</p>
-                    <RightArrowIcon class="ml-2" :size="16" :color="'#fff'" />
+                    <RightArrowIcon
+                      class="ml-2"
+                      :size="16"
+                      :color="'#fff'"
+                    />
                   </div>
                 </div>
               </div>
@@ -27,15 +35,25 @@
               <div class="lg:hidden">
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
-                    <LeftArrowIcon class="mr-2" :size="16" :color="'#fff'" />
+                    <LeftArrowIcon
+                      class="mr-2"
+                      :size="16"
+                      :color="'#fff'"
+                    />
                     <p class=" text-base font-bold text-white font-mont">BattleBrainz</p>
                   </div>
                   <div class="flex items-center">
                     <div @click="toggleModal">
-                      <InfoIcon :size="20" :color="'#fff'" />
+                      <InfoIcon
+                        :size="20"
+                        :color="'#fff'"
+                      />
                     </div>
                     <div @click="toggleSidebar">
-                      <PaperIcon :size="20" :color="'#fff'" />
+                      <PaperIcon
+                        :size="20"
+                        :color="'#fff'"
+                      />
                     </div>
                   </div>
                 </div>
@@ -55,7 +73,10 @@
                   </h1>
                   <input type="checkbox" />
                 </div>
-                <HeartIcon :size="20" :color="'#fff'" />
+                <HeartIcon
+                  :size="20"
+                  :color="'#fff'"
+                />
               </div>
 
               <p class="text-base font-josefin">
@@ -74,7 +95,10 @@
       </div>
 
       <!-- rightsidebar -->
-      <Resources @toggle="toggleSidebar" :position="position" />
+      <Resources
+        @toggle="toggleSidebar"
+        :position="position"
+      />
 
       <!-- bottomnav -->
       <div
