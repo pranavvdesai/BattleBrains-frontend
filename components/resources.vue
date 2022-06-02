@@ -6,7 +6,7 @@
     <div class="flex justify-between items-center md:justify-center">
       <h1 class="text-center my-6 text-gray text-xl font-mont">Reference material [5]</h1>
       <img
-        @click="toggle"
+        @click="toggle" 
         src="@/assets/images/close.png"
         alt="close"
         class="w-3 h-3 mt-1 md:hidden"
