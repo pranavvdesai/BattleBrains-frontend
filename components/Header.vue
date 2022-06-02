@@ -2,7 +2,7 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-0"
+      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-10"
     >
       <div class="head_nav flex flex-col ml-3">
         <div class=" flex flex-row">
