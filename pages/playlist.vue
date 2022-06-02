@@ -9,7 +9,7 @@
         <div class="flex flex-col">
           <!-- nav -->
           <div>
-          <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full md:hidden">
+          <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full lg:hidden">
             <div class="px-4 pt-4">
               <div class=" flex justify-between items-center h-full">
                 <div class="flex items-center">
@@ -37,7 +37,7 @@
           </div>
 
           <!-- middle -->
-          <div class=" md:mx-[25%] lg:mx-[22%]">
+          <div class=" lg:mx-[20%]">
             <div class=" bg-dark-100">
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 xxl:gap-16 px-10 py-5 xxl:py-10">
                 <Card />

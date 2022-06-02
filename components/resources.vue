@@ -1,15 +1,15 @@
 <template>
   <div
     :class="[ position ]"
-    class=" h-screen fixed top-0 md:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[22%] md:w-1/4 w-3/4 z-10 py-4 px-6 transition-all duration-300"
+    class=" h-screen fixed top-0 lg:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-3/4 z-10 py-4 px-6 transition-all duration-300"
   >
-    <div class="flex justify-between items-center md:justify-center">
+    <div class="flex justify-between items-center justify-center">
       <h1 class="text-center my-6 text-light-300 text-xl font-mont">Reference material [5]</h1>
       <img
         @click="toggle"
         src="@/assets/images/close.svg"
         alt="close"
-        class="w-3 h-3 mt-1 md:hidden"
+        class="w-3 h-3 mt-1 lg:hidden"
       >
     </div>
     <div class="flex justify-center mx-5 mt-2">

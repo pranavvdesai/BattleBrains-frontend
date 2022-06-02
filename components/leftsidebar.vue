@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen fixed top-0 hidden md:block md:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[22%] w-1/4 z-10 py-4 px-2 transition-all duration-300">
+  <div class="h-screen fixed top-0 hidden lg:block lg:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-1/4 z-10 py-4 px-2 transition-all duration-300">
     <div class="xl:mx-5 lg:mx-1">
       <div class="flex mt-4">
         <img

@@ -8,12 +8,12 @@
       <div class="flex flex-col">
 
         <!-- middle -->
-        <div class=" md:mx-[25%] lg:mx-[22%] ">
+        <div class=" lg:mx-[22%] ">
           <div class=" bg-dark-100 text-light-300 h-screen">
 
             <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-100 ">
 
-              <div class="hidden md:block">
+              <div class="hidden lg:block">
                 <div class="flex justify-between py-4 ">
                   <div class="flex items-center ">
                     <img
@@ -34,7 +34,7 @@
                 </div>
               </div>
 
-              <div class="md:hidden">
+              <div class="lg:hidden">
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
                     <img
@@ -61,7 +61,7 @@
               </div>
 
               <iframe
-                class="w-full xl:h-128 lg:h-96 md:h-80 h-80"
+                class="w-full xl:h-128 lg:h-96 h-80"
                 src="https://www.youtube.com/embed/gPyyoQN3dbA"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -100,7 +100,7 @@
       <!-- bottomnav -->
       <div
         :class="{hidden : hidden}"
-        class="  fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full md:hidden"
+        class="  fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full lg:hidden"
       >
         <Modal />
       </div>
