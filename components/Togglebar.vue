@@ -5,8 +5,8 @@
   >
     <div class="flex flex-row justify-between mt-5">
       <div class="inner flex flex-col">
-        <h3 class="greeting text-lg"><b>Hi Dev, Good Evening!</b></h3>
-        <p class="learn text-sm">Learn Web3, the Fun way</p>
+        <h3 class="text-lg text-dark-700"><b>Hi Dev, Good Evening!</b></h3>
+        <p class="text-sm text-dark-600">Learn Web3, the Fun way</p>
       </div>
       <img
         class="close"
@@ -59,10 +59,7 @@ export default {
   left: -80%;
   transition: 0.5s ease-in-out;
 }
-.greeting,
-.learn {
-  color: white;
-}
+
 .close {
   filter: invert(1);
 }

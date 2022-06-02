@@ -49,11 +49,12 @@
                 src="../assets/images/paper.png"
                 alt=""
               /> -->
-              
+
               <p class="">5 references</p>
             </div>
           </div>
         </div>
+
         <!-- 2 -->
         <div class="w-full h-1/2 lg:w-1/2 lg:h-full">
           <!-- <div class="bg-white z-20 absolute w-full h-full opacity-20"></div> -->

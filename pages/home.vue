@@ -1,9 +1,9 @@
 <template>
-<div class="bg-dark-200 home_right">
-    <Header />
-    <h1>Helloooooo</h1>
-    <Bottombar />
-</div>
+  <div class="home_right">
+      <Header />
+
+      <Bottombar />
+  </div>
 </template>
 
 <script>

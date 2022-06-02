@@ -44,7 +44,7 @@
 
 <script>
 import leftArrowIcon from "./icons/leftArrowIcon";
-import PaperIcon from "./icons/paperIcon.vue";
+import PaperIcon from "./icons/paperIcon";
 
 export default {
   name: "leftsidebar",
