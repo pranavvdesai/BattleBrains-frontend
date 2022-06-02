@@ -3,13 +3,19 @@
     class="fixed top-0 togglebar p-3 overflow-auto z-10"
     :class="`${active ? 'show' : ''}`"
   >
-    <LightCloseSquareIcon :size="25" :color='"#fff"' @click="close"/>
+    <div @click="close">
+      <LightCloseSquareIcon :size="25" :color="'#fff'" />
+    </div>
     <div class="flex flex-row justify-between align-top mt-5">
       <div class="inner flex flex-row">
         <h3>👋</h3>
         <div class="inner flex flex-col ml-2">
-          <h3 class="text-md text-dark-700 font-mont"><b>Hi Dev, Good Evening!</b></h3>
-          <p class="text-xs text-dark-500 font-josefin">Learn Web3, the Fun way</p>
+          <h3 class="text-md text-dark-700 font-mont">
+            <b>Hi Dev, Good Evening!</b>
+          </h3>
+          <p class="text-xs text-dark-500 font-josefin">
+            Learn Web3, the Fun way
+          </p>
         </div>
       </div>
     </div>
@@ -21,17 +27,18 @@
           class="pr_img"
         />
       </div>
-      <h4 class="font-bold text-md font-mont text-dark-700 mt-6"><b>Novice</b></h4>
+      <h4 class="font-bold text-md font-mont text-dark-700 mt-6">
+        <b>Novice</b>
+      </h4>
       <p class="font-josefin text-sm text-dark-600 mt-1">1400/2000 XPs</p>
     </div>
   </div>
 </template>
 
 <script>
-import LightCloseSquareIcon from './icons/lightCloseSquareIcon.vue';
+import LightCloseSquareIcon from "./icons/lightCloseSquareIcon.vue";
 
 export default {
-
   props: {
     toggle: {
       type: Function,
@@ -45,6 +52,7 @@ export default {
       this.$emit("toggle");
     },
   },
+  components: { LightCloseSquareIcon },
 };
 </script>
 
@@ -53,7 +61,7 @@ export default {
   height: 100%;
   width: 80%;
   background-color: #262633;
-  box-shadow: 5px 0px 15px #14141A;
+  box-shadow: 5px 0px 15px #14141a;
   z-index: 10;
   position: fixed;
   left: -90%;
