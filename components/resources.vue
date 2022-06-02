@@ -1,10 +1,10 @@
 <template>
   <div
-    :class="[ position ]"
-    class=" h-screen fixed top-0 lg:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-3/4 z-10 py-4 px-6 transition-all duration-300"
+    :class="[position]"
+    class=" h-screen fixed top-0 lg:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-1/5 w-3/4 z-10 py-4 px-2 transition-all duration-300"
   >
     <div class="flex items-center justify-between lg:justify-center">
-      <h1 class="text-center my-6 text-light-300 text-xl font-mont">Reference material [5]</h1>
+      <h1 class="text-center my-6 text-dark-600 text-lg font-bold font-mont">Reference material [ 5 ]</h1>
       <img
         @click="toggle"
         src="@/assets/images/close.svg"
@@ -13,7 +13,7 @@
       >
     </div>
     <div class="flex justify-center mx-5 mt-2">
-      <div class="rounded-lg shadow-lg bg-white max-w-sm p-1">
+      <div class="rounded-xl hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-200 bg-dark-300 max-w-sm p-4">
         <a href="#!">
           <img
             class="rounded-t-lg w-full"
@@ -21,9 +21,10 @@
             alt=""
           />
         </a>
-        <div class="p-2">
-          <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-          <p class="text-gray-700 text-base mb-2">
+        <div class="mt-2">
+          <a class="text-blue-100 font-josefin text-md mt-3">https://levyne.com</a>
+          <h5 class="text-dark-700 font-mont text-lg font-bold">Card title</h5>
+          <p class="text-dark-600 font-josefin text-sm mt-2">
             Some quick example text to build on the card title and make up the bulk of the card's
             content.
           </p>
