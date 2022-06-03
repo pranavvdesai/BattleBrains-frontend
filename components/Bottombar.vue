@@ -44,6 +44,7 @@ export default {
     display: flex;
     width: 100%;
     height: 8vh;
+    z-index: 100;
   }
 }
 </style>
