@@ -98,4 +98,17 @@
     text-white text-center mt-3
   }
 
+  .grid-element {
+    @apply
+    w-full h-28 bg-light-700 rounded-xl p-4 flex flex-col justify-between h-full
+
+  }
+  .grid-title{
+    @apply
+    text-dark-500 font-josefin 
+  }
+  .grid-value{
+    @apply
+    text-white xs:text-xl sm:text-3xl font-semibold sm:my-4 xs:my-2
+  }
 }
