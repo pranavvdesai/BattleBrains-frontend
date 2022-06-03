@@ -12,6 +12,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      xs: "270px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
@@ -74,6 +75,9 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
+      boxShadow: {
+        '3xl': '0 0px 0px -15px rgb(0, 0, 0)',
+      }
     },
   },
   plugins: [],
