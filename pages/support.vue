@@ -6,24 +6,24 @@
       class="flex flex-col pt-16 md:pt-20 lg:pt-20 xl:pt-20 mx-6 lg:w-2/3 my-4"
     >
       <div class="flex flex-col lg:hidden">
-        <h3 class="text-xl text-dark-700 tracking-wide my-2">
+        <h3 class="text-lg text-white tracking-wide my-2">
           <b>Have a suggestion / need assistance / want to contribute?</b>
         </h3>
-        <p class="text-sm font-josefin text-dark-500">
+        <p class="text-md font-josefin text-dark-600">
           Write to us and we'll get back to you in no time!
         </p>
       </div>
 
       <input
-        class="rounded-lg bg-dark-400 px-5 py-3 text-white my-3 mx-3"
+        class="rounded-lg bg-dark-400 px-5 py-3 text-white mb-2 mt-5"
         placeholder="SUBJECT"
       />
       <textarea
-        class="rounded-lg bg-dark-400 px-5 py-3 h-40 text-white resize-none my-3 mx-3"
+        class="rounded-lg bg-dark-400 px-5 py-3 h-40 text-white resize-none my-2"
         placeholder="DESCRIPTION"
       />
       <div
-        class="bg-gradient-to-r from-[#2196F3] to-[#00BCD4] text-white rounded-lg py-3 text-center font-medium w-44 sm:w-56 cursor-pointer my-3 mx-3"
+        class="bg-gradient-to-r from-[#2196F3] to-[#00BCD4] text-white rounded-lg py-3 text-center font-bold w-44 sm:w-56 cursor-pointer my-2"
       >
         Submit
       </div>
