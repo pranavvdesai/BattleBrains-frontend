@@ -2,7 +2,7 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-0"
+      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-50"
     >
       <div class="head_nav flex flex-col ml-3">
         <div class=" flex flex-row">
@@ -28,7 +28,7 @@
               <SearchIcon :color="'#9898B3'" :size="20"/>
             </span>
             <input
-              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0"
+              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0 z-20"
               placeholder="Search"
               type="text"
               name="search"
@@ -40,7 +40,7 @@
         <!-- <notificationIcon :color="'#fff'" :size="20"/> -->
         <notificationIcon :color="'#fff'" :size="20" class="mx-5" />
 
-        <div class="relative">
+        <div class="relative z-10">
           <!-- Dropdown toggle button -->
           <button
             @click="show = !show"
