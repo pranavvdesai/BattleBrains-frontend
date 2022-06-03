@@ -21,17 +21,17 @@ import Homecards from '../components/Homecards.vue'
           {
             title : 'Why Web3?',
             desc : 'The third generation of the web promises to put us in control of our data...',
-            duration : '66mins',
+            duration : '66 mins',
             references : 5,
             totalVideos : 4,
             watched : 2,
-            level : 'Begginer',
+            level : 'Beginner',
             lock : false
           },
           {
             title : 'Why Blockchain?',
             desc : 'The third generation of the web promises to put us in control of our data...',
-            duration : '70mins',
+            duration : '70 mins',
             references : 5,
             totalVideos : 4,
             watched : 2,

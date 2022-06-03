@@ -1,46 +1,46 @@
-<template>
+ <template>
 <div class="relative">
-    <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="30" :color="'#fff'"/></div>
-  <div class="flex h-1/2 lg:h-96 mt-10 px-5 relative">
-    <div class="rightSideBar bg-dark-200 rounded-lg w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">
+  <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
+  <div class="flex h-1/2 lg:h-72 mt-10 px-5 relative lg:px-10">
+    <div class="rightSideBar bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">
       <div class="absolute" v-bind:class="lock && 'lock'"></div>
         <!-- 1 -->
-        <div class="flex flex-col justify-between p-5 w-full lg:w-1/2 lg:h-full">
+        <div class="flex flex-col justify-between p-6 w-full lg:w-1/2 lg:h-full">
           <div class="">
-            <div class="flex text-sm font-medium">
-              <p class="mr-6 text-[#01E3FF]">INTRODUCTION</p>
-              <p class="mr-6 text-[#FF01EC]">WEB3</p>
-              <p class="mr-6 text-[#3AFF01]">NFTS</p>
+            <div class="flex">
+              <p class="mr-6 text-[#01E3FF] text-md">INTRODUCTION</p>
+              <p class="mr-6 text-[#FF01EC] text-md">WEB3</p>
+              <p class="mr-6 text-[#3AFF01] text-md">NFTS</p>
             </div>
-            <div class="font-black text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl my-1">
+            <div class="font-black text-white text-xl sm:text-xl md:text-3xl lg:text-3xl my-3">
               <p>{{ title }}</p>
             </div>
-            <div class="text-[#9CA3AF] font-medium lg:w-2/3 text-lg mt-5">
+            <div class="text-dark-500 font-josefin lg:w-2/3 text-lg my-5">
               {{ description }}
             </div>
           </div>
           <div class="flex text-white flex-col lg:flex-row justify-between">
-            <div class="flex mt-2">
-              <p class="mr-1">{{ watched }}/{{ totalVideos }} Videos</p>
-              <div class="bg-white w-24 h-3 items-center rounded-lg mt-2 ">
-                <div class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-lg "></div>
+            <div class="flex items-center mt-3">
+              <p class="mr-3 text-dark-700 font-josefin text-sm">{{ watched }}/{{ totalVideos }} Videos</p>
+              <div class="bg-white w-24 h-3 items-center rounded-2xl">
+                <div class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-2xl"></div>
               </div>
             </div>
-            <div class="flex items-center mt-2">
-              <img class="w-4 h-4" src="../assets/images/boldtime.png" alt="" />
-              <p class="mx-1">{{ duration }}</p>
+            <div class="flex items-center mt-3">
+              <BoldTimeCircleIcon :size="16" :color="'#fff'" />
+              <p class="mx-3 text-dark-700 font-josefin text-sm">{{ duration }}</p>
             </div>
-            <div class="flex items-center mt-2">
-              <BoldPaperIcon :size="20" :color="'#fff'" />
-              <p class="mx-1">{{ references }} references</p>
+            <div class="flex items-center mt-3">
+              <BoldPaperIcon :size="16" :color="'#fff'" />
+              <p class="mx-3 text-dark-700 font-josefin text-sm">{{ references }} references</p>
             </div>
           </div>
         </div>
 
         <!-- 2 -->
-        <div class="w-full lg:w-1/2 lg:h-full second rounded-lg">
-          <div class="text-white border-4 rounded-md font-medium px-5 pb-1 right-10 lg:top-5 beg_btn border-[#0b0ed8]">
-            {{ level }}
+        <div class="w-full lg:w-1/2 lg:h-full second rounded-2xl">
+          <div class="border-2 rounded-lg right-10 pt-1 lg:top-10 beg_btn border-blue-300">
+            <p class="text-white font-josefin self-center">{{ level }}</p>
           </div>
         </div>
         </div>
@@ -50,7 +50,7 @@
 
 <style>
  .second {
-   background-image: linear-gradient(to right, rgb(29, 29, 38), transparent), url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+   background-image: linear-gradient(to right, rgba(29, 29, 38, 1), rgba(29, 29, 38, 0.7)), url("https://c4.wallpaperflare.com/wallpaper/936/709/65/sci-fi-world-futuristic-city-skyscrapers-fantasy-wallpaper-preview.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -66,6 +66,7 @@
  }
  .lock{
    background-color: black;
+   border-radius: 1rem;
    height: 100%;
    width: 100%;
    z-index: 20;
@@ -92,13 +93,14 @@
    }
 
    .second {
-     background-image: linear-gradient(to bottom, rgb(29, 29, 38), transparent), url("https://imgs.search.brave.com/zybFB5vn8vbu6VPp8iQp4I-raQzJC2GpRQVQY1Saxtg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9zdGF0/aWMwLmhvdGNhcnNp/bWFnZXMuY29tL3dv/cmRwcmVzcy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8wNS9v/bmUtY2FyLWdhcmFn/ZS5qcGc");
+     background-image: linear-gradient(to bottom, rgba(29, 29, 38, 1), rgba(29, 29, 38, 0.7)), url("https://c4.wallpaperflare.com/wallpaper/936/709/65/sci-fi-world-futuristic-city-skyscrapers-fantasy-wallpaper-preview.jpg");
    }
  }
 </style>
 
 <script>
 import BoldPaperIcon from './icons/boldPaperIcon.vue';
+import BoldTimeCircleIcon from './icons/boldTimeCircleIcon.vue';
 import LightOutlineLock from './icons/lightOutlineLock.vue';
 export default {
   props: {
@@ -127,7 +129,7 @@ export default {
       type: Boolean
     }
   },
-  components: { BoldPaperIcon, LightOutlineLock }
+  components: {BoldTimeCircleIcon, BoldPaperIcon, LightOutlineLock }
 }
 
 </script>
