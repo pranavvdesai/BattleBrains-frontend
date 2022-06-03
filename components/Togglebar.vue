@@ -2,7 +2,7 @@
   <div
     class="fixed top-0 togglebar p-3 overflow-auto"
     :class="`${active ? 'show' : ''}`"
-  > 
+  >
   <div @click="close" class="close">
       <LightCloseSquareIcon :size="25" :color="'#fff'" />
     </div>
