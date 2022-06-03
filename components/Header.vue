@@ -133,6 +133,8 @@ export default {
     margin: 0px auto;
     width: 100%;
     left: 0%;
+    background-color: #1D1D26;
+    padding: 15px;
   }
 }
 </style>
