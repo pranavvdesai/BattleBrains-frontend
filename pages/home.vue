@@ -1,6 +1,6 @@
 <template>
-  <div class="home_right pb-36">
-      <Header />
+  <div class="home_right pb-48 md:pb-72 lg:pb-24">
+      <Header :headfirst="'👋 Hi Dev, welcome!'" :headsecond="'Learn Web3, the Fun way'"/>
         <div class="home_cards" v-for='data in dataArray' :key='data.title'>
           <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock"/>
        </div>

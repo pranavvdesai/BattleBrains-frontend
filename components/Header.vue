@@ -6,10 +6,10 @@
     >
       <div class="head_nav flex flex-col ml-3">
         <div class=" flex flex-row">
-          <h3 class="greeting text-xl g font-mont text-dark-700">👋</h3>
           <div class="ml-2">
-            <h3 class="greeting text-lg g font-mont text-dark-700 tracking-wide"><b>Hi Dev, welcome!</b></h3>
-            <p class="learn text-sm l font-josefin text-dark-500">Learn Web3, the Fun way</p>
+            <h3 class="greeting text-lg g font-mont text-dark-700 tracking-wide">
+              <b>{{headfirst}}</b></h3>
+            <p class="learn text-sm l font-josefin text-dark-500">{{headsecond}}</p>
           </div>
         </div>
 
@@ -21,7 +21,7 @@
         </div>
       </div>
       <!-- Search -->
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center" v-if="$route.name === 'home'">
         <div class="search_cont">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -72,11 +72,20 @@ import SearchIcon from "./icons/searchIcon"
 import menuIcon from "./icons/menuIcon";
 
 export default {
+
   data() {
     return {
       isActive: false,
       show: false,
     };
+  },
+  props:{
+    headfirst : {
+      type : String
+    },
+    headsecond : {
+      type : String
+    }
   },
   methods: {
     toggle() {

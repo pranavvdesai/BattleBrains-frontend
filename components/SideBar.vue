@@ -30,7 +30,7 @@
       </div>
       
       <!--Bottom XP div-->
-      <div class="xp_info flex flex-col items-start mb-12 border-2 border-white px-4 py-6 rounded-md mx-5">
+      <div class="xp_info flex flex-col items-center mb-12 border-2 border-white px-4 py-6 rounded-md mx-5">
         <div class="flex flex-row">
           <h4 class="name mr-2"><b>Novice</b></h4>
           <p class="xp mx-1">1400/2000 XPs</p>

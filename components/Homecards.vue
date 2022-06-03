@@ -1,7 +1,8 @@
 <template>
-  <div class="flex h-1/2 lg:h-96 mt-10 px-5">
+<div class="relative">
+    <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="30" :color="'#fff'"/></div>
+  <div class="flex h-1/2 lg:h-96 mt-10 px-5 relative">
     <div class="rightSideBar bg-dark-200 rounded-lg w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">
-      <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="30" :color="'#fff'"/></div>
       <div class="absolute" v-bind:class="lock && 'lock'"></div>
         <!-- 1 -->
         <div class="flex flex-col justify-between p-5 w-full lg:w-1/2 lg:h-full">
@@ -44,6 +45,7 @@
         </div>
         </div>
       </div>
+</div>
 </template>
 
 <style>
@@ -67,13 +69,14 @@
    height: 100%;
    width: 100%;
    z-index: 20;
-   opacity: 0.7;
+   opacity: 0.5;
  }
  .lock_pos{
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
    opacity: 1;
+   z-index: 100;
  }
 
  @media(max-width: 1024px) {
