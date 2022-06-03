@@ -129,7 +129,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 11vh;
+    top: 10vh;
     margin: 0px auto;
     width: 100%;
     left: 0%;
