@@ -1,44 +1,68 @@
 <template>
-  <body class="bg-dark-200">
+
+  <body class="bg-dark-100">
     <section class="h-screen">
       <!-- leftsidebar -->
       <Leftsidebar />
       <div class="flex flex-col">
         <!-- middle -->
-        <div class="xl:mx-80 lg:mx-64 md:mx-60">
-          <div class="bg-dark-200 text-gray h-screen">
-            <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-200">
-              <div class="hidden md:block">
-                <div class="flex justify-between py-4">
-                  <div class="flex items-center">
-                    <LeftArrowIcon class="mr-2" :size="16" :color="'#fff'" />
-                    <p class="text-sm text-gray font-josefin">Back</p>
+        <div class=" lg:mx-[20%] ">
+          <div class=" bg-dark-100 h-screen">
+
+            <div class="xl:mx-10 mx-6 bg-dark-100 ">
+
+              <div class="hidden lg:block">
+                <div class="flex justify-between pt-8 pb-4">
+                  <div class="flex items-center ">
+                    <LeftArrowIcon
+                      class="mr-2"
+                      :size="16"
+                      :color="'#9898B3'"
+                    />
+                    <p class=" text-sm text-dark-500 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
-                    <p class="text-sm text-gray font-josefin">Next</p>
-                    <RightArrowIcon class="ml-2" :size="16" :color="'#fff'" />
+                    <p class=" text-sm text-dark-500 font-josefin">Next</p>
+                    <RightArrowIcon
+                      class="ml-2"
+                      :size="16"
+                      :color="'#9898B3'"
+                    />
                   </div>
                 </div>
               </div>
 
-              <div class="md:hidden">
-                <div class="flex justify-between py-6">
-                  <div class="flex items-center">
-                    <LeftArrowIcon :size="16" :color="'#fff'" />
-                    <p class="text-base font-bold text-white font-mont">
-                      BattleBrainz
-                    </p>
+              <div class="lg:hidden">
+                <div class="flex justify-between py-6 ">
+                  <div class="flex items-center ">
+                    <LeftArrowIcon
+                      class="mr-2"
+                      :size="16"
+                      :color="'#fff'"
+                    />
+                    <p class=" text-base font-bold text-white font-mont">BattleBrains</p>
                   </div>
                   <div class="flex items-center">
-                    <InfoIcon :size="20" :color="'#fff'" />
-                    <PaperIcon :size="20" :color="'#fff'" />
+                    <div @click="toggleModal">
+                      <InfoIcon
+                        class="mr-4"
+                        :size="20"
+                        :color="'#B8B8CC'"
+                      />
+                    </div>
+                    <div @click="toggleSidebar">
+                      <PaperIcon
+                        :size="20"
+                        :color="'#B8B8CC'"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
               <iframe
-                class="w-full xl:h-128 lg:h-96 md:h-80 h-80"
-                src="https://www.youtube.com/embed/gPyyoQN3dbA"
+                class="w-full xl:h-128 lg:h-96 h-80"
+                src="https://www.youtube.com/embed/KWxENcTAe1A"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -50,31 +74,37 @@
                   </h1>
                   <input type="checkbox" />
                 </div>
-                <HeartIcon :size="20" :color="'#fff'" />
+                <HeartIcon
+                  :size="16"
+                  :color="'#fff'"
+                />
               </div>
 
-              <p class="text-base font-josefin">
+              <p class="text-base text-dark-600 font-josefin w-5/6">
                 The Web3 Academy with everything for everyone. Discover, Learn
                 and Make friends!
               </p>
-              <div class="flex">
-                <span class="mr-2 text-blue-normal">DEFI</span>
-                <span class="mr-2 text-pink">NFTs</span>
-                <span class="mr-2 text-yellow">PFP</span>
+              <div class="flex my-3">
+                <span class="mr-3 text-sm text-blue-300 font-josefin">DEFI</span>
+                <span class="mr-3 text-sm text-pink font-josefin">NFTs</span>
+                <span class="mr-3 text-sm text-yellow font-josefin">PFP</span>
               </div>
-              <p class="text-sm font-mont pb-2">1 month ago</p>
+              <p class="text-sm font-josefin text-dark-500">1 month ago</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- rightsidebar -->
-      <Resources @toggle="toggleSidebar" :position="position" />
+      <Resources
+        @toggle="toggleSidebar"
+        :position="position"
+      />
 
       <!-- bottomnav -->
       <div
-        :class="{ hidden: hidden }"
-        class="fixed bg-dark-600 shadow-lg bottom-0 left-0 w-full md:hidden"
+        :class="{hidden : hidden}"
+        class="  fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full lg:hidden"
       >
         <Modal />
       </div>
@@ -85,7 +115,7 @@
 <script>
 import Modal from "../components/modal.vue";
 import Resources from "../components/Resources.vue";
-import Leftsidebar from "../components/leftsidebar.vue";
+import Leftsidebar from "../components/Leftsidebar.vue";
 import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
 import HeartIcon from "../components/icons/heartIcon.vue";
 import RightArrowIcon from "../components/icons/rightArrowIcon.vue";
@@ -95,7 +125,7 @@ import InfoIcon from "../components/icons/infoIcon.vue";
 export default {
   data() {
     return {
-      position: "-right-80",
+      position: "-right-full",
       hidden: true,
     };
   },
@@ -111,7 +141,8 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      this.position = this.position === "-right-80" ? "right-0" : "-right-80";
+      this.position =
+        this.position === "-right-full" ? "right-0" : "-right-full";
     },
     toggleModal() {
       this.hidden = !this.hidden;

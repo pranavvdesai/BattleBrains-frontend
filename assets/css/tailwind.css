@@ -9,7 +9,7 @@
   .page {
     @apply
     min-h-screen bg-dark-100 px-10
-
+    xs:p-4
     lg:px-20
   }
 
@@ -27,24 +27,25 @@
 
   .login {
     @apply
-    px-10 py-10 w-full h-auto
-    rounded-3xl flex-col justify-center content-center
+    flex px-10 py-10 w-full h-auto
+    rounded-3xl flex-col justify-center items-center content-center
     bg-dark-200
-
+    xs:px-3
     lg:justify-between
   }
 
   .text {
     @apply
-    text-center mt-5 mb-10 w-full text-dark-500 font-mont text-2xl justify-self-center self-center
-
-    lg:text-sm lg:w-3/4 lg:mx-auto
+    text-center mt-5 mb-10 w-full mt-0 text-dark-500 font-mont text-2xl justify-self-center self-center font-josefin
+    font-normal
+    xs:text-base xs:my-4
+    md:text-base
+    lg:text-lg lg:w-3/4 lg:mx-auto
   }
 
   .khaby_image {
     @apply
     w-full h-auto mx-auto block
-
     lg:w-3/4
   }
   .wagmi {
@@ -56,34 +57,45 @@
 
   .metamask_login {
     @apply
-    w-5/6 text-justify flex mx-auto
-    justify-self-center self-center p-6 text-3xl
-    rounded-3xl align-middle border bg-transparent
+    w-5/6 h-14 text-justify flex mx-auto
+    justify-self-center items-center self-center p-6 text-3xl
+    rounded-xl align-middle border bg-transparent mt-5
     border-solid text-dark-500 justify-center font-josefin
-    border-dark-500 mb-10
-
-    lg:text-base lg:p-2 lg:rounded-xl lg:w-2/3
+    border-dark-500
+    xs:hidden
+    md:flex
+    md:text-base
+    lg:text-lg lg:p-2 lg:rounded-xl lg:w-2/3
   }
 
   .email_input {
     @apply
-    w-5/6 text-justify flex mx-auto
+    w-5/6 h-14 text-justify flex mx-auto
     justify-self-center self-center p-6
-    text-3xl rounded-3xl align-middle bg-blue-200
+    text-3xl rounded-xl align-middle
     border-solid bg-dark-300 font-josefin
-    font-normal mb-5 text-dark-500 justify-center
-    border-dark-500 mt-10
-    lg:text-base lg:p-2 lg:rounded-xl lg:px-6 lg:w-2/3
+    font-normal my-1  text-dark-500 justify-center
+    border-dark-500
+    xs:text-base xs:p-3 xs:my-4
+    md:text-base
+    lg:text-lg lg:p-2 lg:rounded-xl lg:px-6 lg:w-2/3
   }
 
   .email_login {
     @apply
-    w-5/6 p-6 rounded-3xl text-justify
-    text-3xl flex mx-auto justify-self-center
+    w-5/6 p-6 h-14 rounded-xl text-justify
+    text-3xl flex mx-auto items-center justify-self-center
     self-center align-middle bg-blue-200 border-solid
-    text-white font-bold justify-center border-dark-500
+    text-white font-bold justify-center border-dark-500 mb-10
     bg-gradient-to-r from-blue-100 to-blue-200
-    lg:text-base lg:p-2 lg:rounded-xl lg:w-2/3
+    xs:text-base xs:p-3 xs:mb-1
+    md:text-base
+    lg:text-lg lg:p-2 lg:rounded-xl lg:w-2/3
+  }
+
+  .cc {
+    @apply
+    text-dark-500 text-center mt-3 font-josefin
   }
 
 }

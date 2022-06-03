@@ -1,40 +1,37 @@
 <template>
   <body class="bg-dark-200">
     <section class="h-screen">
-      <div class="">
-        <!-- leftsidebar -->
-        <Leftsidebar />
+      <!-- leftsidebar -->
+      <Leftsidebar />
 
-        <div class="flex flex-col">
-          <!-- nav -->
-          <div
-            class="relative bg-dark-600 shadow-lg fixed top-0 left-0 w-full md:hidden"
-          >
-            <div class="px-4 pt-4">
-              <div class="flex justify-between items-center h-full">
-                <div class="flex items-center">
-                  <LeftArrowIcon :size="20" :color="'#fff'" class="mr-4" />
-                  <h1 class="text-white text-lg font-extrabold font-mont">
-                    Why Web3?
-                  </h1>
-                </div>
-                <div class="flex items-center">
+      <div class="flex flex-col">
+        <!-- nav -->
+          <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full lg:hidden">
+          <div class="px-4 pt-4">
+            <div class="flex justify-between items-center h-full">
+              <div class="flex items-center">
+                <LeftArrowIcon :size="16" :color="'#fff'" class="mr-4" />
+                <h1 class="text-white text-lg font-extrabold font-mont">
+                  Why Web3?
+                </h1>
+              </div>
+              <div class="flex items-center">
+                <div @click="toggleSidebar">
                   <PaperIcon
                     :size="20"
                     :color="'#fff'"
-                    @click="toggleSidebar"
                   />
                 </div>
               </div>
             </div>
-            <!-- <Modal @toggle="toggleSidebar" /> -->
-            <Modal />
           </div>
+          <Modal />
+        </div>
 
           <!-- middle -->
-          <div class="xl:mx-80 lg:mx-64 md:mx-60">
-            <div class="bg-dark-200">
-              <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 p-10">
+          <div class="lg:px-[20%]">
+            <div class=" bg-dark-100">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 xxl:gap-16 px-5 lg:px-10 py-5 xxl:py-10">
                 <Card />
                 <Card />
                 <Card />
@@ -42,7 +39,6 @@
               </div>
             </div>
           </div>
-        </div>
 
         <!-- rightsidebar -->
         <Resources @toggle="toggleSidebar" :class="position" />
@@ -62,13 +58,14 @@ import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
 export default {
   data() {
     return {
-      position: "-right-80",
+      position: "-right-full",
     };
   },
   components: { Modal, Resources, Leftsidebar, Card, PaperIcon, LeftArrowIcon },
   methods: {
     toggleSidebar() {
-      this.position = this.position === "-right-80" ? "right-0" : "-right-80";
+      this.position =
+        this.position === "-right-full" ? "right-0" : "-right-full";
     },
   },
 };
