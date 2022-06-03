@@ -10,7 +10,7 @@
           <div class="px-4 pt-4">
             <div class="flex justify-between items-center h-full">
               <div class="flex items-center">
-                <LeftArrowIcon :size="20" :color="'#fff'" class="mr-4" />
+                <LeftArrowIcon :size="16" :color="'#fff'" class="mr-4" />
                 <h1 class="text-white text-lg font-extrabold font-mont">
                   Why Web3?
                 </h1>

@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[position]"
-    class=" h-screen fixed top-0 lg:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-1/5 w-3/4 z-10 py-4 px-2 transition-all duration-300"
+    class=" h-screen fixed top-0 lg:right-0 overflow-y-auto flex-row flex-nowrap overflow-hidden bg-dark-300 lg:w-1/5 w-5/6 z-10 py-4 px-2 transition-all duration-300"
   >
     <div class="flex items-center justify-between lg:justify-center">
       <h1 class="text-center my-6 text-dark-600 text-lg font-bold font-mont">Reference material [ 5 ]</h1>

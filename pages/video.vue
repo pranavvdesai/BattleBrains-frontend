@@ -7,26 +7,26 @@
       <div class="flex flex-col">
         <!-- middle -->
         <div class=" lg:mx-[20%] ">
-          <div class=" bg-dark-100 text-light-300 h-screen">
+          <div class=" bg-dark-100 h-screen">
 
-            <div class="xl:mx-20 lg:mx-7 mx-6 bg-dark-100 ">
+            <div class="xl:mx-10 mx-6 bg-dark-100 ">
 
               <div class="hidden lg:block">
-                <div class="flex justify-between py-4 ">
+                <div class="flex justify-between pt-8 pb-4">
                   <div class="flex items-center ">
                     <LeftArrowIcon
                       class="mr-2"
                       :size="16"
-                      :color="'#fff'"
+                      :color="'#9898B3'"
                     />
-                    <p class=" text-sm text-light-300 font-josefin">Back</p>
+                    <p class=" text-sm text-dark-500 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
-                    <p class=" text-sm text-light-300 font-josefin">Next</p>
+                    <p class=" text-sm text-dark-500 font-josefin">Next</p>
                     <RightArrowIcon
                       class="ml-2"
                       :size="16"
-                      :color="'#fff'"
+                      :color="'#9898B3'"
                     />
                   </div>
                 </div>
@@ -40,19 +40,20 @@
                       :size="16"
                       :color="'#fff'"
                     />
-                    <p class=" text-base font-bold text-white font-mont">BattleBrainz</p>
+                    <p class=" text-base font-bold text-white font-mont">BattleBrains</p>
                   </div>
                   <div class="flex items-center">
                     <div @click="toggleModal">
                       <InfoIcon
+                        class="mr-4"
                         :size="20"
-                        :color="'#fff'"
+                        :color="'#B8B8CC'"
                       />
                     </div>
                     <div @click="toggleSidebar">
                       <PaperIcon
                         :size="20"
-                        :color="'#fff'"
+                        :color="'#B8B8CC'"
                       />
                     </div>
                   </div>
@@ -61,7 +62,7 @@
 
               <iframe
                 class="w-full xl:h-128 lg:h-96 h-80"
-                src="https://www.youtube.com/embed/gPyyoQN3dbA"
+                src="https://www.youtube.com/embed/KWxENcTAe1A"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -74,21 +75,21 @@
                   <input type="checkbox" />
                 </div>
                 <HeartIcon
-                  :size="20"
+                  :size="16"
                   :color="'#fff'"
                 />
               </div>
 
-              <p class="text-base font-josefin">
+              <p class="text-base text-dark-600 font-josefin w-5/6">
                 The Web3 Academy with everything for everyone. Discover, Learn
                 and Make friends!
               </p>
-              <div class="flex">
-                <span class="mr-2 text-blue-300">DEFI</span>
-                <span class="mr-2 text-pink">NFTs</span>
-                <span class="mr-2 text-yellow">PFP</span>
+              <div class="flex my-3">
+                <span class="mr-3 text-sm text-blue-300 font-josefin">DEFI</span>
+                <span class="mr-3 text-sm text-pink font-josefin">NFTs</span>
+                <span class="mr-3 text-sm text-yellow font-josefin">PFP</span>
               </div>
-              <p class="text-sm font-mont pb-2">1 month ago</p>
+              <p class="text-sm font-josefin text-dark-500">1 month ago</p>
             </div>
           </div>
         </div>
