@@ -28,12 +28,14 @@
           <h3 class="ml-3 link_content font-josefin"><b>Support</b></h3>
         </NuxtLink>
       </div>
-      <div class="xp_info flex flex-col items-start mb-12 border-2 border-white p-5 rounded-md mx-5">
+      
+      <!--Bottom XP div-->
+      <div class="xp_info flex flex-col items-start mb-12 border-2 border-white px-4 py-6 rounded-md mx-5">
         <div class="flex flex-row">
           <h4 class="name mr-2"><b>Novice</b></h4>
           <p class="xp mx-1">1400/2000 XPs</p>
         </div>
-          <div class="bg-white w-24 h-3 items-center rounded-lg mt-2 ">
+          <div class="bg-white w-full h-3 items-center rounded-lg mt-2 ">
                 <div
                   class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-lg "
                 ></div>
@@ -86,14 +88,7 @@ a.nuxt-link-exact-active .link:hover{
   background-color: #262633;
 }
 
-
-.pr_img{
-  height: 85%;
-  width: 85%;
-  border-radius: 50%;
-}
 .name,.xp{
-  margin-top: 3px;
   color: white;
 }
 @media(max-width: 1024px){

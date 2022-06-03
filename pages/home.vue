@@ -26,7 +26,7 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Begginer',
-            lock : 0
+            lock : false
           },
           {
             title : 'Why Blockchain?',
@@ -36,7 +36,7 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Moderate',
-            lock : 1
+            lock : true
           }
         ]
       }
@@ -48,16 +48,13 @@ import Homecards from '../components/Homecards.vue'
 
 <style>
   .home_right{
-    position: relative;
     margin-left: 20%;
     width: 80%;
     background-color: #1D1D26;
-    /* overflow: scroll; */
-    /* height: auto */
   }
   .home_cards{
     position: relative;
-    top: 10vh;
+    top: 8vh;
   }
   @media(max-width: 1024px){
     .home_right{

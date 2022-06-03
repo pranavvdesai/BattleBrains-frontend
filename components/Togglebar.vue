@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed top-0 togglebar p-3 overflow-auto z-30"
+    class="fixed top-0 togglebar p-3 overflow-auto"
     :class="`${active ? 'show' : ''}`"
   > 
   <div @click="close" class="close">
@@ -15,12 +15,13 @@
         </div>
       </div>
     </div>
-     <div class="xp_info flex flex-col items-start mt-24 border-2 border-white p-5 rounded-md mx-5">
+    <!--Bottom XP div-->
+     <div class="xp_info flex flex-col items-start mt-24 border-2 border-white px-4 py-6 rounded-md mx-5">
         <div class="flex flex-row">
           <h4 class="name mr-2"><b>Novice</b></h4>
           <p class="xp mx-1">1400/2000 XPs</p>
         </div>
-          <div class="bg-white w-24 h-3 items-center rounded-lg mt-2 ">
+          <div class="bg-white w-full h-3 items-center rounded-lg mt-2">
                 <div
                   class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-lg "
                 ></div>
@@ -62,12 +63,13 @@ export default {
   position: fixed;
   left: -90%;
   transition: 0.5s ease-in-out;
+  z-index: 100;
 }
 .show {
   left: 0%;
 }
 .close{
-  left: 90%;
+  left: 91%;
   top: 1%;
   position: relative;
 }
