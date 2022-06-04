@@ -167,7 +167,7 @@
     </section>
   </body>
 </template>
-            
+
 <script>
 import Modal from "../../components/modal.vue";
 import Resources from "../../components/Resources.vue";
