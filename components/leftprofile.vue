@@ -22,9 +22,9 @@
 
     <div class="absolute bottom-0 mb-10 w-4/5 self-center ml-4">
       <div
-        class="flex border border-dark-500 rounded-md justify-between p-4"
+        class="flex border self-center border-dark-500 rounded-md justify-between p-4"
       >
-        <p class="text-light-300">Logout</p>
+        <p class="text-light-300 font-mont text-base">Logout</p>
         <img
           src="@/assets/images/logout.svg"
           alt="Paper"
