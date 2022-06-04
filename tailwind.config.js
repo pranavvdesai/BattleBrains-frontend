@@ -17,7 +17,7 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      xxl: "1536px",
     },
     colors: {
       transparent: "transparent",
@@ -75,6 +75,9 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
+      boxShadow: {
+        '3xl': '0 0px 0px -15px rgb(0, 0, 0)',
+      }
     },
   },
   plugins: [],
