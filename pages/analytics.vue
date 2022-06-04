@@ -1,0 +1,181 @@
+<template>
+  <body class="bg-dark-100">
+    <section class="h-screen md:flex md:flex-row px-0">
+      <!-- sidebar -->
+      <div class="sidebar md:w-1/5 bg-dark-300 md:h-screen"></div>
+      <!-- main -->
+      <div class="main xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen">
+        <!-- upper section -->
+        <div
+          class="
+            upper
+            xs:flex xs:flex-col-reverse
+            md:mt-0 md:flex-row
+            w-full
+            mb-12
+            mt-8
+            md:items-center md:justify-between
+          "
+        >
+          <div class="top-left text-white md:mt-0 xs:mt-12">
+            <p class="font-mont text-xl font-extrabold">
+              Your current streak is 8 days &#128293;
+            </p>
+            <span class="font-josefin font-semibold text-dark-500"
+              >to the moon...</span
+            >
+          </div>
+          <div
+            class="flex flex-row justify-between w-full md:w-auto items-center"
+          >
+            <div class="topNav">
+              <img
+                src="@/assets/images/topNav.png"
+                alt="topNav"
+                class="
+                  md:hidden
+                  xs:block
+                  h-6
+                  justify-content-center
+                  items-center
+                "
+              />
+            </div>
+            <div
+              class="
+                flex
+                justify-content-center
+                items-center
+                space-x-4
+                top-right
+              "
+            >
+              <img
+                src="@/assets/images/notificationBell.png"
+                alt="notification bell"
+                class="h-6 mr-6"
+              />
+              <div class="profile flex items-center space-x-2">
+                <img
+                  src="@/assets/images/profile.png"
+                  alt="profile"
+                  class="h-10"
+                />
+                <img
+                  src="@/assets/images/ArrowDown.png"
+                  alt="down arrow"
+                  class="md:h-2 md:block xs:hidden"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- progress bar -->
+        <div class="progress">
+          <div class="w-full bg-white rounded-lg">
+            <div class="bg-blue-300 w-3/4 h-1 rounded-lg"></div>
+          </div>
+          <p class="font-josefin font-semibold text-dark-500 mt-2">
+            you are doing great, LFG!!!
+          </p>
+        </div>
+        <!-- referral -->
+        <div
+          class="
+            friends
+            xs:flex-col xs:flex
+            md:flex-row
+            w-full
+            p-3
+            bg-dark-400
+            rounded-xl
+            my-12
+            md:items-center md:justify-between
+          "
+        >
+          <div class="left md:items-center flex md:space-x-8 xs:space-x-4">
+            <div
+              class="
+                cont
+                rounded-lg
+                md:h-14
+                bg-light-700
+                md:w-14
+                xs:h-14 xs:w-20
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <img src="@/assets/images/friends.png" alt="friends" />
+            </div>
+            <div class="refer">
+              <p class="text-lg font-semibold text-white">
+                Refer to invite your friends to Battlebrains.
+              </p>
+              <span class="text-sm text-dark-500"
+                >Everytime someone signs up using your referral, you are
+                rewarded with XPs!</span
+              >
+            </div>
+          </div>
+          <button
+            class="
+              md:mt-0
+              xs:mt-12 xs:w-1/3
+              text-center text-lg
+              h-14
+              md:w-1/5
+              rounded-lg
+              bg-blue-200
+              border-solid
+              text-white
+              font-bold
+              border-dark-500
+              bg-gradient-to-r
+              from-blue-100
+              to-blue-200
+              hover:bg-green-700
+            "
+          >
+            refer
+          </button>
+        </div>
+        <!-- grids -->
+        <div
+          class="
+            grid
+            xs:w-full xs:grid-cols-2
+            md:grid-cols-3
+            gap-10
+            md:w-5/6
+            mb-12
+          "
+        >
+          <div class="grid-element">
+            <p class="grid-title text-dark-500 font-josefin">
+              Total Time Spent
+            </p>
+            <p class="grid-value">12 hrs</p>
+          </div>
+          <div class="grid-element">
+            <p class="grid-title">Profile Visits</p>
+            <p class="grid-value">365</p>
+          </div>
+          <div class="grid-element">
+            <p class="grid-title">No. of Blogs visited</p>
+            <p class="grid-value">8</p>
+          </div>
+          <div class="grid-element">
+            <p class="grid-title">No. of referrals</p>
+            <p class="grid-value">8</p>
+          </div>
+          <div class="grid-element">
+            <p class="grid-title">XPs Earned</p>
+            <p class="grid-value">2000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</template>
