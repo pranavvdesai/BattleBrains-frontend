@@ -13,7 +13,7 @@
       >
     </div>
     <div class="flex lg:flex-col xl:flex-row mt-2 rounded-xl hover:shadow-lg hover:shadow-dark-200 hover:shadow-[0_0_30px_5px] py-3 px-6 items-center">
-      <div class="mr-5">
+      <div class="mr-5 lg:mr-0 xl:mr-5">
         <img
           class=""
           src="@/assets/images/peerimg1.svg"
