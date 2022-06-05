@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-14 h-6 flex items-center bg-gray-300 rounded-full p-1 duration-300 cursor-pointer bg-light-500"
+    class="w-10 h-6 flex items-center rounded-full p-1 duration-300 cursor-pointer bg-dark-400"
     :aria-checked="value.toString()"
     @click="toggle"
   >
