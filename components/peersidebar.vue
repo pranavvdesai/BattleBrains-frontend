@@ -22,13 +22,11 @@
 
       </div>
       <div class="p-2 text-center">
-        <!-- <h5 class="text-gray-900 font-medium mb-2">Card title</h5> -->
         <span class="text-white">Pranav Desai</span>
-          <p>@pranavvdesai</p>
+        <p class="text-light-400">@pranavvdesai</p>
       </div>
     </div>
 
-    
   </div>
 </template>
 
