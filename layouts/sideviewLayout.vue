@@ -1,8 +1,8 @@
 <template>
-  <section class="flex screen_sect">
+  <div class="flex screen_sect">
          <SideBar />
           <Nuxt />
-  </section>
+  </div>
 </template>
 
 <script>
@@ -13,9 +13,3 @@
       }
   }
 </script>
-
-<style>
-  .screen_sect{
-    height: auto;
-  }
-</style>

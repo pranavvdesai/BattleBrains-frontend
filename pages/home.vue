@@ -1,5 +1,5 @@
 <template>
-  <div class="home_right  pb-48 md:pb-72 lg:pb-24">
+  <div class="home_right pb-48 md:pb-72 lg:pb-24">
       <Header :headfirst="'👋 Hi Dev, welcome!'" :headsecond="'Learn Web3, the Fun way'"/>
         <div class="home_cards flex flex-col justify-items-center" v-for='data in dataArray' :key='data.title'>
           <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock"/>
@@ -38,7 +38,7 @@ import Homecards from '../components/Homecards.vue'
             level : 'Moderate',
             lock : true
           },
-              {
+           {
             title : 'Why Blockchain?',
             desc : 'The third generation of the web promises to put us in control of our data...',
             duration : '70 mins',
@@ -74,9 +74,13 @@ import Homecards from '../components/Homecards.vue'
     .home_right{
       width: 100%;
       margin-left: 0%;
+      margin-bottom: 8vh;
     }
     .home_cards{
       top: 17vh;
+    }
+    ::-webkit-scrollbar{
+      display: none;
     }
   }
 </style>

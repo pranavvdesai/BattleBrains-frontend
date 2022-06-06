@@ -1,6 +1,6 @@
 <template>
   <div class="home_right pb-96 md:pb-36">
-    <Header :headfirst="'Your current streak is 8 days &#128293;'" :headsecond="'to the moon...'" />
+    <Header :headfirst="'Your current streak is 8 days 🔥'" :headsecond="'to the moon...'" />
       <!-- main -->
       <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen main">
         <div class="text-white lg:hidden">

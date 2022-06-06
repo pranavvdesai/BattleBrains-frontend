@@ -1,13 +1,13 @@
  <template>
 <div class="relative z-10">
   <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
-  <div class="flex h-1/2 lg:h-72 mt-10 px-5 relative lg:px-10">
+  <div class="flex h-1/2 lg:h-72 mt-5 px-5 relative lg:px-10">
     <div class="rightSideBar bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">
       <div class="absolute" v-bind:class="lock && 'lock'"></div>
         <!-- 1 -->
         <div class="flex flex-col justify-between p-6 w-full lg:w-1/2 lg:h-full">
           <div class="">
-            <div class="flex">
+            <div class="flex sm:flex-row xs:flex-col">
               <p class="mr-6 text-[#01E3FF] text-md">INTRODUCTION</p>
               <p class="mr-6 text-[#FF01EC] text-md">WEB3</p>
               <p class="mr-6 text-[#3AFF01] text-md">NFTS</p>
