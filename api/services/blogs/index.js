@@ -1,5 +1,5 @@
 
-import { handleResponse } from '../utils';
+import { handleResponse } from '../../utils';
 
 export default ($axios) => {
     return {
