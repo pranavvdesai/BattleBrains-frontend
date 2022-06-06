@@ -12,7 +12,7 @@
           <homeIcon :color="'#fff'" :size="22"/>
           <h3 class="ml-3 link_content font-josefin"><b>Home</b></h3>
         </NuxtLink>
-        <NuxtLink to="/about" class="link rounded-lg flex py-4 px-6 mt-4">
+        <NuxtLink to="/analytics" class="link rounded-lg flex py-4 px-6 mt-4">
           <activityIcon :color="'#9898B3'" :size="22"/>
 
           <h3 class="ml-3 link_content font-josefin"><b>My Activity</b></h3>
@@ -22,7 +22,7 @@
 
           <h3 class="ml-3 link_content font-josefin"><b>Release</b></h3>
         </NuxtLink>
-        <NuxtLink to="/" class="link rounded-lg flex py-4 px-6  mt-4">
+        <NuxtLink to="/support" class="link rounded-lg flex py-4 px-6  mt-4">
           <supportIcon :color="'#9898B3'" :size="22"/>
 
           <h3 class="ml-3 link_content font-josefin"><b>Support</b></h3>
