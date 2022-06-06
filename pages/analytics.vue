@@ -1,23 +1,9 @@
 <template>
-  <body class="bg-dark-100">
-    <section class="h-screen md:flex md:flex-row px-0">
-      <!-- sidebar -->
-      <div class="sidebar md:w-1/5 bg-dark-300 md:h-screen"></div>
+  <div class="home_right pb-96 md:pb-36">
+    <Header :headfirst="'Your current streak is 8 days &#128293;'" :headsecond="'to the moon...'" />
       <!-- main -->
-      <div class="main xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen">
-        <!-- upper section -->
-        <div
-          class="
-            upper
-            xs:flex xs:flex-col-reverse
-            md:mt-0 md:flex-row
-            w-full
-            mb-12
-            mt-8
-            md:items-center md:justify-between
-          "
-        >
-          <div class="top-left text-white md:mt-0 xs:mt-12">
+      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen main">
+        <div class="text-white lg:hidden">
             <p class="font-mont text-xl font-extrabold">
               Your current streak is 8 days &#128293;
             </p>
@@ -25,51 +11,6 @@
               >to the moon...</span
             >
           </div>
-          <div
-            class="flex flex-row justify-between w-full md:w-auto items-center"
-          >
-            <div class="topNav">
-              <img
-                src="@/assets/images/topNav.png"
-                alt="topNav"
-                class="
-                  md:hidden
-                  xs:block
-                  h-6
-                  justify-content-center
-                  items-center
-                "
-              />
-            </div>
-            <div
-              class="
-                flex
-                justify-content-center
-                items-center
-                space-x-4
-                top-right
-              "
-            >
-              <img
-                src="@/assets/images/notificationBell.png"
-                alt="notification bell"
-                class="h-6 mr-6"
-              />
-              <div class="profile flex items-center space-x-2">
-                <img
-                  src="@/assets/images/profile.png"
-                  alt="profile"
-                  class="h-10"
-                />
-                <img
-                  src="@/assets/images/ArrowDown.png"
-                  alt="down arrow"
-                  class="md:h-2 md:block xs:hidden"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- progress bar -->
         <div class="progress">
           <div class="w-full bg-white rounded-lg">
@@ -176,6 +117,44 @@
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    <Bottombar />
+  </div>
 </template>
+
+<script>
+import SideBar from "../components/SideBar.vue";
+import Header from "../components/Header.vue";
+import Bottombar from "../components/Bottombar.vue";
+
+export default {
+  components: {
+    SideBar,
+    Header,
+    Bottombar
+  },
+    layout: "sideviewLayout",
+
+}
+
+</script>
+
+<style>
+  .home_right{
+    margin-left: 20%;
+    width: 80%;
+    background-color: #1D1D26;
+  }
+   ::-webkit-scrollbar{
+    background-color: #1D1D26;
+  }
+     .main{
+      position: relative;
+      top: 10vh;
+    }
+  @media(max-width: 1024px){
+    .home_right{
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+</style>
