@@ -2,7 +2,7 @@
   <div class="home_right pb-48 md:pb-72 lg:pb-24">
       <Header :headfirst="'👋 Hi Dev, welcome!'" :headsecond="'Learn Web3, the Fun way'"/>
         <div class="home_cards flex flex-col justify-items-center" v-for='data in dataArray' :key='data.title'>
-          <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock"/>
+          <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock" :tags="data.tags"/>
        </div>
       <Bottombar />
   </div>
@@ -26,7 +26,8 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Beginner',
-            lock : false
+            lock : false,
+            tags : ['INTRODUCTION','NFT','DEFI']
           },
           {
             title : 'Why Blockchain?',
@@ -36,7 +37,8 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Moderate',
-            lock : true
+            lock : true,
+            tags : ['INTRODUCTION','NFT','DEFI']
           },
            {
             title : 'Why Blockchain?',
@@ -46,7 +48,8 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Moderate',
-            lock : true
+            lock : true,
+            tags : ['INTRODUCTION','NFT','DEFI']
           }
         ]
       }

@@ -40,7 +40,7 @@
                       :size="16"
                       :color="'#fff'"
                     />
-                    <p class=" text-base font-bold text-white font-mont">BattleBrains</p>
+                    <p class=" text-base font-bold text-white font-mont">{{title}}</p>
                   </div>
                   <div class="flex items-center">
                     <div @click="toggleModal">
@@ -81,15 +81,14 @@
               </div>
 
               <p class="text-base text-dark-600 font-josefin w-5/6">
-                The Web3 Academy with everything for everyone. Discover, Learn
-                and Make friends!
+               {{desc}}
               </p>
-              <div class="flex my-3">
-                <span class="mr-3 text-sm text-blue-300 font-josefin">DEFI</span>
-                <span class="mr-3 text-sm text-pink font-josefin">NFTs</span>
-                <span class="mr-3 text-sm text-yellow font-josefin">PFP</span>
+              <div class="flex flex-wrap my-3">
+                <div v-for="(tag,index) in tags">
+                <span class="mr-3 text-sm font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</span>
+                </div>
               </div>
-              <p class="text-sm font-josefin text-dark-500">1 month ago</p>
+              <p class="text-sm font-josefin text-dark-500">{{posted}}</p>
             </div>
           </div>
         </div>
@@ -127,6 +126,10 @@ export default {
     return {
       position: "-right-full",
       hidden: true,
+      title : "BattleBrains",
+      desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+      posted : "1 month ago",
+      tags:['DEFI','NFT','PFP'],
     };
   },
   components: {

@@ -31,10 +31,9 @@
           <div class="lg:px-[20%]">
             <div class=" bg-dark-100">
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 xxl:gap-16 px-5 lg:px-10 py-5 xxl:py-10">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <div v-for="data in dataArray" :key="data.title">
+                  <Card :title="data.title" :desc="data.desc" :posted="data.posted" :tags="data.tags"/>
+                </div>
               </div>
             </div>
           </div>
@@ -58,6 +57,33 @@ export default {
   data() {
     return {
       position: "-right-full",
+      dataArray : [
+        {
+          title : "Card 1",
+          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+          posted : "1 month ago",
+          tags:['Blockchain','Defi']
+        },
+          {
+          title : "Card 2",
+          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+          posted : "1 month ago",
+          tags:['NFTs','Defi']
+
+        },
+          {
+          title : "Card 3",
+          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+          posted : "1 month ago",
+          tags:['Blockchain','Defi','NFTs']
+        },
+          {
+          title : "Card 4",
+          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+          posted : "1 month ago",
+          tags:['Blockchain']
+        }
+      ]
     };
   },
   components: { Modal, Resources, Leftsidebar, Card, PaperIcon, LeftArrowIcon },
