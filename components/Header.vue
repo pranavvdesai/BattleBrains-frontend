@@ -2,22 +2,34 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-50"
+      class="
+        header
+        bg-dark-200
+        flex flex-row
+        p-4
+        items-center
+        justify-between
+        fixed
+        top-0
+        z-50
+      "
     >
       <div class="head_nav flex flex-col ml-3">
-        <div class=" flex flex-row">
+        <div class="flex flex-row">
           <div class="ml-2">
-            <h3 class="greeting text-lg g font-mont text-dark-700 tracking-wide">
-              <b>{{headfirst}}</b></h3>
-            <p class="learn text-sm l font-josefin text-dark-500">{{headsecond}}</p>
+            <h3
+              class="greeting text-lg g font-mont text-dark-700 tracking-wide"
+            >
+              <b>{{ headfirst }}</b>
+            </h3>
+            <p class="learn text-sm l font-josefin text-dark-500">
+              {{ headsecond }}
+            </p>
           </div>
         </div>
 
         <div @click="toggle" class="toggler lg:hidden block">
-          <menuIcon
-            :color="'#fff'"
-            :size="20"
-          />
+          <menuIcon :color="'#fff'" :size="20" />
         </div>
       </div>
       <!-- Search -->
@@ -25,10 +37,25 @@
         <div class="search_cont"  v-if="$route.name === 'home'">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <SearchIcon :color="'#9898B3'" :size="20"/>
+              <SearchIcon :color="'#9898B3'" :size="20" />
             </span>
             <input
-              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0 z-20"
+              class="
+                sfield
+                placeholder:text-dark-500
+                font-josefin
+                block
+                bg-dark-300
+                w-full
+                rounded-lg
+                py-2
+                pl-10
+                pr-3
+                shadow-sm
+                sm:text-sm
+                outline-0
+                z-20
+              "
               placeholder="Search"
               type="text"
               name="search"
@@ -44,7 +71,15 @@
           <!-- Dropdown toggle button -->
           <button
             @click="show = !show"
-            class="flex items-center p-2 text-indigo-100 bg-white rounded drop_btn"
+            class="
+              flex
+              items-center
+              p-2
+              text-indigo-100
+              bg-white
+              rounded
+              drop_btn
+            "
           ></button>
         </div>
 
@@ -68,24 +103,23 @@
 <script>
 import Togglebar from "./Togglebar.vue";
 import NotificationIcon from "./icons/notificationIcon.vue";
-import SearchIcon from "./icons/searchIcon"
+import SearchIcon from "./icons/searchIcon";
 import menuIcon from "./icons/menuIcon";
 
 export default {
-
   data() {
     return {
       isActive: false,
       show: false,
     };
   },
-  props:{
-    headfirst : {
-      type : String
+  props: {
+    headfirst: {
+      type: String,
     },
-    headsecond : {
-      type : String
-    }
+    headsecond: {
+      type: String,
+    },
   },
   methods: {
     toggle() {
@@ -133,7 +167,7 @@ export default {
     margin: 0px auto;
     width: 100%;
     left: 0%;
-    background-color: #1D1D26;
+    background-color: #1d1d26;
     padding: 15px;
   }
 }
