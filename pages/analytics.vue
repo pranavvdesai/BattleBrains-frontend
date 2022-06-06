@@ -92,28 +92,12 @@
             mb-12
           "
         >
-          <div class="grid-element">
-            <p class="grid-title text-dark-500 font-josefin">
-              Total Time Spent
-            </p>
-            <p class="grid-value">12 hrs</p>
-          </div>
-          <div class="grid-element">
-            <p class="grid-title">Profile Visits</p>
-            <p class="grid-value">365</p>
-          </div>
-          <div class="grid-element">
-            <p class="grid-title">No. of Blogs visited</p>
-            <p class="grid-value">8</p>
-          </div>
-          <div class="grid-element">
-            <p class="grid-title">No. of referrals</p>
-            <p class="grid-value">8</p>
-          </div>
-          <div class="grid-element">
-            <p class="grid-title">XPs Earned</p>
-            <p class="grid-value">2000</p>
-          </div>
+          <Analyticscard
+            v-for="data in gridData"
+            :key="data.title"
+            :title="data.title"
+            :value="data.value"
+          />
         </div>
       </div>
     </section>
@@ -122,6 +106,7 @@
 
 <script>
 import Referral from "../components/Referral.vue";
+import Analyticscard from "../components/Analyticscard.vue";
 
 export default {
   data() {
@@ -131,9 +116,31 @@ export default {
         description:
           "Everytime someone signs up using your referral, you are rewarded with XPs!",
       },
+      gridData: [
+        {
+          title: "Total Time Spent",
+          value: "12 hrs",
+        },
+        {
+          title: "Profile Visits",
+          value: "365",
+        },
+        {
+          title: "No. of Blogs visited",
+          value: "8",
+        },
+        {
+          title: "No. of referrals",
+          value: "8",
+        },
+        {
+          title: "XPs Earned",
+          value: "2000",
+        },
+      ],
     };
   },
-  components: { Referral },
+  components: { Referral, Analyticscard },
 };
 </script>
 
