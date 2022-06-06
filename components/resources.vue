@@ -6,7 +6,7 @@
     <div class="flex items-center justify-between lg:justify-center px-5">
       <h1 class="text-center my-6 text-dark-600 text-lg font-bold font-mont">Reference material [ 5 ]</h1>
       <div @click="toggle" class="lg:hidden">
-        <CloseIcon :size="20" :color="'#B8B8CC'"/>
+        <CloseIcon :size="14" :color="'#B8B8CC'"/>
       </div>
     </div>
     <div class="flex justify-center mx-5 mt-2">

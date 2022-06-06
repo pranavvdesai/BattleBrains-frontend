@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen fixed top-0 hidden lg:block lg:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-1/4 z-10 py-4 px-4 transition-all duration-300">
+  <div class="h-screen fixed top-0 xs:hidden lg:block lg:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-1/4 z-100 py-4 px-4 transition-all duration-300">
     <div class="">
       <div class="flex mt-4 align-middle">
         <leftArrowIcon :color="'#9898B3'" :size="14" />
@@ -37,10 +37,10 @@
 import leftArrowIcon from "./icons/leftArrowIcon";
 import PaperIcon from "./icons/paperIcon";
 
-export default {name: "leftsidebar",
+export default {
   components: {
     leftArrowIcon,
     PaperIcon,
-  },
+  }
 };
 </script>

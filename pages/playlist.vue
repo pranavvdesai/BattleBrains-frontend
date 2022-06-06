@@ -3,7 +3,6 @@
     <section class="h-screen">
       <!-- leftsidebar -->
       <Leftsidebar />
-
       <div class="flex flex-col">
         <!-- nav -->
           <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full lg:hidden">
