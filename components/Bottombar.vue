@@ -4,13 +4,13 @@
     <NuxtLink to="/home" class="flex p-2">
       <homeIcon :color="'#fff'" :size="20" />
     </NuxtLink>
-    <NuxtLink to="/about" class="flex p-2">
+    <NuxtLink to="/analytics" class="flex p-2">
       <activityIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
     <NuxtLink to="/" class="flex p-2">
       <releaseIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
-    <NuxtLink to="/" class="flex p-2">
+    <NuxtLink to="/support" class="flex p-2">
       <supportIcon :color="'#9898B3'" :size="20" />
     </NuxtLink>
   </div>
@@ -44,7 +44,7 @@ export default {
     display: flex;
     width: 100%;
     height: 8vh;
-    z-index: 100;
+    z-index: 90;
   }
 }
 </style>

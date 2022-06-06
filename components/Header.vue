@@ -33,8 +33,8 @@
         </div>
       </div>
       <!-- Search -->
-      <div class="flex flex-row items-center" v-if="$route.name === 'home'">
-        <div class="search_cont">
+      <div class="flex flex-row items-center">
+        <div class="search_cont"  v-if="$route.name === 'home'">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <SearchIcon :color="'#9898B3'" :size="20" />
@@ -163,7 +163,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 10vh;
+    top: 8vh;
     margin: 0px auto;
     width: 100%;
     left: 0%;
