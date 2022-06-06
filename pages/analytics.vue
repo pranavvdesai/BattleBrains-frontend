@@ -71,14 +71,7 @@
           </div>
         </div>
         <!-- progress bar -->
-        <div class="progress">
-          <div class="w-full bg-white rounded-lg">
-            <div class="bg-blue-300 w-3/4 h-1 rounded-lg"></div>
-          </div>
-          <p class="font-josefin font-semibold text-dark-500 mt-2">
-            you are doing great, LFG!!!
-          </p>
-        </div>
+        <Progressbar :text="progress.text" :percentage="progress.percentage" />
         <!-- referral -->
         <Referral :title="referral.title" :description="referral.description" />
         <!-- grids -->
@@ -107,6 +100,7 @@
 <script>
 import Referral from "../components/Referral.vue";
 import Analyticscard from "../components/Analyticscard.vue";
+import Progressbar from "../components/Progressbar.vue";
 
 export default {
   data() {
@@ -138,9 +132,13 @@ export default {
           value: "2000",
         },
       ],
+      progress: {
+        text: "you are doing great, LFG!!!",
+        percentage: 75,
+      },
     };
   },
-  components: { Referral, Analyticscard },
+  components: { Referral, Analyticscard, Progressbar },
 };
 </script>
 
