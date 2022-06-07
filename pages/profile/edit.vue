@@ -27,27 +27,26 @@
           </div>
 
           <!-- banner -->
-          <div class="relative lg:pt-6 pt-2 lg:mx-10 md:mx-10 sm:mx-5 mx-5 mb-[10%]">
+          <div class="relative mx-5 mt-[5%] mb-[20%]">
             <img src="@/assets/images/profile1.svg" class="w-full" />
-            <div class="bg-dark-300 p-2 rounded-lg absolute top-[15%] right-4">
-              <label for="banner-input">
-                <img src="@/assets/images/edit.svg" class="w-5 h-5" />
-              </label>
-              <input id="banner-input" type="file" style="display: none;" />
-            </div>
-
-            <div class="absolute bg-gray-50 top-[65%] flex ml-14">
-              <img src="@/assets/images/dp3.png"
-                class="rounded-full w-[30%] border-dark-100 lg:border-8 md:border-6 border-4" />
-              <div class="bg-dark-300 p-2 rounded-lg absolute ml-[12%] self-center">
-                <label for="avatar-input">
-                  <img src="@/assets/images/edit.svg" class="w-5 h-5" />
-                </label>
-                <input id="avatar-input" type="file" style="display: none;" />
+            <div class="absolute -mt-[12%] ml-10 w-[25%]">
+              <div class="border-dark-100 flex rounded-full border-4">
+                <img src="@/assets/images/dp3.png" class="flex rounded-full" />
+                <div class="self-center absolute px-auto flex w-full px-4">
+                  <label for="avatar-input" class="bg-dark-300 p-2 rounded-lg mx-auto">
+                    <img src="@/assets/images/edit.svg" width="16" height="16" />
+                  </label>
+                </div>
               </div>
+              <input id="avatar-input" type="file" style="display: none;" />
             </div>
-
+            <label for="avatar-input" class="bg-dark-300 self-center absolute top-[7%] right-[2%] rounded-lg p-2">
+              <img src="@/assets/images/edit.svg" width="16" height="16" />
+            </label>
+            <input id="avatar-input" type="file" style="display: none;" />
           </div>
+
+
 
           <!-- formcontent -->
           <div class="lg:mx-14 md:mx-14 sm:m-5 m-5 font-josefin">
@@ -55,7 +54,7 @@
             <div class="grid grid-cols-4 gap-5 text-dark-500">
               <div class="col-span-4  ">
                 Username
-                <input type="text" v-model="username" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
+                <input type="text" v-model="username" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
                   value="https://www.battlebrains.com/invite/pranav" />
               </div>
 

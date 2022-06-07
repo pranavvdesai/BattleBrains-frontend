@@ -26,18 +26,18 @@
           </div>
 
           <!-- banner -->
-          <div class="relative lg:pt-6 pt-2 lg:mx-10 md:mx-10 sm:mx-5 mx-5 mb-[10%]">
+          <div class="relative mx-5 mt-[5%] mb-[15%]">
             <img src="@/assets/images/profile1.svg" class="w-full" />
-            <div class="absolute bg-gray-50 flex-row flex justify-between top-[45%] w-full px-10">
-              <img src="@/assets/images/dp3.png"
-                class="rounded-full w-[25%] border-dark-100 lg:border-8 md:border-6 border-4" />
+            <div class="absolute -mt-[12%] flex w-full flex-row justify-between px-10">
+              <img src="@/assets/images/dp3.png" class="border-dark-100 w-[25%] rounded-full border-4" />
               <nuxt-link to="/profile/edit">
-                <div class="bg-dark-300 p-2 rounded-lg mt-4 absolute bottom-0 right-10">
-                  <img src="@/assets/images/edit.svg" class="lg:w-5 lg:h-5 md:w-4 md:h-4 sm:w-4 sm:h-4 w-4 h-4" />
+                <div class="bg-dark-300 absolute bottom-0 right-10 mt-4 rounded-lg p-2">
+                  <img src="@/assets/images/edit.svg" width="16" height="16" />
                 </div>
               </nuxt-link>
             </div>
           </div>
+
 
 
           <!-- formsection -->
