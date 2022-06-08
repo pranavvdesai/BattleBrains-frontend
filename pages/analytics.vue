@@ -136,7 +136,12 @@ export default {
 </script>
 
 <style>
-   ::-webkit-scrollbar{
+  ::-webkit-scrollbar{
     background-color: #1D1D26;
+  }
+  @media(max-width: 1024px){
+    ::-webkit-scrollbar{
+      display: none;
+    }
   }
 </style>

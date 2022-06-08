@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Desktop View -->
-    <div class="xs:hidden lg:fixed lg:top-0 lg:flex lg:flex-col lg:items-center lg:w-1/5 lg:h-full lg:bg-dark-300 lg:overflow-y-auto">
+    <div class="xs:hidden lg:fixed lg:top-0 lg:flex lg:flex-col lg:items-center lg:w-1/5 lg:h-full lg:bg-dark-300 lg:overflow-auto">
       <img
         src="@/assets/images/logo.png"
         class="lg:w-1/2 mt-7"

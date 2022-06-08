@@ -38,9 +38,3 @@ export default {
   components: { Togglebar, Homecards, Header },
 };
 </script>
-
-<style>
- ::-webkit-scrollbar{
-    background-color: #1D1D26;
-  }
-</style>

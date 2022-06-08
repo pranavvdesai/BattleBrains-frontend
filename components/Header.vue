@@ -2,7 +2,7 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-50 xs:w-full lg:w-[80%]"
+      class="bg-dark-200 flex flex-row xs:p-6 p-4 items-center justify-between fixed top-0 z-50 xs:w-full lg:w-[80%] lg:h-[8vh] xs:h-[5vh]"
     >
       <div class="head_nav flex flex-col ml-3">
         <div class="xs:hidden lg:flex lg:flex-row">
@@ -103,7 +103,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 8vh;
+    top: 45px;
     margin: 0px auto;
     width: 100%;
     left: 0%;
