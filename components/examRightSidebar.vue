@@ -10,21 +10,22 @@
         :size="18"
       />
     </div>
-
-    <div class="grid grid-cols-4 text-white mt-20 w-[80%] mx-auto text-center">
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2 border-[#1e90ff]">
+    <div
+      class="grid grid-cols-4 text-white mt-20 text-center place-items-center w-[85%] mx-auto"
+    >
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2 border-[#1e90ff]">
         1
       </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2 border-[#1e90ff]">
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2 border-[#1e90ff]">
         2
       </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2 border-[#1e90ff]">
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2 border-[#1e90ff]">
         3
       </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2"> 4 </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2"> 5 </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2"> 6 </span>
-      <span class="py-2 mr-3 mb-4 bg-dark-100 border-2"> 7 </span>
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2"> 4 </span>
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2"> 5 </span>
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2"> 6 </span>
+      <span class="py-2 mr-3 mb-4 w-12 bg-dark-100 border-2"> 7 </span>
     </div>
   </div>
 </template>
