@@ -49,72 +49,72 @@
 
 
           <!-- formcontent -->
-          <div class="lg:mx-14 md:mx-14 sm:m-5 m-5 font-josefin">
+          <div class="lg:mx-20 mx-10 font-josefin">
             <!-- <form class="font-josefin"> -->
             <div class="grid grid-cols-4 gap-5 text-dark-500">
-              <div class="col-span-4  ">
+              <div class="col-span-4">
                 Username
                 <input type="text" v-model="username" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="col-span-4">
                 Name
-                <input type="text" v-model="name" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="name" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="col-span-4">
                 Email
-                <input type="email" v-model="email" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="email" v-model="email" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="col-span-4">
                 Description
-                <textarea rows="3" v-model="description" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
+                <textarea rows="3" v-model="description" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
                   placeholder="Eg: https://www.battlebrains.com/invite/pranav" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Github
-                <input type="text" v-model="github" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="github" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Twitter
-                <input type="text" v-model="twitter" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="twitter" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Linkedin
-                <input type="text" v-model="linkedin" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="linkedin" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Discord
-                <input type="text" v-model="discord" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="discord" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Behance
-                <input type="text" v-model="behance" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="behance" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="lg:col-span-2 col-span-4">
                 Medium
-                <input type="text" v-model="medium" class="bg-dark-300 p-2 rounded w-full font-mont text-sm my-2"
-                  value="https://www.battlebrains.com/invite/pranav" />
+                <input type="text" v-model="medium" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                  placeholder="Lorem Ipsum" />
               </div>
 
               <div class="col-span-4 py-2">
                 <div class="pb-2">Age group</div>
-                <select name="" id="" v-model="age" class="bg-dark-300 p-2 rounded w-full font-mont text-sm">
+                <select name="" id="" v-model="age" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm">
                   <option value="">18-25</option>
                   <option value="">25-35</option>
                   <option value="">35-45</option>
@@ -126,7 +126,7 @@
 
               <div class="col-span-4 py-2">
                 <div class="pb-2">Country</div>
-                <select name="" id="" v-model="country" class="bg-dark-300 p-2 rounded w-full font-mont text-sm">
+                <select name="" id="" v-model="country" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm">
                   <option value="">India</option>
                   <option value="">India</option>
                   <option value="">India</option>
