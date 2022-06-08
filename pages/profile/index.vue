@@ -5,9 +5,8 @@
       <!-- leftsidebar -->
       <Leftprofile />
 
-      <div class="flex flex-col">
         <!-- middle -->
-        <div class="lg:mx-[20%] bg-dark-100 h-screen">
+        <div class="lg:mx-[20%] bg-dark-100 h-screen flex flex-col">
 
           <!-- mobilenav -->
           <div class="lg:hidden mx-[5%] flex justify-between py-6">
@@ -122,8 +121,6 @@
             </div>
           </div>
         </div>
-
-      </div>
 
       <!-- rightsidebar -->
       <Peersidebar @toggle="toggleSidebar" :class="position" />

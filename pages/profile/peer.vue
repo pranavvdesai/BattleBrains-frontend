@@ -4,9 +4,8 @@
       <!-- leftsidebar -->
       <Leftprofile />
 
-      <div class="flex flex-col">
         <!-- middle -->
-        <div class="lg:mx-[20%] bg-dark-100 h-screen">
+        <div class="lg:mx-[20%] bg-dark-100 h-screen flex flex-col">
 
           <!-- mobilenav -->
           <div class="lg:hidden mx-[5%] flex justify-between py-6">
@@ -31,8 +30,6 @@
               <img src="@/assets/images/dp3.png" class="border-dark-100 w-[25%] rounded-full border-4 ml-10" />
             </div>
           </div>
-
-
 
           <!-- formsection -->
           <div class="lg:px-10 mx-10">
@@ -72,8 +69,6 @@
             </div>
           </div>
         </div>
-
-      </div>
 
       <!-- rightsidebar -->
       <Peersidebar @toggle="toggleSidebar" :class="position" />

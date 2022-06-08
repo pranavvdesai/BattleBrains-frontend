@@ -5,10 +5,8 @@
       <!-- leftsidebar -->
       <Leftprofile />
 
-      <div class="flex flex-col">
-
         <!-- middle -->
-        <div class=" lg:mx-[20%] bg-dark-100 h-screen">
+        <div class=" lg:mx-[20%] bg-dark-100 h-screen flex flex-col">
 
           <!-- mobilenav -->
           <div class="lg:hidden mx-[5%] flex justify-between py-6">
@@ -46,8 +44,6 @@
             <input id="avatar-input" type="file" style="display: none;" />
           </div>
 
-
-
           <!-- formcontent -->
           <div class="lg:mx-20 mx-10 font-josefin">
             <!-- <form class="font-josefin"> -->
@@ -72,7 +68,8 @@
 
               <div class="col-span-4">
                 Description
-                <textarea rows="3" v-model="description" class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
+                <textarea rows="3" v-model="description"
+                  class="bg-dark-300 p-2 rounded-lg w-full font-mont text-sm my-2"
                   placeholder="Eg: https://www.battlebrains.com/invite/pranav" />
               </div>
 
@@ -139,11 +136,8 @@
                 class="p-2 bg-blue-100 text-white rounded-xl mb-4 sm:col-span-1 col-span-2 mt-2 font-josefin font-bold">Save</button>
             </div>
             <!-- </form> -->
-
           </div>
         </div>
-
-      </div>
 
       <!-- rightsidebar -->
       <Peersidebar @toggle="toggleSidebar" :class="position" />
