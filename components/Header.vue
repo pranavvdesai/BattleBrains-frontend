@@ -2,18 +2,18 @@
   <div>
     <Togglebar @toggle="toggle" :active="isActive" />
     <div
-      class="header bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-50"
+      class="bg-dark-200 flex flex-row p-4 items-center justify-between fixed top-0 z-50 xs:w-full lg:w-[80%]"
     >
       <div class="head_nav flex flex-col ml-3">
-        <div class=" flex flex-row">
+        <div class="xs:hidden lg:flex lg:flex-row">
           <div class="ml-2">
-            <h3 class="greeting text-lg g font-mont text-dark-700 tracking-wide">
+            <h3 class="text-lg font-mont text-dark-700 tracking-wide">
               <b>{{headfirst}}</b></h3>
-            <p class="learn text-sm l font-josefin text-dark-500">{{headsecond}}</p>
+            <p class="text-sm font-josefin text-dark-500">{{headsecond}}</p>
           </div>
         </div>
 
-        <div @click="toggle" class="toggler lg:hidden block">
+        <div @click="toggle" class="toggler lg:hidden xs:block">
           <menuIcon
             :color="'#fff'"
             :size="20"
@@ -22,13 +22,13 @@
       </div>
       <!-- Search -->
       <div class="flex flex-row items-center">
-        <div class="search_cont"  v-if="$route.name === 'home'">
+        <div class="search_cont bg-dark-200"  v-if="$route.name === 'home'">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <SearchIcon :color="'#9898B3'" :size="20"/>
             </span>
             <input
-              class="sfield placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0 z-20"
+              class="text-white placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0 z-20"
               placeholder="Search"
               type="text"
               name="search"
@@ -44,7 +44,7 @@
           <!-- Dropdown toggle button -->
           <button
             @click="show = !show"
-            class="flex items-center p-2 text-indigo-100 bg-white rounded drop_btn"
+            class="flex items-center p-2 text-indigo-100 bg-white rounded-full h-[30px] w-[30px] bg-cover bg-no-repeat bg-center bg-[url('https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=')]"
           ></button>
         </div>
 
@@ -97,33 +97,7 @@ export default {
 </script>
 
 <style>
-.header {
-  width: 80%;
-  height: 10vh;
-}
-
-.sfield {
-  color: white;
-}
-
-.drop_btn {
-  border-radius: 50%;
-  background-image: url("https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1248542684?k=20&m=1248542684&s=612x612&w=0&h=1yKiRrtPhiqUJXS_yJDwMGVHVkYRk2pJX4PG3TT4ZYM=");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30px;
-  width: 30px;
-}
-
 @media (max-width: 1024px) {
-  .g,
-  .l {
-    display: none;
-  }
-  .header {
-    width: 100%;
-  }
   .search_cont {
     display: flex;
     justify-content: center;
@@ -133,7 +107,6 @@ export default {
     margin: 0px auto;
     width: 100%;
     left: 0%;
-    background-color: #1D1D26;
     padding: 15px;
   }
 }

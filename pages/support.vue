@@ -1,10 +1,10 @@
 <template>
-  <div class="home_right pb-48 md:pb-72 lg:pb-24">
+  <div class="home_right pb-48 md:pb-72 lg:pb-24 lg:w-[80%] xs:w-full lg:ml-[20%] h-[100vh] bg-dark-200">
    <Header :headfirst="'Have a suggestion / need assistance / want to contribute?'" :headsecond="'Write to us and we will get back to you in no time!'"/>
     <div
-      class="flex flex-col pt-16 md:pt-20 lg:pt-20 xl:pt-20 mx-6 lg:w-2/3 my-4"
+      class="flex flex-col mx-6 lg:w-2/3 my-4 relative xs:top-[10vh]"
     >
-      <div class="flex flex-col support_head">
+      <div class="xs:flex xs:flex-col lg:hidden">
         <h3 class="text-lg text-white tracking-wide my-2">
           <b>Have a suggestion / need assistance / want to contribute?</b>
         </h3>
@@ -26,43 +26,21 @@
         Submit
       </div>
     </div>
-    <Bottombar />
   </div>
 </template>
 
 <script>
-import Bottombar from "../components/Bottombar.vue";
 import Togglebar from "../components/Togglebar.vue";
 import Homecards from "../components/Homecards.vue";
 import Header from "../components/Header.vue";
 export default {
   layout: "sideviewLayout",
-  components: { Bottombar, Togglebar, Homecards, Header },
+  components: { Togglebar, Homecards, Header },
 };
 </script>
 
 <style>
-.home_right {
-  position: relative;
-  margin-left: 20%;
-  width: 80%;
-  height: 100vh;
-  background-color: #1d1d26;
-}
-.support_head{
-  display: none;
-}
  ::-webkit-scrollbar{
     background-color: #1D1D26;
   }
-
-@media (max-width: 1024px) {
-  .home_right {
-    width: 100%;
-    margin-left: 0%;
-  }
-  .support_head{
-    display: block;
-  }
-}
 </style>

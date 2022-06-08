@@ -1,8 +1,8 @@
 <template>
-  <div class="home_right pb-96 md:pb-36">
+  <div class="home_right pb-96 md:pb-36 lg:w-[80%] xs:w-full lg:ml-[20%] bg-dark-200 xs:mb-[7vh] lg:mb-0">
     <Header :headfirst="'Your current streak is 8 days 🔥'" :headsecond="'to the moon...'" />
       <!-- main -->
-      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen main">
+      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen relative top-[10vh]">
         <div class="text-white lg:hidden">
             <p class="font-mont text-xl font-extrabold">
               Your current streak is 8 days &#128293;
@@ -30,7 +30,7 @@
             p-3
             bg-dark-400
             rounded-xl
-            my-12
+            my-6
             md:items-center md:justify-between
           "
         >
@@ -117,20 +117,17 @@
           </div>
         </div>
       </div>
-    <Bottombar />
   </div>
 </template>
 
 <script>
 import SideBar from "../components/SideBar.vue";
 import Header from "../components/Header.vue";
-import Bottombar from "../components/Bottombar.vue";
 
 export default {
   components: {
     SideBar,
     Header,
-    Bottombar
   },
     layout: "sideviewLayout",
 
@@ -139,22 +136,7 @@ export default {
 </script>
 
 <style>
-  .home_right{
-    margin-left: 20%;
-    width: 80%;
-    background-color: #1D1D26;
-  }
    ::-webkit-scrollbar{
     background-color: #1D1D26;
-  }
-     .main{
-      position: relative;
-      top: 10vh;
-    }
-  @media(max-width: 1024px){
-    .home_right{
-      width: 100%;
-      margin-left: 0%;
-    }
   }
 </style>

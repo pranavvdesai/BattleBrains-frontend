@@ -9,7 +9,7 @@
         />
       </a>
       <div class="mt-3">
-        <h5 class="text-white text-lg font-bold font-mont text-white">{{title}}</h5>
+        <h5 class="text-white text-lg font-bold font-mont">{{title}}</h5>
         <p class="text-dark-600 text-sm my-1 font-josefin">
          {{desc}}
         </p>
