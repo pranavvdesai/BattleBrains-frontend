@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 bg-dark-100 xs:px-6 lg:px-10 py-4 rounded-xl my-6"
+    class="flex flex-col hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] bg-dark-100 xs:px-6 lg:px-10 py-4 rounded-xl my-6"
   >
     <div class="text-dark-500 font-bold text-base">Question 1</div>
     <div class="text-white text-2xl font-bold my-4">

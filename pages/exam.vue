@@ -14,15 +14,16 @@
             </div>
             <div class="flex items-center">
               <div @click="toggleSidebar">
-                <BoldPaperIcon :size="20" :color="'#B8B8CC'" />
+                <BoldPaperIcon :size="16" :color="'#B8B8CC'" />
               </div>
             </div>
           </div>
         </div>
+        
         <!-- Section 2 -->
-        <div class="flex flex-col xs:w-[100%] lg:w-[73%] lg:mt-6 lg:mr-4">
+        <div class="flex flex-col xs:w-[100%] lg:w-[79%] lg:mt-6 lg:px-8">
           <!-- Navbar -->
-          <div class="mx-6 hidden lg:block">
+          <div class="ml-6 hidden lg:block">
             <div class="text-white font-bold text-2xl">
               📘 It's your moment to excel
             </div>
