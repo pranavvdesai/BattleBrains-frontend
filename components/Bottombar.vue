@@ -1,6 +1,6 @@
 <template>
   <!-- Mobile View -->
-  <div class="bottombar justify-around items-center bg-dark-100 fixed bottom-0">
+  <div class="lg:hidden xs:flex xs:justify-around xs:items-center bg-dark-100 xs:fixed xs:bottom-0 xs:w-full xs:h-[10vh] bottombar">
     <NuxtLink to="/home" class="flex p-2">
       <homeIcon :color="'#fff'" :size="20" />
     </NuxtLink>
@@ -34,17 +34,10 @@ export default {
 };
 </script>
 
-
 <style>
-.bottombar {
-  display: none;
-}
-@media (max-width: 1024px) {
-  .bottombar {
-    display: flex;
-    width: 100%;
-    height: 8vh;
-    z-index: 90;
-  }
-}
+ @media(max-width:1024px){
+   .bottombar{
+     z-index: 90;
+   }
+ }
 </style>

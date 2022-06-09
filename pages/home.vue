@@ -1,15 +1,13 @@
 <template>
-  <div class="home_right  pb-48 md:pb-72 lg:pb-24">
+  <div class="home_right pb-48 md:pb-72 lg:pb-24 lg:ml-[20%] xs:w-[100%] lg:w-[80%] overflow-y-scroll bg-dark-200 xs:mb-[8vh] lg:mb-0">
       <Header :headfirst="'👋 Hi Dev, welcome!'" :headsecond="'Learn Web3, the Fun way'"/>
-        <div class="home_cards flex flex-col justify-items-center" v-for='data in dataArray' :key='data.title'>
-          <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock"/>
+        <div class="home_cards flex flex-col justify-items-center relative xs:top-[20vh] lg:top-[9vh]" v-for='data in dataArray' :key='data.title'>
+          <Homecards :title="data.title" :description="data.desc" :duration="data.duration" :references="data.references" :totalVideos="data.totalVideos" :watched="data.watched" :level="data.level" :lock="data.lock" :tags="data.tags"/>
        </div>
-      <Bottombar />
   </div>
 </template>
 
 <script>
-import Bottombar from '../components/Bottombar.vue'
 import Togglebar from '../components/Togglebar.vue'
 import Header from '../components/Header.vue'
 import Homecards from '../components/Homecards.vue'
@@ -26,7 +24,8 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Beginner',
-            lock : false
+            lock : false,
+            tags : ['INTRODUCTION','NFT','DEFI']
           },
           {
             title : 'Why Blockchain?',
@@ -36,9 +35,10 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Moderate',
-            lock : true
+            lock : true,
+            tags : ['INTRODUCTION','NFT','DEFI']
           },
-              {
+           {
             title : 'Why Blockchain?',
             desc : 'The third generation of the web promises to put us in control of our data...',
             duration : '70 mins',
@@ -46,37 +46,25 @@ import Homecards from '../components/Homecards.vue'
             totalVideos : 4,
             watched : 2,
             level : 'Moderate',
-            lock : true
-          }
+            lock : true,
+            tags : ['INTRODUCTION','NFT','DEFI']
+          },
+          
         ]
       }
     },
     layout: "sideviewLayout",
-    components: { Bottombar, Togglebar, Header, Homecards }
+    components: { Togglebar, Header, Homecards }
 }
 </script>
 
 <style>
-  .home_right{
-    margin-left: 20%;
-    width: 80%;
-    background-color: #1D1D26;
-    overflow-y: scroll;
-  }
-  .home_cards{
-    position: relative;
-    top: 8vh;
-  }
   ::-webkit-scrollbar{
     background-color: #1D1D26;
   }
   @media(max-width: 1024px){
-    .home_right{
-      width: 100%;
-      margin-left: 0%;
-    }
-    .home_cards{
-      top: 17vh;
+    ::-webkit-scrollbar{
+      display: none;
     }
   }
 </style>
