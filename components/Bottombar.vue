@@ -22,13 +22,14 @@ import activityIcon from "./icons/activityIcon";
 import releaseIcon from "./icons/releaseIcon";
 import supportIcon from "./icons/supportIcon";
 
+
 export default {
   name: "leftsidebar",
   components: {
     homeIcon,
     activityIcon,
     releaseIcon,
-    supportIcon,
+    supportIcon
   },
 };
 </script>

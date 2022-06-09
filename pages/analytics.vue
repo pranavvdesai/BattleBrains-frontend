@@ -97,13 +97,6 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-
-
-</script>
-
-=======
->>>>>>> main
 <style>
 .home_right {
   margin-left: 20%;
@@ -123,8 +116,4 @@ export default {
     margin-left: 0%;
   }
 }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> main
