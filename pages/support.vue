@@ -1,5 +1,5 @@
 <template>
-  <div class="home_right pb-48 md:pb-72 lg:pb-24 lg:w-[80%] xs:w-full lg:ml-[20%] h-[100vh] bg-dark-200">
+  <div class="home_right pb-48 md:pb-72 lg:pb-24 lg:w-[80%] xs:w-full lg:ml-[20%] h-screen bg-dark-200 overflow-y-scroll">
    <Header :headfirst="'Have a suggestion / need assistance / want to contribute?'" :headsecond="'Write to us and we will get back to you in no time!'"/>
     <div
       class="flex flex-col mx-6 lg:w-2/3 my-4 relative xs:top-[10vh]"
@@ -38,3 +38,14 @@ export default {
   components: { Togglebar, Homecards, Header },
 };
 </script>
+
+<style>
+  ::-webkit-scrollbar{
+    background-color: #1D1D26;
+  }
+  @media(max-width: 1024px){
+    ::-webkit-scrollbar{
+      display: none;
+    }
+  }
+</style>

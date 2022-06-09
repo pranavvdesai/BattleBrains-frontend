@@ -25,7 +25,7 @@
         <div class="search_cont bg-dark-200"  v-if="$route.name === 'home'">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <SearchIcon :color="'#9898B3'" :size="20"/>
+              <SearchIcon :color="'#9898B3'" :size="20" />
             </span>
             <input
               class="text-white placeholder:text-dark-500 font-josefin block bg-dark-300 w-full rounded-lg py-2 pl-10 pr-3 shadow-sm sm:text-sm outline-0 z-20"
@@ -68,24 +68,23 @@
 <script>
 import Togglebar from "./Togglebar.vue";
 import NotificationIcon from "./icons/notificationIcon.vue";
-import SearchIcon from "./icons/searchIcon"
+import SearchIcon from "./icons/searchIcon";
 import menuIcon from "./icons/menuIcon";
 
 export default {
-
   data() {
     return {
       isActive: false,
       show: false,
     };
   },
-  props:{
-    headfirst : {
-      type : String
+  props: {
+    headfirst: {
+      type: String,
     },
-    headsecond : {
-      type : String
-    }
+    headsecond: {
+      type: String,
+    },
   },
   methods: {
     toggle() {
