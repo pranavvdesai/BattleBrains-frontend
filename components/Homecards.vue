@@ -1,5 +1,5 @@
  <template>
-<div class="relative">
+<div class="relative z-10">
   <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
   <div class="flex h-1/2 lg:h-72 mt-10 px-5 relative lg:px-10">
     <div class="rightSideBar bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">

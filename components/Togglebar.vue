@@ -18,8 +18,8 @@
     <!--Bottom XP div-->
      <div class="xp_info flex flex-col items-start mt-24 border-2 border-white px-4 py-6 rounded-md mx-5">
         <div class="flex flex-row">
-          <h4 class="name mr-2"><b>Novice</b></h4>
-          <p class="xp mx-1">1400/2000 XPs</p>
+          <h4 class="name mr-2 text-dark-700"><b>Novice</b></h4>
+          <p class="xp mx-1 text-dark-600">1400/2000 XPs</p>
         </div>
           <div class="bg-white w-full h-3 items-center rounded-lg mt-2">
                 <div
