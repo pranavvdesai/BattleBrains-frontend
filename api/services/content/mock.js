@@ -26,7 +26,8 @@ export default ($axios) => {
                     counts: {
                         total: 9,
                         videos: 4,
-                        references: 5,
+                        blog: 3,
+                        urls: 2,
                         time: {
                             required: 66,
                             unit: "mins"
