@@ -1,7 +1,7 @@
 <template>
   <body class="bg-dark-100">
     <section class="font-josefin">
-      <ExamScreenSidebar />
+      <ExamScreenSidebar :questionsArray="questionsArray" />
       <div class="lg:flex lg:justify-end">
         <!-- Navbar Responsve -->
         <div class="lg:hidden bg-dark-200 px-6">
@@ -14,28 +14,29 @@
             </div>
             <div class="flex items-center">
               <div @click="toggleSidebar">
-                <BoldPaperIcon :size="20" :color="'#B8B8CC'" />
+                <BoldPaperIcon :size="16" :color="'#B8B8CC'" />
               </div>
             </div>
           </div>
         </div>
+
         <!-- Section 2 -->
-        <div class="flex flex-col xs:w-[100%] lg:w-[73%] lg:mt-6 lg:mr-4">
+        <div class="flex flex-col xs:w-[100%] lg:w-[80%] lg:mt-6 lg:px-8">
           <!-- Navbar -->
-          <div class="mx-6 hidden lg:block">
+          <div class="ml-6 hidden lg:block">
             <div class="text-white font-bold text-2xl">
               📘 It's your moment to excel
             </div>
             <div class="text-dark-500">Calm down, you got this!</div>
           </div>
 
-          <!-- Question1 -->
-          <ExamQuestionCard />
-          <!-- Question2 -->
-          <ExamQuestionCard />
+          <div v-for='data in questionsArray' :key='data.qNo'>
+            <ExamQuestionCard :qNo="data.qNo" :isAttempted="data.isAttempted" :question="data.question"
+              :optionsArray="data.optionsArray" :answer="data.answer" />
+          </div>
 
           <!-- rightsidebar -->
-          <ExamRightSidebar @toggle="toggleSidebar" :class="position" />
+          <ExamRightSidebar @toggle="toggleSidebar" :class="position" :questionsArray="questionsArray" />
         </div>
       </div>
     </section>
@@ -51,6 +52,40 @@ import ExamQuestionCard from "../components/examQuestionCard.vue";
 export default {
   data() {
     return {
+      questionsArray: [
+        {
+          qNo: 1,
+          isAttempted: true,
+          question: "What is the meaning of life?",
+          optionsArray: [
+            {
+              option: 'Harshal Dave',
+              val: 1
+            },
+            {
+              option: 'Pranav Desai',
+              val: 2
+            }
+          ],
+          answer: null,
+        },
+        {
+          qNo: 2,
+          isAttempted: false,
+          question: "How old are you?",
+          optionsArray: [
+            {
+              option: 'Harshal Dave',
+              val: 1
+            },
+            {
+              option: 'Pranav Desai',
+              val: 2
+            }
+          ],
+          answer: null,
+        },
+      ],
       position: "-right-full",
     };
   },
