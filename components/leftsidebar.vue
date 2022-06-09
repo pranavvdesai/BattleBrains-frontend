@@ -1,7 +1,11 @@
 <template>
+<<<<<<< HEAD
   <div
     class="h-screen fixed top-0 hidden lg:block lg:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-1/4 z-10 py-4 px-4 transition-all duration-300"
   >
+=======
+  <div class="h-screen fixed top-0 xs:hidden lg:block lg:left-0 overflow-y-auto flex-row flex-nowrap overflow-hidden shadow-3xl bg-dark-300 lg:w-[20%] w-1/4 z-100 py-4 px-4 transition-all duration-300">
+>>>>>>> f5f79a989acc94dcd0a567960ad9e4a70320b867
     <div class="">
       <div class="flex mt-4 align-middle">
         <leftArrowIcon :color="'#9898B3'" :size="14" />
@@ -43,10 +47,13 @@ import leftArrowIcon from "./icons/leftArrowIcon";
 import PaperIcon from "./icons/paperIcon";
 
 export default {
+<<<<<<< HEAD
   name: "leftsidebar",
+=======
+>>>>>>> f5f79a989acc94dcd0a567960ad9e4a70320b867
   components: {
     leftArrowIcon,
     PaperIcon,
-  },
+  }
 };
 </script>

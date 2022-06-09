@@ -9,16 +9,17 @@
         />
       </a>
       <div class="mt-3">
-        <h5 class="text-white text-lg font-bold font-mont text-white">Card title</h5>
+        <h5 class="text-white text-lg font-bold font-mont">{{title}}</h5>
         <p class="text-dark-600 text-sm my-1 font-josefin">
-          The Web3 Academy with everything for everyone. Discover, Learn and Make friends!
+         {{desc}}
         </p>
-        <div class="flex my-2">
-          <h1 class="mr-2 text-blue-300 font-josefin">DEFI</h1>
-          <h1 class="mr-2 text-pink font-josefin">NFTs</h1>
+        <div class="flex flex-wrap my-2">
+          <div v-for="(tag,index) in tags">
+            <h1 class="mr-2 font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</h1>
+          </div>
         </div>
         <div class="flex mt-3 justify-between">
-          <p class="text-dark-500 text-sm font-josefin">1 month ago</p>
+          <p class="text-dark-500 text-sm font-josefin">{{posted}}</p>
           <input
             type="checkbox"
             class="mt-2"
@@ -28,3 +29,22 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default{
+    props:{
+      title : {
+        type: String
+      },
+      desc : {
+        type : String
+      },
+      posted : {
+        type : String
+      },
+      tags:{
+        type: Array
+      }
+    }
+  }
+</script>

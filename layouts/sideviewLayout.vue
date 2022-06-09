@@ -1,21 +1,18 @@
 <template>
-  <section class="flex screen_sect">
-         <SideBar />
-          <Nuxt />
-  </section>
+  <div class="flex">
+    <SideBar />
+    <Nuxt />
+    <Bottombar />
+  </div>
 </template>
 
 <script>
-  import SideBar from "../components/SideBar.vue";
-  export default{
-      components : {
-          SideBar
-      }
+import SideBar from "../components/SideBar.vue";
+import Bottombar from "../components/Bottombar.vue";
+export default {
+  components: {
+    SideBar,
+    Bottombar
   }
+}
 </script>
-
-<style>
-  .screen_sect{
-    height: auto;
-  }
-</style>
