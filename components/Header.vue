@@ -28,13 +28,17 @@
           </div>
         </div>
 
-        <div @click="toggle" class="toggler lg:hidden block">
+        <div
+          @click="toggle"
+          class="toggler lg:hidden block"
+          v-if="showNotif !== false"
+        >
           <menuIcon :color="'#fff'" :size="20" />
         </div>
       </div>
       <!-- Search -->
       <div class="flex flex-row items-center">
-        <div class="search_cont"  v-if="$route.name === 'home'">
+        <div class="search_cont" v-if="$route.name === 'home'">
           <label class="relative block w-5/6 z-0 lg:w-full">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
               <SearchIcon :color="'#9898B3'" :size="20" />
@@ -119,6 +123,14 @@ export default {
     },
     headsecond: {
       type: String,
+    },
+    showNotif: {
+      type: Boolean,
+      default: true,
+    },
+    showDropdown: {
+      type: Boolean,
+      default: true,
     },
   },
   methods: {
