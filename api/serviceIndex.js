@@ -1,5 +1,5 @@
-import blogsService from './blogService'
-import blogsMockService from './blogService/mock'
+import blogsService from './services/blogs'
+import blogsMockService from './services/blogs/mock'
 
 const isMock = true;
 
