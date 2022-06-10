@@ -24,7 +24,7 @@
                   </div>
                 </div>
               </div>
-
+            </div>
               <div class="lg:hidden">
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
