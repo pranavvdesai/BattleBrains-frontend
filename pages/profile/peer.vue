@@ -1,5 +1,4 @@
 <template>
-
   <body class="bg-dark-100">
     <section class="h-screen">
       <!-- leftsidebar -->
@@ -27,35 +26,27 @@
           <!-- banner -->
           <div class="relative mx-5 mt-[5%] mb-[15%]">
             <img src="@/assets/images/profile1.svg" class="w-full" />
-            <div class="absolute -mt-[12%] flex w-full justify-between px-10">
-              <img src="@/assets/images/dp3.png" class="border-dark-100 w-[25%] rounded-full border-4" />
-              <nuxt-link to="/profile/edit">
-                <div class="bg-dark-300 absolute bottom-0 right-10 mt-4 rounded-lg p-2">
-                  <img src="@/assets/images/edit.svg" width="16" height="16" />
-                </div>
-              </nuxt-link>
+            <div class="absolute -mt-[12%] flex w-full">
+              <img src="@/assets/images/dp3.png" class="border-dark-100 w-[25%] rounded-full border-4 ml-10" />
             </div>
           </div>
 
-
-
           <!-- formsection -->
-          <div class="lg:mx-20 mx-10">
+          <div class="lg:px-10 mx-10">
             <div class="flex items-center pb-1">
               <h1 class="font-mont text-2xl text-white mr-3 font-extrabold">Pranav</h1>
               <p class=" font-josefin text-blue-100 lg:text-lg md:text-lg sm:text-base text-base">
                 pranav@gmail.com</p>
             </div>
             <div>
-              <p class="text-dark-600 lg:text-base md:text-base sm:text-sm text-sm font-josefin">21 | Computational
+              <p class="text-dark-600 lg:text-base md:text-base sm:text-sm text-sm font-josefin">21 |
+                Computational
                 Graphics |
                 Deep
                 Learning | Design and UX
                 | ΨΦ | Building next
                 gen web3 edtech @battlebrains_</p>
             </div>
-
-            <!-- Social links -->
             <div class="flex items-stretch mt-5">
               <a href="https://battlebrains.xyz" target="_blank" class="bg-dark-300 p-2 mr-2 rounded-lg">
                 <img src="@/assets/images/github.svg" class="w-5 h-5" />
@@ -75,49 +66,6 @@
               <a href="https://battlebrains.xyz" target="_blank" class="bg-dark-300 p-2 rounded-lg">
                 <img src="@/assets/images/medium.svg" class="w-5 h-5" />
               </a>
-            </div>
-
-            <!-- Text fields -->
-            <div class="grid grid-cols-3 text-dark-500 font-josefin">
-              <div class="col-span-3 py-2 pt-6">
-                Your referral link
-              </div>
-              <input class="lg:col-span-2 col-span-3 bg-dark-300 p-2 rounded-md w-full font-mont text-sm text-blue-100"
-                v-on:focus="$event.target.select()" ref="clone" readonly :value="text" />
-              <button @click="copy"
-                class="col-span-1 lg:block hidden bg-dark-300 p-2 rounded ml-4 font-josefin text-sm font-bold w-20">Copy</button>
-
-              <div class="col-span-3 py-2">
-                Metamask
-              </div>
-              <input type="text" disabled
-                class="lg:col-span-2 col-span-3 bg-dark-300 p-2 rounded-md w-full font-mont text-sm"
-                v-model="metamask" />
-              <button
-                class="col-span-1 lg:block hidden bg-dark-300 p-2 rounded ml-4 font-josefin text-sm font-bold w-20">Connect</button>
-
-              <div class="col-span-3 py-2">
-                Email
-              </div>
-              <input type="email" class="lg:col-span-2 col-span-3 bg-dark-300 p-2 rounded-lg w-full font-mont text-sm"
-                v-model="email" />
-              <button
-                class="col-span-1 lg:block hidden bg-dark-300 p-2 rounded ml-4 font-josefin text-sm font-bold w-20">Verified</button>
-
-              <div class="col-span-3 py-2">
-                Age group
-              </div>
-              <!-- <input type="email" class="lg:col-span-2 col-span-3 mb-6 bg-dark-300 p-2 rounded w-full font-mont text-sm" -->
-              <!-- value="https://www.battlebrains.com/invite/pranav" /> -->
-              <select name="" id="" v-model="age"
-                class="lg:col-span-2 col-span-3 mb-6 bg-dark-300 p-2 rounded-lg w-full font-mont text-sm">
-                <option value="">18-25</option>
-                <option value="">25-35</option>
-                <option value="">35-45</option>
-                <option value="">45-55</option>
-                <option value="">55-65</option>
-                <option value="">65+</option>
-              </select>
             </div>
           </div>
         </div>
@@ -152,11 +100,6 @@ export default {
     return {
       position: "-right-full",
       hidden: true,
-      // refLink: "https://battlebrains.xyz/register?ref=pranav",
-      text: 'https://battlebrains.xyz/register?ref=pranav',
-      metamask: "0xLoremIpsum",
-      email: "",
-      age: "",
     };
   },
   components: {
@@ -181,10 +124,6 @@ export default {
     toggleModal() {
       this.hidden = !this.hidden;
     },
-    copy() {
-      this.$refs.clone.focus();
-      document.execCommand('copy');
-    }
   },
 };
 </script>

@@ -1,4 +1,4 @@
-import { handleResponse, mockPendingPromise } from '../utils';
+import { handleResponse, mockPendingPromise } from '../../utils';
 import mockAssets from './mockAssets'
 
 export default ($axios) => {

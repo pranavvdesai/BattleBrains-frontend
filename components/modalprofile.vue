@@ -2,22 +2,21 @@
   <div class="px-4 pb-4">
     <div class="xl:mx-5 lg:mx-1">
 
-      <div class="flex text-light-400 mt-4 justify-between items-center">
+      <div class="flex text-light-400 mt-4 justify-between items-center py-3">
         <p>Receive Newsletter</p>
         <Swit v-model="toggleValue1" />
-
       </div>
-      <div class="flex text-light-400 py-2 items-center justify-between">
-        <p>Receive Newsletter</p>
+      <div class="flex text-light-400 py-2 items-center justify-between py-3">
+        <p>Push Notifications</p>
         <Swit v-model="toggleValue2" />
       </div>
-      <div class="flex text-light-400 items-center justify-between mb-5">
-        <p>Receive Newsletter</p>
+      <div class="flex text-light-400 items-center justify-between mb-5 py-3">
+        <p>Public Profile</p>
         <Swit v-model="toggleValue3" />
 
       </div>
-      <div class="flex border-2 border-light-300 mx-8 rounded-md justify-between p-3">
-        <p class="text-light-300">Logout</p>
+      <div class="flex border border-dark-500 mx-8 rounded-md justify-between p-3">
+        <p class="text-light-300 font-mont">Logout</p>
         <img
           src="@/assets/images/logout.svg"
           alt="Paper"
