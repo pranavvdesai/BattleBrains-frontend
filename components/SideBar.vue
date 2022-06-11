@@ -1,13 +1,13 @@
 <template>
   <div>
     <!-- Desktop View -->
-    <div class="xs:hidden lg:fixed lg:top-0 lg:flex lg:flex-col lg:items-center lg:w-1/5 lg:h-full lg:bg-dark-300 lg:overflow-auto">
+    <div class="xs:hidden lg:fixed lg:top-0 lg:flex lg:flex-col lg:items-center lg:w-1/5 lg:h-full lg:bg-dark-300 lg:overflow-y-auto lg:overflow-x-hidden">
       <img
         src="@/assets/images/logo.png"
         class="lg:w-1/2 mt-7"
         alt="logo"
       />
-      <div class="flex flex-col w-3/4 my-9 flex-1">
+      <div class="flex flex-col w-3/4 my-6 flex-1">
         <NuxtLink to="/home" class="link rounded-lg flex py-4 px-6 bg-dark-300 align-center hover:bg-dark-200">
           <homeIcon :color="'#fff'" :size="22"/>
           <h3 class="ml-3 link_content text-dark-500 font-josefin"><b>Home</b></h3>
