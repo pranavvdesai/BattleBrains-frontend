@@ -6,23 +6,21 @@
       <Leftsidebar />
       <div class="flex flex-col">
         <!-- middle -->
-        <div class=" lg:mx-[20%] ">
-          <div class=" bg-dark-100 h-screen">
-
-            <div class="xl:mx-10 mx-6 bg-dark-100 ">
-
+        <div class="lg:mx-[20%]">
+          <div class="bg-dark-100 h-screen">
+            <div class="xl:mx-10 mx-6 bg-dark-100">
               <div class="hidden lg:block">
                 <div class="flex justify-between pt-8 pb-4">
-                  <div class="flex items-center ">
+                  <div class="flex items-center">
                     <LeftArrowIcon
                       class="mr-2"
                       :size="16"
                       :color="'#9898B3'"
                     />
-                    <p class=" text-sm text-dark-500 font-josefin">Back</p>
+                    <p class="text-sm text-dark-500 font-josefin">Back</p>
                   </div>
                   <div class="flex items-center">
-                    <p class=" text-sm text-dark-500 font-josefin">Next</p>
+                    <p class="text-sm text-dark-500 font-josefin">Next</p>
                     <RightArrowIcon
                       class="ml-2"
                       :size="16"
@@ -31,7 +29,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="lg:hidden">
                 <div class="flex justify-between py-6 ">
                   <div class="flex items-center ">
@@ -40,7 +37,7 @@
                       :size="16"
                       :color="'#fff'"
                     />
-                    <p class=" text-base font-bold text-white font-mont">BattleBrains</p>
+                    <p class=" text-base font-bold text-white font-mont">{{title}}</p>
                   </div>
                   <div class="flex items-center">
                     <div @click="toggleModal">
@@ -81,15 +78,17 @@
               </div>
 
               <p class="text-base text-dark-600 font-josefin w-5/6">
-                The Web3 Academy with everything for everyone. Discover, Learn
-                and Make friends!
+                {{desc}}
               </p>
-              <div class="flex my-3">
-                <span class="mr-3 text-sm text-blue-300 font-josefin">DEFI</span>
-                <span class="mr-3 text-sm text-pink font-josefin">NFTs</span>
-                <span class="mr-3 text-sm text-yellow font-josefin">PFP</span>
+              <div class="flex flex-wrap my-3">
+                <div v-for="(tag,index) in tags">
+                  <span
+                    class="mr-3 text-sm font-josefin"
+                    v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')"
+                  >{{tag}}</span>
+                </div>
               </div>
-              <p class="text-sm font-josefin text-dark-500">1 month ago</p>
+              <p class="text-sm font-josefin text-dark-500">{{posted}}</p>
 
               <!-- commentsection -->
               <hr class="w-full text-white my-5" />
@@ -109,8 +108,8 @@
 
       <!-- bottomnav -->
       <div
-        :class="{hidden : hidden}"
-        class="  fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full lg:hidden"
+        :class="{ hidden: hidden }"
+        class="fixed bg-dark-300 shadow-lg bottom-0 left-0 w-full lg:hidden"
       >
         <Modal />
       </div>
@@ -135,6 +134,10 @@ export default {
     return {
       position: "-right-full",
       hidden: true,
+      title: "BattleBrains",
+      desc: "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
+      posted: "1 month ago",
+      tags: ["DEFI", "NFT", "PFP"],
     };
   },
   components: {

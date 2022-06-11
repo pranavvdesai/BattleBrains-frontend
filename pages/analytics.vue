@@ -1,19 +1,16 @@
 <template>
-  <div class="home_right pb-96 md:pb-36">
-    <Header
-      :headfirst="'Your current streak is 8 days &#128293;'"
-      :headsecond="'to the moon...'"
-    />
-    <!-- main -->
-    <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen main">
-      <div class="text-white lg:hidden">
-        <p class="font-mont text-xl font-extrabold">
-          Your current streak is 8 days &#128293;
-        </p>
-        <span class="font-josefin font-semibold text-dark-500"
-          >to the moon...</span
-        >
-      </div>
+  <div class="home_right pb-96 md:pb-36 lg:w-[80%] xs:w-full lg:ml-[20%] bg-dark-200 xs:mb-[7vh] lg:mb-0 overflow-y-scroll">
+    <Header :headfirst="'Your current streak is 8 days 🔥'" :headsecond="'to the moon...'" />
+      <!-- main -->
+      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen relative top-[10vh] mt-5">
+        <div class="text-white lg:hidden">
+            <p class="font-mont text-xl font-extrabold">
+              Your current streak is 8 days &#128293;
+            </p>
+            <span class="font-josefin font-semibold text-dark-500"
+              >to the moon...</span
+            >
+          </div>
       <!-- progress bar -->
       <Progressbar :text="progress.text" :percentage="progress.percentage" />
       <!-- referral -->
@@ -37,14 +34,12 @@
         />
       </div>
     </div>
-    <Bottombar />
   </div>
 </template>
 
 <script>
 import SideBar from "../components/SideBar.vue";
 import Header from "../components/Header.vue";
-import Bottombar from "../components/Bottombar.vue";
 import Referral from "../components/Referral.vue";
 import Analyticscard from "../components/Analyticscard.vue";
 import Progressbar from "../components/Progressbar.vue";
@@ -91,29 +86,18 @@ export default {
     Progressbar,
     SideBar,
     Header,
-    Bottombar,
   },
   layout: "sideviewLayout",
 };
 </script>
 
 <style>
-.home_right {
-  margin-left: 20%;
-  width: 80%;
-  background-color: #1d1d26;
-}
-::-webkit-scrollbar {
-  background-color: #1d1d26;
-}
-.main {
-  position: relative;
-  top: 10vh;
-}
-@media (max-width: 1024px) {
-  .home_right {
-    width: 100%;
-    margin-left: 0%;
+  ::-webkit-scrollbar{
+    background-color: #1D1D26;
   }
-}
+  @media(max-width: 1024px){
+    ::-webkit-scrollbar{
+      display: none;
+    }
+  }
 </style>
