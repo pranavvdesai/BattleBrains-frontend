@@ -1,0 +1,32 @@
+<template>
+    <svg
+      id="Iconly_Light-Outline_Plus"
+      data-name="Iconly/Light-Outline/Plus"
+      xmlns="http://www.w3.org/2000/svg"
+      :width="size"
+      :height="size"
+      viewBox="0 0 21.5 21.5"
+      class=" inline"
+    >
+      <g id="Plus">
+        <path
+          id="Combined_Shape"
+          data-name="Combined Shape"
+          d="M6.064,21.5C2.437,21.5,0,18.954,0,15.165V6.335C0,2.546,2.437,0,6.064,0h9.372C19.063,0,21.5,2.546,21.5,6.335v8.83c0,3.789-2.437,6.335-6.064,6.335ZM1.5,6.335v8.83C1.5,18.1,3.291,20,6.064,20h9.372C18.209,20,20,18.1,20,15.165V6.335C20,3.4,18.209,1.5,15.436,1.5H6.064C3.291,1.5,1.5,3.4,1.5,6.335ZM10,14.4V11.49H7.084a.75.75,0,1,1,0-1.5H10V7.078a.75.75,0,1,1,1.5,0V9.99h2.916a.75.75,0,1,1,0,1.5H11.5V14.4a.75.75,0,0,1-1.5,0Z"
+          transform="translate(0)"
+          :fill="color"
+        />
+      </g>
+    </svg>
+
+</template>
+
+<script>
+export default {
+  name: "addComment",
+  props: {
+    color: String,
+    size: Number,
+  },
+};
+</script>

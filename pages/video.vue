@@ -90,6 +90,12 @@
                 <span class="mr-3 text-sm text-yellow font-josefin">PFP</span>
               </div>
               <p class="text-sm font-josefin text-dark-500">1 month ago</p>
+
+              <!-- commentsection -->
+              <hr class="w-full text-white my-5" />
+              <div class="text-white mb-5">Comments</div>
+
+              <Comment />
             </div>
           </div>
         </div>
@@ -121,6 +127,8 @@ import HeartIcon from "../components/icons/heartIcon.vue";
 import RightArrowIcon from "../components/icons/rightArrowIcon.vue";
 import PaperIcon from "../components/icons/paperIcon.vue";
 import InfoIcon from "../components/icons/infoIcon.vue";
+import AddComment from "../components/icons/addComment.vue";
+import Comment from "../components/Comment.vue";
 
 export default {
   data() {
@@ -138,6 +146,8 @@ export default {
     RightArrowIcon,
     PaperIcon,
     InfoIcon,
+    AddComment,
+    Comment,
   },
   methods: {
     toggleSidebar() {
