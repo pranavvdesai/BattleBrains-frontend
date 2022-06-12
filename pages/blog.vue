@@ -7,7 +7,7 @@
         <div class="header flex flex-col mt-3 w-[87%] lg:w-[80%] lg:ml-20 ml-8 sm:ml-10 md:ml-14">
 
           <!-- mbile bottom drawer -->
-          <div class="lg:hidden flex justify-between py-6">
+          <div class="lg:hidden xs:flex xs:justify-between xs:py-6">
             <div class="flex items-center">
               <LeftArrowIcon class="mr-5" :size="16" :color="'#fff'" />
               <p class="text-base font-bold text-white font-mont">
