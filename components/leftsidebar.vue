@@ -18,7 +18,6 @@
         </h2>
         <h2 class="text-pink text-sm font-josefin">BLOCKCHAIN</h2>
       </div>
-      y
       <p class="mt-8 text-lg text-light-300 font-josefin">
         A blockchain is a digitally distributed, decentralized, public ledger
         that exists across a network...

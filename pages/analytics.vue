@@ -2,7 +2,7 @@
   <div class="home_right pb-96 md:pb-36 lg:w-[80%] xs:w-full lg:ml-[20%] bg-dark-200 xs:mb-[7vh] lg:mb-0 overflow-y-scroll">
     <Header :headfirst="'Your current streak is 8 days 🔥'" :headsecond="'to the moon...'" />
       <!-- main -->
-      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen relative top-[10vh] mt-5">
+      <div class="xs:w-full xs:px-4 md:w-4/5 md:py-10 md:px-8 h-screen relative top-[75px]">
         <div class="text-white lg:hidden">
             <p class="font-mont text-xl font-extrabold">
               Your current streak is 8 days &#128293;

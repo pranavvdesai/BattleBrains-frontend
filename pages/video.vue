@@ -3,79 +3,79 @@
     <section class="h-screen">
       <!-- leftsidebar -->
       <Leftsidebar />
-      <div class="flex flex-col">
-        <!-- middle -->
-        <div class="lg:mx-[20%]">
-          <div class="bg-dark-100 h-screen">
-            <div class="xl:mx-10 mx-6 bg-dark-100">
-              <div class="hidden lg:block">
-                <div class="flex justify-between pt-8 pb-4">
-                  <div class="flex items-center">
-                    <LeftArrowIcon class="mr-2" :size="16" :color="'#9898B3'" />
-                    <p class="text-sm text-dark-500 font-josefin">Back</p>
-                  </div>
-                  <div class="flex items-center">
-                    <p class="text-sm text-dark-500 font-josefin">Next</p>
-                    <RightArrowIcon
-                      class="ml-2"
-                      :size="16"
-                      :color="'#9898B3'"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="lg:hidden">
-                <div class="flex justify-between py-6 ">
-                  <div class="flex items-center ">
-                    <LeftArrowIcon
-                      class="mr-2"
-                      :size="16"
-                      :color="'#fff'"
-                    />
-                    <p class=" text-base font-bold text-white font-mont">{{title}}</p>
-                  </div>
-                  <div class="flex items-center">
-                    <div @click="toggleModal">
-                      <InfoIcon class="mr-4" :size="20" :color="'#B8B8CC'" />
-                    </div>
-                    <div @click="toggleSidebar">
-                      <PaperIcon :size="20" :color="'#B8B8CC'" />
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <iframe
-                class="w-full xl:h-128 lg:h-96 h-80"
-                src="https://www.youtube.com/embed/KWxENcTAe1A"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <div class="flex justify-between my-4">
-                <div class="flex items-center">
-                  <h1 class="text-base text-white font-mont font-bold mr-4">
-                    BattleBrains
-                  </h1>
-                  <input type="checkbox" />
-                </div>
-                <HeartIcon :size="16" :color="'#fff'" />
+      <!-- middle -->
+      <div class="flex flex-col lg:mx-[20%] bg-dark-100 h-screen">
+        <div class="px-[5%] bg-dark-100 hidden lg:block">
+          <div class="hidden lg:block">
+            <div class="flex justify-between pt-8 pb-4">
+              <div class="flex items-center">
+                <LeftArrowIcon class="mr-2" :size="16" :color="'#9898B3'" />
+                <p class="text-sm text-dark-500 font-josefin">Back</p>
               </div>
-
-              <p class="text-base text-dark-600 font-josefin w-5/6">
-               {{desc}}
-              </p>
-              <div class="flex flex-wrap my-3">
-                <div v-for="(tag,index) in tags">
-                <span class="mr-3 text-sm font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</span>
-                </div>
+              <div class="flex items-center">
+                <p class="text-sm text-dark-500 font-josefin">Next</p>
+                <RightArrowIcon
+                  class="ml-2"
+                  :size="16"
+                  :color="'#9898B3'"
+                />
               </div>
-              <p class="text-sm font-josefin text-dark-500">{{posted}}</p>
             </div>
           </div>
         </div>
+        <div class="lg:hidden">
+          <div class="flex justify-between py-6 ">
+            <div class="flex items-center ">
+              <LeftArrowIcon
+                class="mx-4"
+                :size="16"
+                :color="'#fff'"
+              />
+              <p class=" text-base font-bold text-white font-mont">{{title}}</p>
+            </div>
+            <div class="flex items-center">
+              <div @click="toggleModal">
+                <InfoIcon class="mr-4" :size="20" :color="'#B8B8CC'" />
+              </div>
+              <div @click="toggleSidebar">
+                <PaperIcon class="mr-4" :size="20" :color="'#B8B8CC'" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-[5%]">
+          <iframe
+            class="w-full xl:h-128 lg:h-96 h-80"
+            src="https://www.youtube.com/embed/KWxENcTAe1A"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+
+          <div class="flex justify-between my-4">
+            <div class="flex items-center">
+              <h1 class="text-base text-white font-mont font-bold mr-4">
+                BattleBrains
+              </h1>
+              <input type="checkbox" />
+            </div>
+            <HeartIcon :size="16" :color="'#fff'" />
+          </div>
+
+          <p class="text-base text-dark-600 font-josefin w-5/6">
+            {{desc}}
+          </p>
+          <div class="flex flex-wrap my-3">
+            <div v-for="(tag,index) in tags">
+              <span class="mr-3 text-sm font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</span>
+            </div>
+          </div>
+          <p class="text-sm font-josefin text-dark-500">{{posted}}</p>
+        </div>
       </div>
+
 
       <!-- rightsidebar -->
       <Resources @toggle="toggleSidebar" :position="position" />

@@ -2,12 +2,12 @@
 <div class="relative z-10">
   <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
   <div class="flex h-1/2 lg:h-72 mt-5 px-5 relative lg:px-10">
-    <div class="rightSideBar bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col md:flex-row lg:flex-row z-10 relative">
+    <div class="bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col lg:flex-row z-10 relative">
       <div class="lock_back absolute h-full w-full bg-black opacity-50 rounded-2xl" v-if="lock"></div>
         <!-- 1 -->
         <div class="flex flex-col justify-between p-6 w-full lg:w-1/2 lg:h-full">
           <div class="">
-            <div class="flex sm:flex-row xs:flex-col">
+            <div class="flex flex-wrap">
               <div v-for="(tag,index) in tags">
                 <h1 class="mr-4 font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</h1>
               </div>
@@ -21,18 +21,18 @@
           </div>
           <div class="flex text-white flex-col lg:flex-row justify-between">
             <div class="flex items-center mt-3">
-              <p class="mr-3 text-dark-700 font-josefin text-sm">{{ watched }}/{{ totalVideos }} Videos</p>
+              <p class="mr-1 text-dark-700 font-josefin text-sm">{{ watched }}/{{ totalVideos }} Videos</p>
               <div class="bg-white w-24 h-3 items-center rounded-2xl">
                 <div class="bg-gradient-to-r from-[#00BCD4] to-[#1e90ff] ... w-3/4 h-3 items-center rounded-2xl"></div>
               </div>
             </div>
             <div class="flex items-center mt-3">
               <BoldTimeCircleIcon :size="16" :color="'#fff'" />
-              <p class="mx-3 text-dark-700 font-josefin text-sm">{{ duration }}</p>
+              <p class="mx-1 text-dark-700 font-josefin text-sm">{{ duration }}</p>
             </div>
             <div class="flex items-center mt-3">
               <BoldPaperIcon :size="16" :color="'#fff'" />
-              <p class="mx-3 text-dark-700 font-josefin text-sm">{{ references }} references</p>
+              <p class="mx-1 text-dark-700 font-josefin text-sm">{{ references }} references</p>
             </div>
           </div>
         </div>
