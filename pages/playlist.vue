@@ -30,7 +30,7 @@
           <!-- middle -->
           <div class="lg:px-[20%]">
             <div class=" bg-dark-100">
-              <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 xxl:gap-16 px-5 lg:px-10 py-5 xxl:py-10">
+              <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 xxl:gap-16 px-5 lg:px-10 py-10 xxl:py-10">
                 <div v-for="data in dataArray" :key="data.title">
                   <Card :title="data.title" :desc="data.desc" :posted="data.posted" :tags="data.tags"/>
                 </div>

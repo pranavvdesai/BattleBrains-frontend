@@ -16,7 +16,7 @@
       </div>
     </div>
     <!--Bottom XP div-->
-    <div class="w-full flex justify-center lg:px-2 lg:mb-10">
+    <div class="w-full flex justify-center lg:px-6 lg:mb-10">
      <div class="flex flex-col items-start mt-24 border-2 border-dark-500 px-4 py-6 rounded-md xs:w-full md:w-3/4 lg:w-full">
         <div class="flex flex-row">
           <h4 class="mr-2 text-dark-700 font-mont"><b>Novice</b></h4>
