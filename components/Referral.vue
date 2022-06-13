@@ -29,29 +29,21 @@
         <img src="@/assets/images/friends.png" alt="friends" />
       </div>
       <div class="refer">
-        <p class="text-lg font-semibold text-white">
+        <p class="text-lg font-semibold font-mont text-white">
           {{ title }}
         </p>
-        <span class="text-sm text-dark-500">{{ description }}</span>
+        <span class="text-md text-dark-600 font-josefin">{{ description }}</span>
       </div>
     </div>
     <button
       class="
         md:mt-0
         xs:mt-12 xs:w-1/3
-        text-center text-lg
         h-14
         md:w-1/5
         rounded-lg
-        bg-blue-200
-        border-solid
-        text-white
-        font-bold
-        border-dark-500
-        bg-gradient-to-r
-        from-blue-100
-        to-blue-200
-        hover:bg-green-700
+        text-white font-bold font-mont text-center text-lg
+        bg-gradient-to-r from-blue-100 to-blue-200
       "
     >
       refer
