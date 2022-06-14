@@ -105,10 +105,10 @@
   }
   .grid-title{
     @apply
-    text-dark-500 font-josefin 
+    text-dark-600 font-josefin text-lg
   }
   .grid-value{
     @apply
-    text-white xs:text-xl sm:text-3xl font-semibold sm:my-4 xs:my-2
+    text-white font-mont xs:text-xl sm:text-3xl font-semibold sm:my-4 xs:my-2
   }
 }
