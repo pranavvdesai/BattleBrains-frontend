@@ -95,8 +95,18 @@
           <!-- commentsection -->
           <hr class="w-full text-white my-5" />
           <div class="text-white mb-5">Comments</div>
-
-          <Comment />
+          <div
+            v-for="comment in commentsArray"
+            :key="comment.id"
+          >
+            <Comment
+              :name="comment.name"
+              :uname="comment.uname"
+              :comment="comment.comment"
+              :time="comment.time"
+              :replies="comment.replies"
+            />
+          </div>
         </div>
       </div>
 
@@ -138,6 +148,67 @@ export default {
       desc: "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
       posted: "1 month ago",
       tags: ["DEFI", "NFT", "PFP"],
+
+      commentsArray: [
+        {
+          id: 1,
+          name: "Battle Brains",
+          uname: "battlebrains",
+          time: "1 month ago",
+          comment:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+          likes: 16,
+          replies: [
+            {
+              id: 1,
+              name: "Battle Brains",
+              uname: "battlebrains",
+              time: "1 month ago",
+              comment:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+              likes: 16,
+            },
+            {
+              id: 2,
+              name: "Battle Brains",
+              uname: "battlebrains",
+              time: "1 month ago",
+              comment:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+              likes: 16,
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: "Battle Brains",
+          uname: "battlebrains",
+          time: "1 month ago",
+          comment:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+          likes: 16,
+          replies: [
+            {
+              id: 1,
+              name: "Battle Brains",
+              uname: "battlebrains",
+              time: "1 month ago",
+              comment:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+              likes: 16,
+            },
+            {
+              id: 2,
+              name: "Battle Brains",
+              uname: "battlebrains",
+              time: "1 month ago",
+              comment:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
+              likes: 16,
+            },
+          ],
+        },
+      ],
     };
   },
   components: {
