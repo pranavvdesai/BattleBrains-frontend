@@ -8,8 +8,8 @@
         <div class="flex flex-col justify-between p-6 w-full lg:w-1/2 lg:h-full">
           <div class="">
             <div class="flex flex-wrap">
-              <div v-for="(tag,index) in tags">
-                <h1 class="mr-4 font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag}}</h1>
+              <div v-for="tag in tags" :key="tag.id">
+                <h1 class="mr-4 font-josefin" v-bind:class="(index%3==0 && 'text-blue-300') || (index%3==1 && 'text-pink') || (index%3==2 && 'text-yellow')">{{tag.display}}</h1>
               </div>
             </div>
             <div class="font-black text-white text-xl sm:text-xl md:text-3xl lg:text-3xl my-3">
