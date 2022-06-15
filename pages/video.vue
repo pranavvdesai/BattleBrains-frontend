@@ -93,8 +93,8 @@
           </div>
           <p class="text-sm font-josefin text-dark-500">{{posted}}</p>
           <!-- commentsection -->
-          <hr class="w-full text-white my-5" />
-          <div class="text-white mb-5">Comments</div>
+          <hr class="w-full text-dark-600 my-5" />
+          <div class="text-dark-600 mb-5">Comments</div>
           <div
             v-for="comment in commentsArray"
             :key="comment.id"
