@@ -93,5 +93,11 @@ export default {
         this.position === "-right-full" ? "right-0" : "-right-full";
     },
   },
+  created() {
+    const levelNumber = this.$route.params.levelNumber;
+    this.$engine.contentService.getSpecificLevel(levelNumber, (data) => {
+      this.dataArray = data;
+    })
+  }
 };
 </script>
