@@ -7,26 +7,35 @@
       />
       <div class="flex flex-col ml-2">
         <p class="text-sm text-white font-josefin sm:mb-4">
-          <span class="font-bold mr-1">Battle Brains</span>
-          <span class="mx-1 xs:text-xs sm:text-base">@Battlebrainz</span>
-          <span class="text-xs text-gray-500 mx-1 hidden sm:inline-flex">1 month ago</span>
+          <span class="font-bold sm:mr-1 font-mont xs:text-sm sm:text-base">{{name}}</span>
+          <span class="mx-1 xs:text-xs sm:text-base text-blue-100 font-mont">{{uname}}</span>
+          <span class="text-xs text-dark-600 mx-1 hidden sm:inline-flex">{{time}}</span>
+          <AddComment
+            :size="18"
+            :color="'#B8B8CC'"
+            class="mx-1 hidden sm:inline-flex"
+          />
+        </p>
+        <p class="text-sm text-white font-josefin sm:hidden mb-4">
+          <span class="text-xs text-dark-600 sm:hidden inline-flex">{{time}}</span>
           <AddComment
             :size="18"
             :color="'#B8B8CC'"
             class="mx-1"
           />
         </p>
-        <p class="text-sm text-white font-josefin sm:hidden mb-4">
-          <span class="text-xs text-gray-500 sm:hidden inline-flex">1 month ago</span>
-        </p>
         <p class="text-sm text-dark-600 font-josefin sm:pr-10 xs:pr-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit! Labore necessitatibus soluta voluptatum iusto, dignissimos dolorum. Nesciunt eaque voluptas temporibus quisquam corrupti saepe dignissimos, sequi tempora itaque provident nulla rerum non, neque recusandae! Voluptates.
+          {{comment}}
         </p>
 
       </div>
       <div class="flex self-start">
-        <p class=" text-yellow">Like</p>
-        <p class="text-white ml-2">16</p>
+        <LikeIcon
+          class=""
+          :size="16"
+          :color="'#B8B8CC'"
+        />
+        <p class="text-white sm:ml-2 xs:ml-1 xs:text-xs sm:text-base">16</p>
       </div>
     </div>
   </div>
@@ -34,7 +43,26 @@
 
 <script>
 import AddComment from "./icons/addComment.vue";
+import LikeIcon from "./icons/likeIcon.vue";
+
 export default {
-  components: { AddComment },
+  props: {
+    name: {
+      type: String,
+    },
+    uname: {
+      type: String,
+    },
+    comment: {
+      type: String,
+    },
+    time: {
+      type: String,
+    },
+    replies: {
+      type: Array,
+    },
+  },
+  components: { AddComment, LikeIcon },
 };
 </script>

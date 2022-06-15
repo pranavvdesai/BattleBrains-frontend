@@ -153,7 +153,7 @@ export default {
         {
           id: 1,
           name: "Battle Brains",
-          uname: "battlebrains",
+          uname: "@battlebrains",
           time: "1 month ago",
           comment:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
@@ -162,7 +162,7 @@ export default {
             {
               id: 1,
               name: "Battle Brains",
-              uname: "battlebrains",
+              uname: "@battlebrains",
               time: "1 month ago",
               comment:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
@@ -171,7 +171,7 @@ export default {
             {
               id: 2,
               name: "Battle Brains",
-              uname: "battlebrains",
+              uname: "@battlebrains",
               time: "1 month ago",
               comment:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
@@ -182,7 +182,7 @@ export default {
         {
           id: 2,
           name: "Battle Brains",
-          uname: "battlebrains",
+          uname: "@battlebrains",
           time: "1 month ago",
           comment:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
@@ -191,7 +191,7 @@ export default {
             {
               id: 1,
               name: "Battle Brains",
-              uname: "battlebrains",
+              uname: "@battlebrains",
               time: "1 month ago",
               comment:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
@@ -200,7 +200,7 @@ export default {
             {
               id: 2,
               name: "Battle Brains",
-              uname: "battlebrains",
+              uname: "@battlebrains",
               time: "1 month ago",
               comment:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut nemo debitis recusandae dolor doloremque, facilis natus placeat quisquam sit unde eos nostrum ullam reprehenderit!",
