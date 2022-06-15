@@ -44,11 +44,11 @@
 </template>
 
 <script>
-import ExamScreenSidebar from "../components/examScreenSidebar.vue";
-import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
-import ExamRightSidebar from "../components/examRightSidebar.vue";
-import BoldPaperIcon from "../components/icons/boldPaperIcon.vue";
-import ExamQuestionCard from "../components/examQuestionCard.vue";
+import ExamScreenSidebar from "@/components/examScreenSidebar.vue";
+import LeftArrowIcon from "@/components/icons/leftArrowIcon.vue";
+import ExamRightSidebar from "@/components/examRightSidebar.vue";
+import BoldPaperIcon from "@/components/icons/boldPaperIcon.vue";
+import ExamQuestionCard from "@/components/examQuestionCard.vue";
 export default {
   data() {
     return {

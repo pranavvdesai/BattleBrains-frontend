@@ -38,11 +38,11 @@
 </template>
 
 <script>
-import SideBar from "../components/SideBar.vue";
-import Header from "../components/Header.vue";
-import Referral from "../components/Referral.vue";
-import Analyticscard from "../components/Analyticscard.vue";
-import Progressbar from "../components/Progressbar.vue";
+import SideBar from "@/components/SideBar.vue";
+import Header from "@/components/Header.vue";
+import Referral from "@/components/Referral.vue";
+import Analyticscard from "@/components/Analyticscard.vue";
+import Progressbar from "@/components/Progressbar.vue";
 
 export default {
   data() {

@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import Modal from "../components/modal.vue";
-import Resources from "../components/Resources.vue";
-import Leftsidebar from "../components/Leftsidebar.vue";
-import Card from "../components/Card.vue";
-import PaperIcon from "../components/icons/paperIcon.vue";
-import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
+import Modal from "@/components/modal.vue";
+import Resources from "@/components/Resources.vue";
+import Leftsidebar from "@/components/Leftsidebar.vue";
+import Card from "@/components/Card.vue";
+import PaperIcon from "@/components/icons/paperIcon.vue";
+import LeftArrowIcon from "@/components/icons/leftArrowIcon.vue";
 
 export default {
   data() {
