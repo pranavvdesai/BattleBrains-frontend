@@ -70,10 +70,10 @@
 
 <script>
 import { marked } from "marked";
-import Leftsidebar from "../components/leftsidebar.vue";
-import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
-import InfoIcon from "../components/icons/infoIcon.vue";
-import Modal from "../components/modal.vue";
+import Leftsidebar from "@/components/Leftsidebar.vue";
+import LeftArrowIcon from "@/components/icons/leftArrowIcon.vue";
+import InfoIcon from "@/components/icons/infoIcon.vue";
+import Modal from "@/components/modal.vue";
 
 export default {
   data() {

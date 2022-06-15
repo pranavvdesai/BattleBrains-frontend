@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import Togglebar from '../components/Togglebar.vue'
-import Header from '../components/Header.vue'
-import Homecards from '../components/Homecards.vue'
+import Togglebar from '@/components/Togglebar.vue'
+import Header from '@/components/Header.vue'
+import Homecards from '@/components/Homecards.vue'
 
   export default{
     data(){

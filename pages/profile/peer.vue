@@ -82,18 +82,18 @@
 </template>
 
 <script>
-import Modal from "../../components/modal.vue";
-import Resources from "../../components/Resources.vue";
-import Leftsidebar from "../../components/Leftsidebar.vue";
-import Card from "../../components/Card.vue";
-import Leftprofile from "../../components/leftprofile.vue";
-import Peersidebar from "../../components/peersidebar.vue";
-import LeftArrowIcon from "../../components/icons/leftArrowIcon.vue";
-import PaperIcon from "../../components/icons/paperIcon.vue";
-import InfoIcon from "../../components/icons/infoIcon.vue";
-import Modalprofile from "../../components/modalprofile.vue";
-import UserIcon from "../../components/icons/userIcon.vue";
-import SettingIcon from "../../components/icons/settingIcon.vue";
+import Modal from "@/components/modal.vue";
+import Resources from "@/components/Resources.vue";
+import Leftsidebar from "@/components/Leftsidebar.vue";
+import Card from "@/components/Card.vue";
+import Leftprofile from "@/components/leftprofile.vue";
+import Peersidebar from "@/components/peersidebar.vue";
+import LeftArrowIcon from "@/components/icons/leftArrowIcon.vue";
+import PaperIcon from "@/components/icons/paperIcon.vue";
+import InfoIcon from "@/components/icons/infoIcon.vue";
+import Modalprofile from "@/components/modalprofile.vue";
+import UserIcon from "@/components/icons/userIcon.vue";
+import SettingIcon from "@/components/icons/settingIcon.vue";
 
 export default {
   data() {
