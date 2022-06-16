@@ -1,6 +1,7 @@
  <template>
 <div class="relative z-10">
-  <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
+  <nuxt-link :to="levelLink" :disabled="lock">
+    <div class="absolute" v-bind:class="lock && 'lock_pos'" v-if="lock"><LightOutlineLock :size="25" :color="'#fff'"/></div>
   <div class="flex h-1/2 lg:h-72 mt-5 px-5 relative lg:px-10">
     <div class="bg-dark-200 hover:shadow-[0_0_30px_5px_rgba(0,0,0,1)] hover:shadow-dark-100 rounded-2xl w-full flex justify-between flex-col lg:flex-row z-10 relative">
       <div class="lock_back absolute h-full w-full bg-black opacity-50 rounded-2xl" v-if="lock"></div>
@@ -47,11 +48,12 @@
             <div class="xs:absolute z-40 h-full w-full xs:bg-gradient-to-b lg:bg-gradient-to-r from-dark-200/100 to-dark-200/75">
             </div>
           <div class="z-50 border-2 rounded-lg lg:right-5 pt-1 lg:top-5 border-blue-300 text-center w-[125px] h-[35px] m-2.5 xs:absolute xs:right-2.5 xs:bottom-2.5">
-            <p class="text-white font-josefin self-center">{{ level }}</p>
+            <p class="text-white font-josefin self-center">{{ difficultyString }}</p>
           </div>
         </div>
         </div>
       </div>
+  </nuxt-link>
 </div>
 </template>
 
@@ -72,6 +74,12 @@ import BoldPaperIcon from './icons/boldPaperIcon.vue';
 import BoldTimeCircleIcon from './icons/boldTimeCircleIcon.vue';
 import LightOutlineLock from './icons/lightOutlineLock.vue';
 export default {
+  data() {
+    return {
+      levelLink: (this.lock) ? "" : `/levels/${this.level}`,
+      difficultyString: this.$constants.levelDifficulty[this.difficulty]
+    }
+  },
   props: {
     title: {
       type: String
@@ -92,13 +100,16 @@ export default {
       type: Number
     },
     level: {
-      type: String
+      type: Number
     },
     lock: {
       type: Boolean
     },
     tags: {
       type: Array
+    },
+    difficulty: {
+      type: Number
     }
   },
   components: {BoldTimeCircleIcon, BoldPaperIcon, LightOutlineLock }
