@@ -21,7 +21,9 @@
         </div>
 
         <!-- Section 2 -->
-        <div class="flex flex-col xs:w-[100%] lg:w-[80%] lg:mt-6 lg:px-8">
+        <div
+          class="flex flex-col xs:w-[100%] lg:w-[80%] lg:mt-6 lg:px-8 xs:px-2"
+        >
           <!-- Navbar -->
           <div class="ml-6 hidden lg:block mt-6">
             <div class="text-white font-bold text-2xl">🔔 Notifications</div>

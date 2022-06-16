@@ -5,17 +5,17 @@
       class="w-16 h-16"
       alt="notifications"
     />
-    <div class="relative w-full ml-8 py-2">
-      <div class="flex-col absolute top-0">
+    <div class="flex-col h-auto xs:space-y-1 lg:space-y-4 w-full ml-6 xs:ml-3">
+      <div class="flex-col">
         <span class="text-lg font-mont text-dark-700 tracking-wide">
           <b>{{ title }}</b>
         </span>
-        <span class="text-sm font-josefin text-dark-500 xs:mx-3 lg:mx-8">{{
+        <span class="text-sm font-josefin text-dark-500 xs:mx-1 lg:mx-8">{{
           time
         }}</span>
       </div>
-      <p class="text-sm font-josefin text-dark-500 absolute bottom-0">
-        {{ description }}
+      <p class="text-sm font-josefin text-dark-500">
+        {{ description }} {{ description }}
       </p>
     </div>
     <button
@@ -23,6 +23,7 @@
         hidden
         lg:block
         my-4
+        h-8
         w-1/6
         text-white
         bg-dark-200
