@@ -1,18 +1,18 @@
 <template>
   <!-- Mobile View -->
   <div class="lg:hidden xs:flex xs:justify-around xs:items-center bg-dark-100 xs:fixed xs:bottom-0 xs:w-full xs:h-[10vh] bottombar">
-    <NuxtLink to="/home" class="flex p-2">
+    <nuxt-link to="/dashboard" class="flex p-2">
       <homeIcon :color="'#fff'" :size="20" />
-    </NuxtLink>
-    <NuxtLink to="/analytics" class="flex p-2">
+    </nuxt-link>
+    <nuxt-link to="/dashboard/analytics" class="flex p-2">
       <activityIcon :color="'#9898B3'" :size="20" />
-    </NuxtLink>
-    <NuxtLink to="/" class="flex p-2">
+    </nuxt-link>
+    <nuxt-link to="/dashboard" class="flex p-2">
       <releaseIcon :color="'#9898B3'" :size="20" />
-    </NuxtLink>
-    <NuxtLink to="/support" class="flex p-2">
+    </nuxt-link>
+    <nuxt-link to="/dashboard/support" class="flex p-2">
       <supportIcon :color="'#9898B3'" :size="20" />
-    </NuxtLink>
+    </nuxt-link>
   </div>
 </template>
 
