@@ -49,7 +49,7 @@ import Homecards from '../components/Homecards.vue'
             lock : true,
             tags : ['INTRODUCTION','NFT','DEFI']
           },
-          
+
         ]
       }
     },

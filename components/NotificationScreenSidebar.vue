@@ -26,7 +26,7 @@
       <leftArrowIcon :color="'#9898B3'" :size="14" />
       <p class="ml-5 text-sm text-dark-500">back</p>
     </div>
-    <h1 class="text-dark-500 md:text-base mt-10 font-mont mb-4">
+    <h1 class="text-dark-500 md:text-base mt-10 font-josefin font-bold mb-4">
       Your Support Requests
     </h1>
     <NotificationSupportCard

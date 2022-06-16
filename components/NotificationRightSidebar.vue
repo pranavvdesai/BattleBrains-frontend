@@ -27,9 +27,9 @@
         :size="16"
       />
     </div>
-    <h1 class="text-dark-500 md:text-base mt-10 font-mont mb-4">
+    <p class="text-dark-600 font-bold md:text-sm mt-10 font-josefin mb-4">
       Your Support Requests
-    </h1>
+    </p>
     <NotificationSupportCard
       v-for="data in support"
       :key="data.id"

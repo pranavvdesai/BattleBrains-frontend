@@ -33,7 +33,7 @@
           <!-- notifications -->
           <div class="notifications mt-12 ml-6">
             <div class="notif">
-              <p class="text-sm font-josefin text-dark-500 mb-8">Today</p>
+              <p class="text-sm font-josefin text-dark-500 mb-4">Today</p>
               <Notifications
                 v-for="data in dataArray"
                 v-if="data.date == 'today'"
@@ -44,7 +44,7 @@
               />
             </div>
             <div class="notif w-full">
-              <p class="text-sm font-josefin text-dark-500 mb-8">Yesterday</p>
+              <p class="text-sm font-josefin text-dark-500 mb-4">Yesterday</p>
               <Notifications
                 v-for="data in dataArray"
                 v-if="data.date == 'yesterday'"

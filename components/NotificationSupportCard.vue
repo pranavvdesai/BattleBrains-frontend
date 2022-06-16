@@ -6,24 +6,24 @@
         hover:shadow-[0_0_10px_5px_rgba(0,0,0,0.3)]
         bg-dark-300
         max-w-sm
-        p-2
+        p-4
       "
     >
       <div>
-        <p class="text-sm text-dark-500 mb-1">request #{{ id }}</p>
+        <p class="text-md text-dark-500 mb-1">request #{{ id }}</p>
         <h2 class="text-white text-lg font-bold font-mont mb-1">{{ title }}</h2>
-        <p class="text-dark-600 text-sm my-1 font-josefin mb-4">
+        <p class="text-dark-600 text-md my-2 font-josefin mb-4">
           {{ desc }}
         </p>
-        <button
-          class="w-1/4 rounded-lg text-white"
+        <div
+          class="w-2/5 px-2 py-1 rounded-md text-white text-center"
           v-bind:class="{
             'bg-blue-300': open,
-            'bg-dark-500': !open,
+            'bg-dark-400': !open,
           }"
         >
           {{ open ? "open" : "closed" }}
-        </button>
+        </div>
       </div>
     </div>
   </div>
