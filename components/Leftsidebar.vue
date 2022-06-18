@@ -10,20 +10,21 @@
       <h1
         class="text-white xl:text-3xl lg:text-2xl md:text-xl font-extrabold mt-10 font-mont"
       >
-        Why Web3?
+        {{ title }}
       </h1>
       <div class="flex flex-col lg:flex-row mt-4">
         <h2 class="text-blue-300 mr-2 text-sm font-josefin pb-1 lg:pb-0">
           INTRODUCTION
         </h2>
-        <h2 class="text-pink text-sm font-josefin">BLOCKCHAIN</h2>
+        <h2 class="text-pink text-sm font-josefin">
+          BLOCKCHAIN
+        </h2>
       </div>
       <p class="mt-8 text-lg text-light-300 font-josefin">
-        A blockchain is a digitally distributed, decentralized, public ledger
-        that exists across a network...
+        {{ description }}
       </p>
       <div class="flex items-center">
-        <h1 class="text-white mt-6 mb-6 mr-3 font-josefin">2/4 videos</h1>
+        <h1 class="text-white mt-6 mb-6 mr-3 font-josefin">{{ completedVideoCount }}/{{ totalVideoCount }} videos</h1>
         <div class="w-1/2 bg-white rounded-lg">
           <div class="bg-blue-300 w-1/2 h-3 rounded-lg"></div>
         </div>
@@ -46,5 +47,6 @@ export default {
     leftArrowIcon,
     PaperIcon,
   },
+  props: ['title', 'description', 'completedVideoCount', 'totalVideoCount']
 };
 </script>

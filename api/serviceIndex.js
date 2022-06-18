@@ -1,10 +1,13 @@
 import blogsService from './services/blogs'
-import blogsMockService from './services/blogs/mock'
+import contentService from './services/content';
+import authenticationService from './services/authentication';
 
-const isMock = true;
+const isMock = false;
 
-export default function(axiosInstance) {
+export default function(ctx) {
     return {
-        blogsService : (isMock) ? blogsMockService(axiosInstance) : blogsService(axiosInstance)
+        blogsService : blogsService(ctx),
+        contentService : contentService(ctx),
+        authenticationService: authenticationService(ctx)
     }
 }

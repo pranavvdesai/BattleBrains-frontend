@@ -27,8 +27,9 @@
             type="email"
             class="email_input"
             placeholder="Enter email"
+            v-model="email"
           />
-          <button class="email_login hover:bg-green-700">
+          <button class="email_login hover:bg-green-700" @click="connectEmail">
             Sign in with Email
           </button>
           <div class="contact mt-16">
@@ -45,3 +46,20 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: ""
+    }
+  },
+  methods: {
+    async connectEmail() {
+      // login logic here/
+      console.log(`logging in with ${this.email}`)
+      this.$router.push('/dashboard');
+    }
+  }
+}
+</script>

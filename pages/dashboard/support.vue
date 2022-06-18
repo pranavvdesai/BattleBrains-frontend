@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import Togglebar from "../components/Togglebar.vue";
-import Homecards from "../components/Homecards.vue";
-import Header from "../components/Header.vue";
+import Togglebar from "@/components/Togglebar.vue";
+import Homecards from "@/components/Homecards.vue";
+import Header from "@/components/Header.vue";
 export default {
   layout: "sideviewLayout",
   components: { Togglebar, Homecards, Header },

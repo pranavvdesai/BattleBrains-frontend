@@ -8,25 +8,25 @@
         alt="logo"
       />
       <div class="flex flex-col w-3/4 my-6 flex-1">
-        <NuxtLink to="/home" class="link rounded-lg flex py-4 px-6 bg-dark-300 align-center hover:bg-dark-200">
+        <nuxt-link to="/dashboard" class="link rounded-lg flex py-4 px-6 bg-dark-300 align-center hover:bg-dark-200">
           <homeIcon :color="'#fff'" :size="22"/>
           <h3 class="ml-3 link_content text-dark-500 font-josefin"><b>Home</b></h3>
-        </NuxtLink>
-        <NuxtLink to="/analytics" class="link rounded-lg flex py-4 px-6 bg-dark-300 mt-4  hover:bg-dark-200">
+        </nuxt-link>
+        <nuxt-link to="/dashboard/analytics" class="link rounded-lg flex py-4 px-6 bg-dark-300 mt-4  hover:bg-dark-200">
           <activityIcon :color="'#9898B3'" :size="22"/>
 
           <h3 class="ml-3 link_content text-dark-500 font-josefin"><b>My Activity</b></h3>
-        </NuxtLink>
-        <NuxtLink to="/" class="link rounded-lg flex py-4 px-6 bg-dark-300  mt-4  hover:bg-dark-200">
+        </nuxt-link>
+        <nuxt-link to="/" class="link rounded-lg flex py-4 px-6 bg-dark-300  mt-4  hover:bg-dark-200">
           <releaseIcon :color="'#9898B3'" :size="22"/>
 
           <h3 class="ml-3 link_content text-dark-500 font-josefin"><b>Release</b></h3>
-        </NuxtLink>
-        <NuxtLink to="/support" class="link rounded-lg flex py-4 px-6 bg-dark-300  mt-4  hover:bg-dark-200">
+        </nuxt-link>
+        <nuxt-link to="/dashboard/support" class="link rounded-lg flex py-4 px-6 bg-dark-300  mt-4  hover:bg-dark-200">
           <supportIcon :color="'#9898B3'" :size="22"/>
 
           <h3 class="ml-3 link_content text-dark-500 font-josefin"><b>Support</b></h3>
-        </NuxtLink>
+        </nuxt-link>
       </div>
 
       <!--Bottom XP div-->

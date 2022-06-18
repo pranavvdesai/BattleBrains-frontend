@@ -92,14 +92,14 @@
 </template>
 
 <script>
-import Modal from "../components/modal.vue";
-import Resources from "../components/Resources.vue";
-import Leftsidebar from "../components/Leftsidebar.vue";
-import LeftArrowIcon from "../components/icons/leftArrowIcon.vue";
-import HeartIcon from "../components/icons/heartIcon.vue";
-import RightArrowIcon from "../components/icons/rightArrowIcon.vue";
-import PaperIcon from "../components/icons/paperIcon.vue";
-import InfoIcon from "../components/icons/infoIcon.vue";
+import Modal from "@/components/modal.vue";
+import Resources from "@/components/Resources.vue";
+import Leftsidebar from "@/components/Leftsidebar.vue";
+import LeftArrowIcon from "@/components/icons/leftArrowIcon.vue";
+import HeartIcon from "@/components/icons/heartIcon.vue";
+import RightArrowIcon from "@/components/icons/rightArrowIcon.vue";
+import PaperIcon from "@/components/icons/paperIcon.vue";
+import InfoIcon from "@/components/icons/infoIcon.vue";
 
 export default {
   data() {
