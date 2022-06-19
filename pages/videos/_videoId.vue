@@ -66,7 +66,9 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           />
-
+          <div class="-mt-10 flex justify-end mr-[3%]">
+            <div class="bg-dark-100"><p class="text-white py-1 px-4 rounded-lg font-mont">3:02</p></div>
+          </div>
           <div class="flex justify-between my-4">
             <div class="flex items-center">
               <h1 class="text-base text-white font-mont font-bold mr-4">
