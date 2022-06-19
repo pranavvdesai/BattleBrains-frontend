@@ -41,16 +41,27 @@
         </div>
       </div>
     </div>
-    <div v-if="replies.length>0">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <img
+          class="rounded-full w-7 h-7 mr-2 self-start invisible "
+          src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <div v-if="replies.length>0">
       <div v-for="reply in replies">
         <NestedComment
           :name="reply.name"
           :uname="reply.uname"
           :comment="reply.comment"
           :time="reply.time"
+          :rname="uname"
         />
       </div>
     </div>
+      </div>
+    </div>
+
+    
   </div>
 
 </template>
