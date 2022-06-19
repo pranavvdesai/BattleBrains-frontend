@@ -1,8 +1,8 @@
 <template>
   <body class="bg-dark-200">
-    <section class="h-screen">
+    <section class="h-screen" v-if="data">
       <!-- leftsidebar -->
-      <Leftsidebar />
+      <Leftsidebar :title="data.title" :description="data.description" :completedVideoCount="2" :totalVideoCount="data.counts.video" />
       <div class="flex flex-col">
         <!-- nav -->
           <div class="relative bg-dark-300 shadow-lg  top-0 left-0 w-full lg:hidden">
@@ -11,7 +11,7 @@
               <div class="flex items-center">
                 <LeftArrowIcon :size="16" :color="'#fff'" class="mr-4" />
                 <h1 class="text-white text-lg font-extrabold font-mont">
-                  Why Web3?
+                  {{ data.title }}
                 </h1>
               </div>
               <div class="flex items-center">
@@ -31,8 +31,8 @@
           <div class="lg:px-[20%]">
             <div class=" bg-dark-100">
               <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 xxl:gap-16 px-5 lg:px-10 py-10 xxl:py-10">
-                <div v-for="data in dataArray" :key="data.title">
-                  <Card :title="data.title" :desc="data.desc" :posted="data.posted" :tags="data.tags"/>
+                <div v-for="video in data.content.videos" :key="video.id">
+                  <Card :videoId="video.id" :title="video.title" :desc="video.description" :posted="'null'" :tags="video.Tags" :isWatched="video.userSpecifics.isCompleted"/>
                 </div>
               </div>
             </div>
@@ -41,6 +41,9 @@
         <!-- rightsidebar -->
         <Resources @toggle="toggleSidebar" :class="position" />
       </div>
+    </section>
+    <section v-else>
+      Loading
     </section>
   </body>
 </template>
@@ -57,33 +60,7 @@ export default {
   data() {
     return {
       position: "-right-full",
-      dataArray : [
-        {
-          title : "Card 1",
-          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
-          posted : "1 month ago",
-          tags:['Blockchain','Defi']
-        },
-          {
-          title : "Card 2",
-          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
-          posted : "1 month ago",
-          tags:['NFTs','Defi']
-
-        },
-          {
-          title : "Card 3",
-          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
-          posted : "1 month ago",
-          tags:['Blockchain','Defi','NFTs']
-        },
-          {
-          title : "Card 4",
-          desc : "  The Web3 Academy with everything for everyone. Discover, Learn and Make friends!",
-          posted : "1 month ago",
-          tags:['Blockchain']
-        }
-      ]
+      data : null
     };
   },
   components: { Modal, Resources, Leftsidebar, Card, PaperIcon, LeftArrowIcon },
@@ -93,5 +70,11 @@ export default {
         this.position === "-right-full" ? "right-0" : "-right-full";
     },
   },
+  mounted() {
+    const levelNumber = this.$route.params.levelNumber;
+    this.$engine.contentService.getSpecificLevel(levelNumber, (data) => {
+      this.data = data;
+    })
+  }
 };
 </script>

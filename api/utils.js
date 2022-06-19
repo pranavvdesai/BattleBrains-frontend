@@ -22,7 +22,7 @@ const responseIsNot = (codeString, actualCode) => {
 const handleResponse = (pendingPromise, callback, errorHandler) => {
     pendingPromise
         .then(response => {
-            if (responseIs('2xx', response.statusCode)) {
+            if (responseIs('2xx', response.status)) {
                 callback(response.data);
             } else {
                 if (errorHandler) errorHandler({ message: response.data.message }); // If no error handler passed, error is supressed.

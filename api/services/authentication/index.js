@@ -1,6 +1,8 @@
-import { handleResponse } from '../utils';
+import { handleResponse } from '../../utils';
 
-export default ($axios) => {
+export default (ctx) => {
+    const $axios = ctx.$axios;
+    const $store = ctx.store;
     return {
         connectEmail(email, callback, errorHandler) {
             handleResponse($axios.post(
